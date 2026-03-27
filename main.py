@@ -22,7 +22,7 @@ DATA_DIR.mkdir(exist_ok=True)
 DOCS_DIR.mkdir(exist_ok=True)
 
 FUNETF_FILTER_EXCEL_URL = "https://www.funetf.co.kr/api/public/download/excel/etfFilter"
-FUNETF_DETAIL_URL = "https://www.funetf.co.kr/product/etf/view/{isin}"
+FUNETF_DETAIL_URL = "https://www.funetf.co.kr/product/etf/view/{fund_code}"
 TIME_LINEUP_URL = "https://timeetf.co.kr/m11.php"
 TIGER_ACTIVE_LINEUP_URL = "https://investments.miraeasset.com/tigeretf/ko/content/activeLineUp/list.do"
 KODEX_LIST_URL = "https://www.samsungfund.com/etf/product/list.do"
@@ -49,7 +49,7 @@ class ETFRecord:
     manager: str
     etf_name: str
     short_code: str
-    isin: str
+    fund_code: str
     detail_url: str
     source: str = "FunETF"
 
@@ -116,9 +116,11 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     xls = pd.read_excel(io.BytesIO(raw))
     xls.columns = normalize_columns(xls.columns)
 
-    isin_col = find_column(xls, ["isin", "표준코드"], default_idx=1)
+    fund_code_col = find_column(xls, ["펀드코드", "fund code"], default_idx=0)
     name_col = find_column(xls, ["etf 종목명", "종목명", "상품명"], default_idx=2)
     short_col = find_column(xls, ["etf 단축코드", "단축코드", "종목코드"], default_idx=3)
+    replica_col = find_column(xls, ["복제방식"], default_idx=28)
+    aum_col = find_column(xls, ["운용규모(억원)", "운용규모"], default_idx=22)
 
     manager_col = None
     for candidate in ["운용사명", "운용사", "자산운용사", "issuer"]:
@@ -131,7 +133,11 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     records = []
     for _, row in xls.iterrows():
         etf_name = str(row[name_col]).strip()
-        if not etf_name or etf_name == "nan" or "액티브" not in etf_name:
+        if not etf_name or etf_name == "nan":
+            continue
+
+        replica_type = str(row[replica_col]).strip()
+        if "액티브" not in replica_type:
             continue
 
         row_manager = manager_from_text(row[manager_col]) if manager_col else None
@@ -140,25 +146,61 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
         if manager not in MANAGER_RULES:
             continue
 
-        isin = str(row[isin_col]).strip()
+        fund_code = str(row[fund_code_col]).strip()
         short_code = str(row[short_col]).strip()
-        if not isin.startswith("KR"):
+        if not fund_code:
             continue
 
         records.append(
-            ETFRecord(
-                manager=manager,
-                etf_name=etf_name,
-                short_code=short_code,
-                isin=isin,
-                detail_url=FUNETF_DETAIL_URL.format(isin=isin),
-            )
+            {
+                "manager": manager,
+                "etf_name": etf_name,
+                "short_code": short_code,
+                "fund_code": fund_code,
+                "detail_url": "",
+                "source": "FunETF",
+                "aum_okr": parse_float(str(row[aum_col])),
+                "aum_unit": "억원",
+                "asof_date": datetime.now(timezone.utc).astimezone(KST).date().isoformat(),
+                "top_1": str(row.get("TOP 1", "")).strip(),
+                "top_1_weight_pct": parse_float(str(row.get("비율(%)", ""))),
+                "top_2": str(row.get("TOP 2", "")).strip(),
+                "top_2_weight_pct": parse_float(str(row.get("비율(%).1", ""))),
+                "top_3": str(row.get("TOP 3", "")).strip(),
+                "top_3_weight_pct": parse_float(str(row.get("비율(%).2", ""))),
+                "top_4": str(row.get("TOP 4", "")).strip(),
+                "top_4_weight_pct": parse_float(str(row.get("비율(%).3", ""))),
+                "top_5": str(row.get("TOP 5", "")).strip(),
+                "top_5_weight_pct": parse_float(str(row.get("비율(%).4", ""))),
+            }
         )
 
-    df = pd.DataFrame([r.__dict__ for r in records]).drop_duplicates(subset=["isin"])
+    df = pd.DataFrame(records).drop_duplicates(subset=["fund_code"])
     if MAX_ETFS > 0:
         df = df.head(MAX_ETFS).copy()
     return df
+
+
+def build_holdings_from_row(row: pd.Series) -> pd.DataFrame:
+    rows = []
+    for idx in range(1, 6):
+        name = str(row.get(f"top_{idx}", "")).strip()
+        weight = row.get(f"top_{idx}_weight_pct")
+        if not name or name == "nan" or weight is None or pd.isna(weight):
+            continue
+        rows.append(
+            {
+                "manager": row["manager"],
+                "etf_name": row["etf_name"],
+                "short_code": row["short_code"],
+                "fund_code": row["fund_code"],
+                "holding_name": name,
+                "weight_pct": float(weight),
+                "asof_date": row["asof_date"],
+                "source": row["source"],
+            }
+        )
+    return pd.DataFrame(rows)
 
 
 def parse_float(text: str | None) -> float | None:
@@ -249,7 +291,7 @@ def fetch_etf_detail(session: requests.Session, record: ETFRecord) -> tuple[dict
         "manager": record.manager,
         "etf_name": record.etf_name,
         "short_code": record.short_code,
-        "isin": record.isin,
+        "fund_code": record.fund_code,
         "detail_url": record.detail_url,
         "source": record.source,
         "aum_okr": aum_okr,
@@ -285,7 +327,7 @@ def fetch_etf_detail(session: requests.Session, record: ETFRecord) -> tuple[dict
     if holdings.empty:
         holdings = pd.DataFrame(columns=["holding_name", "weight_pct"])
 
-    holdings.insert(0, "isin", record.isin)
+    holdings.insert(0, "fund_code", record.fund_code)
     holdings.insert(0, "short_code", record.short_code)
     holdings.insert(0, "etf_name", record.etf_name)
     holdings.insert(0, "manager", record.manager)
@@ -360,7 +402,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame) -> str:
 const etfs = {etf_json};
 const holdings = {holdings_json};
 let currentManager = '전체';
-let currentIsin = etfs.length ? etfs[0].isin : null;
+let currentFundCode = etfs.length ? etfs[0].fund_code : null;
 
 function formatNum(v) {{
   if (v === '' || v === null || v === undefined) return '-';
@@ -388,7 +430,7 @@ function renderFilters() {{
     btn.onclick = () => {{
       currentManager = m;
       const rows = filteredEtfs();
-      currentIsin = rows.length ? rows[0].isin : null;
+      currentFundCode = rows.length ? rows[0].fund_code : null;
       renderFilters();
       renderEtfs();
       renderHoldings();
@@ -403,14 +445,14 @@ function renderEtfs() {{
   filteredEtfs().forEach(row => {{
     const tr = document.createElement('tr');
     tr.style.cursor = 'pointer';
-    tr.onclick = () => {{ currentIsin = row.isin; renderEtfs(); renderHoldings(); }};
-    if (row.isin === currentIsin) tr.style.background = '#fafafa';
+    tr.onclick = () => {{ currentFundCode = row.fund_code; renderEtfs(); renderHoldings(); }};
+    if (row.fund_code === currentFundCode) tr.style.background = '#fafafa';
     tr.innerHTML = `
       <td>${{row.manager}}</td>
       <td><strong>${{row.etf_name}}</strong><div class="small">${{row.short_code}}</div></td>
       <td class="num">${{formatNum(row.aum_okr)}}</td>
       <td>${{row.asof_date || '-'}}</td>
-      <td><a href="${{row.detail_url}}" target="_blank" rel="noreferrer">원본</a></td>`;
+      <td>${{row.detail_url ? '<a href="' + row.detail_url + '" target="_blank" rel="noreferrer">원본</a>' : '-'}}</td>`;
     tbody.appendChild(tr);
   }});
 }}
@@ -418,9 +460,9 @@ function renderEtfs() {{
 function renderHoldings() {{
   const tbody = document.querySelector('#holdings-table tbody');
   tbody.innerHTML = '';
-  const selected = etfs.find(x => x.isin === currentIsin);
+  const selected = etfs.find(x => x.fund_code === currentFundCode);
   document.getElementById('selected-name').textContent = selected ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}}` : '선택된 ETF가 없습니다.';
-  const rows = holdings.filter(x => x.isin === currentIsin).sort((a,b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1));
+  const rows = holdings.filter(x => x.fund_code === currentFundCode).sort((a,b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1));
   rows.forEach(row => {{
     const tr = document.createElement('tr');
     tr.innerHTML = `<td>${{row.holding_name}}</td><td class="num">${{formatNum(row.weight_pct)}}</td>`;
@@ -444,49 +486,25 @@ def main() -> None:
     if etf_df.empty:
         raise RuntimeError("액티브 ETF 목록을 찾지 못했습니다. 사이트 구조가 바뀌었는지 확인하세요.")
 
-    summaries: list[dict] = []
     holdings_frames: list[pd.DataFrame] = []
+    for row in etf_df.to_dict(orient="records"):
+        holdings = build_holdings_from_row(pd.Series(row))
+        holdings_frames.append(holdings)
+        print(f"[OK] {row['etf_name']}")
 
-    for row in etf_df.itertuples(index=False):
-        record = ETFRecord(
-            manager=row.manager,
-            etf_name=row.etf_name,
-            short_code=str(row.short_code),
-            isin=row.isin,
-            detail_url=row.detail_url,
-            source=row.source,
-        )
-        try:
-            summary, holdings = fetch_etf_detail(session, record)
-            summaries.append(summary)
-            holdings_frames.append(holdings)
-            print(f"[OK] {record.etf_name}")
-        except Exception as exc:
-            summaries.append(
-                {
-                    "manager": record.manager,
-                    "etf_name": record.etf_name,
-                    "short_code": record.short_code,
-                    "isin": record.isin,
-                    "detail_url": record.detail_url,
-                    "source": record.source,
-                    "aum_okr": None,
-                    "aum_unit": None,
-                    "asof_date": None,
-                    "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
-                    "error": str(exc),
-                }
-            )
-            print(f"[ERROR] {record.etf_name}: {exc}")
-
-    summary_df = pd.DataFrame(summaries)
+    summary_df = etf_df.copy()
+    summary_df["fetched_at_utc"] = datetime.now(timezone.utc).isoformat()
+    summary_df["error"] = ""
     summary_df["run_date_kst"] = datetime.now(timezone.utc).astimezone(KST).isoformat()
     summary_df = summary_df.sort_values(by=["aum_okr", "manager", "etf_name"], ascending=[False, True, True], na_position="last")
+    summary_df = summary_df[
+        ["manager", "etf_name", "short_code", "fund_code", "detail_url", "source", "aum_okr", "aum_unit", "asof_date", "fetched_at_utc", "error", "run_date_kst"]
+    ]
 
     if holdings_frames:
         holdings_df = pd.concat(holdings_frames, ignore_index=True)
     else:
-        holdings_df = pd.DataFrame(columns=["manager", "etf_name", "short_code", "isin", "holding_name", "weight_pct", "asof_date", "source"])
+        holdings_df = pd.DataFrame(columns=["manager", "etf_name", "short_code", "fund_code", "holding_name", "weight_pct", "asof_date", "source"])
 
     summary_df.to_csv(DATA_DIR / "etf_list.csv", index=False, encoding="utf-8-sig")
     holdings_df.to_csv(DATA_DIR / "etf_holdings.csv", index=False, encoding="utf-8-sig")
