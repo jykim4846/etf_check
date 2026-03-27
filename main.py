@@ -42,6 +42,9 @@ MANAGER_RULES = {
 MAX_ETFS = int(os.getenv("MAX_ETFS", "0") or "0")
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "30") or "30")
 KST = timezone(timedelta(hours=9))
+FUNETF_SEARCH_URL = "https://www.funetf.co.kr/search"
+FUNETF_SEARCH_API_URL = "https://www.funetf.co.kr/api/public/main/search/all"
+FUNETF_PDF_API_URL = "https://www.funetf.co.kr/api/public/product/view/etfpdf"
 
 THEME_RULES = {
     "AI": ["ai", "인공지능", "nasdaq ai", "aiplatform"],
@@ -98,6 +101,64 @@ def fetch_text(session: requests.Session, url: str) -> str:
     response.raise_for_status()
     response.encoding = response.encoding or "utf-8"
     return response.text
+
+
+def fetch_search_form(session: requests.Session, query: str) -> dict[str, str]:
+    html = session.get(FUNETF_SEARCH_URL, params={"schVal": query}, timeout=REQUEST_TIMEOUT).text
+    soup = BeautifulSoup(html, "html.parser")
+    form = soup.find("form", {"name": "searchForm"})
+    if form is None:
+        raise RuntimeError("FunETF search form not found")
+    return {inp.get("name"): inp.get("value", "") for inp in form.find_all("input") if inp.get("name")}
+
+
+def resolve_item_id(session: requests.Session, query: str, fund_code: str) -> tuple[str | None, str]:
+    form = fetch_search_form(session, query)
+    params = {
+        "schVal": form.get("schVal", query),
+        "reSchVal": form.get("reSchVal", ""),
+        "reSchChk": form.get("reSchChk", ""),
+        "schMoreClass": form.get("schMoreClass", ""),
+        "schKeyword": form.get("schKeyword", ""),
+        "_csrf": form.get("_csrf", ""),
+    }
+    response = session.get(
+        FUNETF_SEARCH_API_URL,
+        params=params,
+        headers={"X-Requested-With": "XMLHttpRequest"},
+        timeout=REQUEST_TIMEOUT,
+    )
+    response.raise_for_status()
+    result = response.json()
+    etf_list = result.get("etfList", {}).get("content", [])
+    for item in etf_list:
+        if item.get("fundCd") == fund_code:
+            item_id = item.get("itemId")
+            if item_id:
+                return item_id, f"https://www.funetf.co.kr/product/etf/view/{item_id}"
+    return None, ""
+
+
+def fetch_top10_holdings(session: requests.Session, item_id: str) -> list[dict]:
+    html = fetch_text(session, f"https://www.funetf.co.kr/product/etf/view/{item_id}")
+    soup = BeautifulSoup(html, "html.parser")
+    form = soup.find("form", {"name": "frm"})
+    if form is None:
+        return []
+
+    params = {inp.get("name"): inp.get("value", "") for inp in form.find_all("input") if inp.get("name")}
+    params["etfPdfYmd"] = params.get("etfPdfYmd") or params.get("kodexPdfYmd") or params.get("gijunYmd") or ""
+    response = session.get(
+        FUNETF_PDF_API_URL,
+        params=params,
+        headers={"Referer": f"https://www.funetf.co.kr/product/etf/view/{item_id}", "X-Requested-With": "XMLHttpRequest"},
+        timeout=REQUEST_TIMEOUT,
+    )
+    response.raise_for_status()
+    result = response.json()
+    if not isinstance(result, list):
+        return []
+    return sorted(result, key=lambda x: float(x.get("evP") or 0), reverse=True)[:10]
 
 
 def normalize_columns(columns: Iterable[object]) -> list[str]:
@@ -341,6 +402,28 @@ def build_holdings_from_row(row: pd.Series) -> pd.DataFrame:
                 "fund_code": row["fund_code"],
                 "holding_name": name,
                 "weight_pct": float(weight),
+                "asof_date": row["asof_date"],
+                "source": row["source"],
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def build_holdings_from_api(row: pd.Series, api_rows: list[dict]) -> pd.DataFrame:
+    rows = []
+    for item in api_rows:
+        holding_name = str(item.get("citmNm") or item.get("grpItmNo") or "").strip()
+        weight_pct = item.get("evP")
+        if not holding_name or weight_pct is None:
+            continue
+        rows.append(
+            {
+                "manager": row["manager"],
+                "etf_name": row["etf_name"],
+                "short_code": row["short_code"],
+                "fund_code": row["fund_code"],
+                "holding_name": holding_name,
+                "weight_pct": float(weight_pct),
                 "asof_date": row["asof_date"],
                 "source": row["source"],
             }
@@ -669,12 +752,34 @@ def main() -> None:
         raise RuntimeError("액티브 ETF 목록을 찾지 못했습니다. 사이트 구조가 바뀌었는지 확인하세요.")
 
     holdings_frames: list[pd.DataFrame] = []
+    enriched_rows: list[dict] = []
     for row in etf_df.to_dict(orient="records"):
-        holdings = build_holdings_from_row(pd.Series(row))
+        row_series = pd.Series(row)
+        item_id = None
+        detail_url = ""
+        try:
+            item_id, detail_url = resolve_item_id(session, row["etf_name"], row["fund_code"])
+        except Exception:
+            item_id, detail_url = None, ""
+
+        row["detail_url"] = detail_url
+        row_series["detail_url"] = detail_url
+
+        holdings = pd.DataFrame()
+        if item_id:
+            try:
+                holdings = build_holdings_from_api(row_series, fetch_top10_holdings(session, item_id))
+            except Exception:
+                holdings = pd.DataFrame()
+
+        if holdings.empty:
+            holdings = build_holdings_from_row(row_series)
+
         holdings_frames.append(holdings)
+        enriched_rows.append(row)
         print(f"[OK] {row['etf_name']}")
 
-    summary_df = etf_df.copy()
+    summary_df = pd.DataFrame(enriched_rows)
     summary_df["fetched_at_utc"] = datetime.now(timezone.utc).isoformat()
     summary_df["error"] = ""
     summary_df["run_date_kst"] = datetime.now(timezone.utc).astimezone(KST).isoformat()
