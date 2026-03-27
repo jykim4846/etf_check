@@ -11,6 +11,8 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      RUN_SUMMARY_PATH: data/run_summary.json
 
     steps:
       - name: Checkout
@@ -26,10 +28,28 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run collector
-        run: python main.py
+      - name: Run collector with retry
+        id: collector
+        run: |
+          attempts=0
+          until [ "$attempts" -ge 2 ]
+          do
+            attempts=$((attempts + 1))
+            echo "Collector attempt $attempts"
+            if python main.py; then
+              echo "attempts_used=$attempts" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if [ "$attempts" -lt 2 ]; then
+              echo "Retrying collector after failure..."
+              sleep 10
+            fi
+          done
+          echo "attempts_used=$attempts" >> "$GITHUB_OUTPUT"
+          exit 1
 
       - name: Commit updated files
+        if: ${{ success() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -40,3 +60,27 @@ jobs:
           fi
           git commit -m "chore: update ETF data"
           git push
+
+      - name: Notify success
+        if: ${{ success() && secrets.NOTIFY_WEBHOOK_URL != '' }}
+        env:
+          NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          ATTEMPTS_USED: ${{ steps.collector.outputs.attempts_used }}
+          RUN_SUMMARY_PATH: ${{ env.RUN_SUMMARY_PATH }}
+        run: python scripts/send_notification.py success
+
+      - name: Notify failure
+        if: ${{ failure() && secrets.NOTIFY_WEBHOOK_URL != '' }}
+        env:
+          NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          ATTEMPTS_USED: ${{ steps.collector.outputs.attempts_used }}
+          RUN_SUMMARY_PATH: ${{ env.RUN_SUMMARY_PATH }}
+        run: python scripts/send_notification.py failure
