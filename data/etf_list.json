@@ -6,12 +6,16 @@
     "fund_code":"K55105E24776",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"금리형 | 액티브 | 단기금리형(파킹형)",
     "aum_okr":81416.40849446,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -20,12 +24,16 @@
     "fund_code":"K55105EC8033",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"채권 | 액티브 | 금리형 | 단기금리형(파킹형)",
     "aum_okr":78812.72827415,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -34,12 +42,16 @@
     "fund_code":"K55105DR9373",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"금리형 | 액티브 | 단기금리형(파킹형)",
     "aum_okr":44511.95069318,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -48,12 +60,16 @@
     "fund_code":"K55105BR0838",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | 종합채권",
     "aum_okr":39290.89367841,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -62,12 +78,16 @@
     "fund_code":"K55301EI2420",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"채권 | 액티브 | 금리형 | 단기금리형(파킹형)",
     "aum_okr":33195.3482328,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -76,12 +96,16 @@
     "fund_code":"K55105E94878",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"금리형 | 액티브 | 단기금리형(파킹형)",
     "aum_okr":27772.00131969,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -90,12 +114,16 @@
     "fund_code":"K55301DY1209",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"금리형 | 액티브 | 단기금리형(파킹형)",
     "aum_okr":24305.8678171,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -104,12 +132,16 @@
     "fund_code":"K55301E85343",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"금리형 | 액티브 | 단기금리형(파킹형)",
     "aum_okr":15988.33285215,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -118,12 +150,16 @@
     "fund_code":"K55105DW2744",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"커버드콜",
+    "theme":"배당",
+    "category_tags":"주식 | 커버드콜 | 배당 | 미국",
     "aum_okr":14510.74361058,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -132,12 +168,16 @@
     "fund_code":"K55105EN8634",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":14487.07708577,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -146,12 +186,16 @@
     "fund_code":"K553J1E23876",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 글로벌AI",
     "aum_okr":11930.47963745,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -160,12 +204,16 @@
     "fund_code":"K55301EP6638",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":11875.50904259,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -174,12 +222,16 @@
     "fund_code":"K55301E88107",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"커버드콜",
+    "theme":"커버드콜",
+    "category_tags":"채권 | 커버드콜",
     "aum_okr":10830.12357944,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -188,12 +240,16 @@
     "fund_code":"K553J1DT1912",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"주식 | 액티브 | 미국",
     "aum_okr":10710.57219961,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -202,12 +258,16 @@
     "fund_code":"K55301DZ7460",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | 종합채권",
     "aum_okr":10686.2777243,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -216,12 +276,16 @@
     "fund_code":"K553N9EU4486",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":10190.28674232,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -230,12 +294,16 @@
     "fund_code":"K55105DW7453",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI |  AI&로봇",
     "aum_okr":9795.13608357,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -244,12 +312,16 @@
     "fund_code":"K55105EE6431",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브 | 코스피 200",
     "aum_okr":9356.81208312,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -258,12 +330,16 @@
     "fund_code":"K55301DY9046",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"커버드콜",
+    "theme":"배당",
+    "category_tags":"주식 | 커버드콜 | 배당",
     "aum_okr":8724.69174401,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -272,12 +348,16 @@
     "fund_code":"K55301BR4790",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":7624.40512333,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -286,12 +366,16 @@
     "fund_code":"K55301DW0609",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":6813.42996944,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -300,12 +384,16 @@
     "fund_code":"K553J1DW4846",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"배당",
+    "category_tags":"주식 | 액티브 | 배당 | 국내",
     "aum_okr":6777.30738824,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -314,12 +402,16 @@
     "fund_code":"K55301E17064",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"금리형 | 액티브 | AI",
     "aum_okr":6612.28469042,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -328,12 +420,16 @@
     "fund_code":"K55105E10130",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"금리형 | 액티브 | AI",
     "aum_okr":6578.83141165,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -342,12 +438,16 @@
     "fund_code":"K553N9E27494",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"바이오",
+    "category_tags":"주식 | 액티브 | 바이오 | 바이오헬스",
     "aum_okr":6424.54184968,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -356,12 +456,16 @@
     "fund_code":"K55105EK2846",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"채권 | 액티브 | 금리형 | 단기금리형(파킹형)",
     "aum_okr":6042.107576,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -370,12 +474,16 @@
     "fund_code":"K55301E15670",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"채권 | 액티브 | 미국",
     "aum_okr":5920.30679517,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -384,12 +492,16 @@
     "fund_code":"K55105EB5592",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"채권 | 액티브 | 미국",
     "aum_okr":5910.04897957,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -398,12 +510,16 @@
     "fund_code":"K553J1ET1739",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":5466.83464641,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -412,12 +528,16 @@
     "fund_code":"K55105E67924",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":5412.72176956,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -426,12 +546,16 @@
     "fund_code":"K55301EE3190",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"부동산\/리츠",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"부동산\/리츠 | 액티브 | AI | 글로벌AI",
     "aum_okr":5243.20476494,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -440,12 +564,16 @@
     "fund_code":"K55105E71496",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":5134.36642135,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -454,12 +582,16 @@
     "fund_code":"K55105DT5379",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"채권 | 액티브",
     "aum_okr":4901.16743195,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -468,12 +600,16 @@
     "fund_code":"K55301E99955",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":4805.60189443,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -482,12 +618,16 @@
     "fund_code":"K553J1E46927",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"바이오",
+    "category_tags":"주식 | 액티브 | 바이오 | 바이오헬스",
     "aum_okr":4663.35456894,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -496,12 +636,16 @@
     "fund_code":"K55301CR6349",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":4663.2969552,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -510,12 +654,16 @@
     "fund_code":"K55301EF8008",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"금리형",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"금리형 | 액티브 | 단기금리형(파킹형)",
     "aum_okr":4338.48060703,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -524,12 +672,16 @@
     "fund_code":"K553J1E98415",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"방산\/우주",
+    "category_tags":"주식 | 액티브 | 방산\/우주",
     "aum_okr":4073.3486526,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -538,12 +690,16 @@
     "fund_code":"K55105EG9086",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":4041.5662902,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -552,12 +708,16 @@
     "fund_code":"K55105DV4568",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | 국내",
     "aum_okr":3534.56064,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -566,12 +726,16 @@
     "fund_code":"K55301E58613",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 글로벌AI",
     "aum_okr":3497.0168265,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -580,12 +744,16 @@
     "fund_code":"K55301EK7888",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":3481.66497551,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -594,12 +762,16 @@
     "fund_code":"K55105E76727",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"커버드콜",
+    "theme":"커버드콜",
+    "category_tags":"채권 | 커버드콜",
     "aum_okr":3432.19376497,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -608,12 +780,16 @@
     "fund_code":"K55105BR3113",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"금리형",
+    "category_tags":"채권 | 액티브 | 금리형",
     "aum_okr":3269.65487523,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -622,12 +798,16 @@
     "fund_code":"K55105EP9606",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"커버드콜",
+    "theme":"커버드콜",
+    "category_tags":"주식 | 커버드콜",
     "aum_okr":3266.88338511,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -636,12 +816,16 @@
     "fund_code":"K55105DR4788",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":3245.56137586,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -650,12 +834,16 @@
     "fund_code":"K55105DR2899",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | 종합채권",
     "aum_okr":3149.26799386,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -664,12 +852,16 @@
     "fund_code":"K55105D79160",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | 종합채권",
     "aum_okr":3132.69779635,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -678,12 +870,16 @@
     "fund_code":"K55301EM5013",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":2937.08722096,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -692,12 +888,16 @@
     "fund_code":"K55105DH2776",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"전력\/에너지",
+    "category_tags":"주식 | 액티브 | 전력\/에너지 | 에너지&화학",
     "aum_okr":2907.99739906,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -706,12 +906,16 @@
     "fund_code":"K55301E15696",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":2825.15513129,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -720,12 +924,16 @@
     "fund_code":"K553J1DJ0270",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":2651.57488802,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -734,12 +942,16 @@
     "fund_code":"K55105EK8983",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"원자재",
+    "style":"액티브",
+    "theme":"원자재",
+    "category_tags":"원자재 | 액티브 | 금투자",
     "aum_okr":2500.04238295,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -748,12 +960,16 @@
     "fund_code":"K553N9EF9468",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":2344.00716363,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -762,12 +978,16 @@
     "fund_code":"K553J1DT1904",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"주식 | 액티브 | 미국",
     "aum_okr":2164.75722526,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -776,12 +996,16 @@
     "fund_code":"K553J1EK6638",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 차이나AI",
     "aum_okr":2043.11509854,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -790,12 +1014,16 @@
     "fund_code":"K553N9E63887",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 글로벌휴머노이드로봇",
     "aum_okr":1936.62749319,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -804,12 +1032,16 @@
     "fund_code":"K553N9EH5654",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"주식 | 액티브 | 미국",
     "aum_okr":1879.77187724,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -818,12 +1050,16 @@
     "fund_code":"K55301EG5110",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":1774.239532,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -832,12 +1068,16 @@
     "fund_code":"K55105EN8642",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":1634.7034268,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -846,12 +1086,16 @@
     "fund_code":"K55105EM2711",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"채권 | 액티브 | 미국",
     "aum_okr":1627.3742094,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -860,12 +1104,16 @@
     "fund_code":"K553J1EI5410",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":1533.33813808,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -874,12 +1122,16 @@
     "fund_code":"K553J1EF9274",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":1468.44853194,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -888,12 +1140,16 @@
     "fund_code":"K55301DZ7882",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | 국내",
     "aum_okr":1416.93056961,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -902,12 +1158,16 @@
     "fund_code":"K55105ER7764",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":1372.85541884,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -916,12 +1176,16 @@
     "fund_code":"K553N9EL0774",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":1288.7290685,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -930,12 +1194,16 @@
     "fund_code":"K55105DT5361",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"채권 | 액티브",
     "aum_okr":1244.66460056,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -944,12 +1212,16 @@
     "fund_code":"K55105EI4473",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"채권 | 액티브",
     "aum_okr":1151.9319496,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -958,12 +1230,16 @@
     "fund_code":"K55105DO3916",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 글로벌AI",
     "aum_okr":1107.33006706,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -972,12 +1248,16 @@
     "fund_code":"K55105E57081",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"채권 | 액티브 | AI",
     "aum_okr":1092.4944256,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -986,12 +1266,16 @@
     "fund_code":"K55301EQ3782",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"바이오",
+    "category_tags":"주식 | 액티브 | 바이오",
     "aum_okr":1089.47231734,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1000,12 +1284,16 @@
     "fund_code":"K55301EL4868",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"부동산\/리츠",
+    "style":"액티브",
+    "theme":"리츠\/부동산",
+    "category_tags":"부동산\/리츠 | 액티브 | 리츠\/부동산",
     "aum_okr":927.87156319,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1014,12 +1302,16 @@
     "fund_code":"K553J1EP1634",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":902.34418189,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1028,12 +1320,16 @@
     "fund_code":"K55301DP1325",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 글로벌AI",
     "aum_okr":870.9127861,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1042,12 +1338,16 @@
     "fund_code":"K55105DT5353",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"채권 | 액티브",
     "aum_okr":810.72624564,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1056,12 +1356,16 @@
     "fund_code":"K553N9E80501",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"배당",
+    "category_tags":"주식 | 액티브 | 배당",
     "aum_okr":795.40647685,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1070,12 +1374,16 @@
     "fund_code":"K55105DM5970",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":752.35321613,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1084,12 +1392,16 @@
     "fund_code":"K55301E68232",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":674.65628876,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1098,12 +1410,16 @@
     "fund_code":"K55105DW7461",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"전력\/에너지",
+    "category_tags":"주식 | 액티브 | 전력\/에너지 | 조선",
     "aum_okr":674.61008218,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1112,12 +1428,16 @@
     "fund_code":"K55105EL1938",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"버퍼형",
+    "theme":"커버드콜",
+    "category_tags":"주식 | 버퍼형 | 커버드콜",
     "aum_okr":595.74481291,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1126,12 +1446,16 @@
     "fund_code":"K55105EJ6188",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"주식 | 액티브 | 미국",
     "aum_okr":574.58820875,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1140,12 +1464,16 @@
     "fund_code":"K553N9EG1423",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":561.32826489,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1154,12 +1482,16 @@
     "fund_code":"K55301D98900",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI |  AI&로봇",
     "aum_okr":553.78391295,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1168,12 +1500,16 @@
     "fund_code":"K55105DS5081",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 차이나AI",
     "aum_okr":433.08983034,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1182,12 +1518,16 @@
     "fund_code":"K553J1DP1767",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":421.34874502,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1196,12 +1536,16 @@
     "fund_code":"K553N9EQ9994",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"부동산\/리츠",
+    "style":"액티브",
+    "theme":"리츠\/부동산",
+    "category_tags":"부동산\/리츠 | 액티브 | 리츠\/부동산",
     "aum_okr":419.34139703,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1210,12 +1554,16 @@
     "fund_code":"K55105DR4770",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":415.42563429,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1224,12 +1572,16 @@
     "fund_code":"K553N9E74926",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"부동산\/리츠",
+    "style":"액티브",
+    "theme":"리츠\/부동산",
+    "category_tags":"부동산\/리츠 | 액티브 | 리츠\/부동산",
     "aum_okr":408.16011281,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1238,12 +1590,16 @@
     "fund_code":"K553N9EH9532",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":395.65863603,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1252,12 +1608,16 @@
     "fund_code":"K55105E57073",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":364.79982904,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1266,12 +1626,16 @@
     "fund_code":"K553N9EC3266",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"부동산\/리츠",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"부동산\/리츠 | 액티브 | AI |  AI&로봇",
     "aum_okr":330.14548374,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1280,12 +1644,16 @@
     "fund_code":"K553N9EF9815",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":318.62658141,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1294,12 +1662,16 @@
     "fund_code":"K55105DH2784",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"모빌리티",
+    "category_tags":"주식 | 액티브 | 모빌리티",
     "aum_okr":310.56713169,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1308,12 +1680,16 @@
     "fund_code":"K553N9EF5557",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"원자재",
+    "style":"액티브",
+    "theme":"리츠\/부동산",
+    "category_tags":"원자재 | 액티브 | 리츠\/부동산",
     "aum_okr":302.03405529,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1322,12 +1698,16 @@
     "fund_code":"K55301DH6423",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":262.45096818,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1336,12 +1716,16 @@
     "fund_code":"K553J1EJ6698",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"배당",
+    "category_tags":"주식 | 액티브 | 배당",
     "aum_okr":252.21940856,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1350,12 +1734,16 @@
     "fund_code":"K55105DX9912",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"AI",
+    "category_tags":"주식 | 액티브 | AI | 아시아 반도체",
     "aum_okr":221.18826229,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1364,12 +1752,16 @@
     "fund_code":"K55105EH1736",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"버퍼형",
+    "theme":"커버드콜",
+    "category_tags":"주식 | 버퍼형 | 커버드콜",
     "aum_okr":214.4278203,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1378,12 +1770,16 @@
     "fund_code":"K55105E17036",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | AA+이상",
     "aum_okr":212.15929188,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1392,12 +1788,16 @@
     "fund_code":"K55301DW0591",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"채권 | 액티브",
     "aum_okr":201.71900782,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1406,12 +1806,16 @@
     "fund_code":"K553N9EJ5488",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":192.3126448,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1420,12 +1824,16 @@
     "fund_code":"K55105E57099",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | 미국",
     "aum_okr":186.56359571,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1434,12 +1842,16 @@
     "fund_code":"K55301DH5144",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"모빌리티",
+    "category_tags":"주식 | 액티브 | 모빌리티",
     "aum_okr":184.40959129,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1448,12 +1860,16 @@
     "fund_code":"K55105D92619",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":182.21443702,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1462,12 +1878,16 @@
     "fund_code":"K55105EI2691",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"원자재",
+    "style":"액티브",
+    "theme":"원자재",
+    "category_tags":"원자재 | 액티브",
     "aum_okr":174.89177541,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1476,12 +1896,16 @@
     "fund_code":"K55301EL7275",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브",
     "aum_okr":161.541818,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1490,12 +1914,16 @@
     "fund_code":"K553N9E96812",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"반도체",
+    "category_tags":"주식 | 액티브 | 반도체",
     "aum_okr":151.09612098,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1504,12 +1932,16 @@
     "fund_code":"K553N9EP3964",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"바이오",
+    "category_tags":"주식 | 액티브 | 바이오",
     "aum_okr":141.25487757,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1518,12 +1950,16 @@
     "fund_code":"K553J1DO1974",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"전력\/에너지",
+    "category_tags":"주식 | 액티브 | 전력\/에너지",
     "aum_okr":138.44215433,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1532,12 +1968,16 @@
     "fund_code":"K55105E17044",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"채권",
+    "style":"액티브",
+    "theme":"채권",
+    "category_tags":"채권 | 액티브 | AA+이상",
     "aum_okr":134.79038992,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1546,12 +1986,16 @@
     "fund_code":"K553J1DJ0288",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":124.69043597,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1560,12 +2004,16 @@
     "fund_code":"K553J1EB9138",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"바이오",
+    "category_tags":"주식 | 액티브 | 바이오",
     "aum_okr":121.70397222,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1574,12 +2022,16 @@
     "fund_code":"K55105DC4892",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":120.64175483,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1588,12 +2040,16 @@
     "fund_code":"K553J1EF1685",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":114.16062776,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1602,12 +2058,16 @@
     "fund_code":"K55240E32568",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":80.00031481,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1616,12 +2076,16 @@
     "fund_code":"K553N9EM6598",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"바이오",
+    "category_tags":"주식 | 액티브 | 바이오",
     "aum_okr":76.6836576,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1630,12 +2094,16 @@
     "fund_code":"K553N9EP3691",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"기타",
+    "category_tags":"주식 | 액티브",
     "aum_okr":73.34987726,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"삼성",
@@ -1644,12 +2112,16 @@
     "fund_code":"K553N9ED6821",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"바이오",
+    "category_tags":"주식 | 액티브 | 바이오",
     "aum_okr":49.88352777,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1658,11 +2130,15 @@
     "fund_code":"K55301EH0516",
     "detail_url":"",
     "source":"FunETF",
+    "asset_class":"주식",
+    "style":"액티브",
+    "theme":"미국",
+    "category_tags":"주식 | 액티브 | 미국",
     "aum_okr":46.02377887,
     "aum_unit":"억원",
     "asof_date":"2026-03-27",
-    "fetched_at_utc":"2026-03-27T06:03:17.801388+00:00",
+    "fetched_at_utc":"2026-03-27T06:29:39.269552+00:00",
     "error":"",
-    "run_date_kst":"2026-03-27T15:03:17.801620+09:00"
+    "run_date_kst":"2026-03-27T15:29:39.269787+09:00"
   }
 ]

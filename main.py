@@ -43,6 +43,24 @@ MAX_ETFS = int(os.getenv("MAX_ETFS", "0") or "0")
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "30") or "30")
 KST = timezone(timedelta(hours=9))
 
+THEME_RULES = {
+    "AI": ["ai", "인공지능", "nasdaq ai", "aiplatform"],
+    "반도체": ["반도체", "semiconductor", "chip"],
+    "바이오": ["바이오", "bio", "헬스케어", "healthcare", "제약", "치료제"],
+    "배당": ["배당", "dividend"],
+    "커버드콜": ["커버드콜", "covered call", "buffer"],
+    "금리형": ["금리", "머니마켓", "mmf", "sofr", "kofr", "cd", "파킹형"],
+    "채권": ["채권", "국고채", "회사채", "금융채", "bond"],
+    "리츠/부동산": ["리츠", "부동산", "인프라"],
+    "원자재": ["금", "gold", "원유", "oil", "천연가스", "gas", "원자재"],
+    "전력/에너지": ["전력", "에너지", "ess", "친환경", "신재생", "전력인프라"],
+    "방산/우주": ["방산", "우주", "aerospace", "defense"],
+    "로봇": ["로봇", "robot"],
+    "모빌리티": ["자율주행", "모빌리티", "2차전지", "전지", "배터리"],
+    "중국": ["차이나", "china"],
+    "미국": ["미국", "us ", "s&p500", "나스닥", "dow", "dow jones"],
+}
+
 
 @dataclass
 class ETFRecord:
@@ -111,6 +129,63 @@ def find_column(df: pd.DataFrame, candidates: list[str], default_idx: int | None
     raise KeyError(f"Column not found. Candidates={candidates}, columns={list(df.columns)}")
 
 
+def compact_text(*values: object) -> str:
+    return " ".join(str(v).strip() for v in values if v is not None and str(v).strip() and str(v).strip() != "nan")
+
+
+def classify_asset_class(
+    etf_type: str,
+    etf_subtype: str,
+    representative_main: str,
+    representative_sub: str,
+    etf_name: str,
+) -> str:
+    text = compact_text(etf_type, etf_subtype, representative_main, representative_sub, etf_name).lower()
+    if any(token in text for token in ["채권", "국고채", "회사채", "금융채"]):
+        return "채권"
+    if any(token in text for token in ["머니마켓", "금리", "파킹형", "cd", "kofr", "sofr"]):
+        return "금리형"
+    if any(token in text for token in ["원자재", "금", "원유", "천연가스", "팔라듐"]):
+        return "원자재"
+    if any(token in text for token in ["부동산", "리츠", "인프라"]):
+        return "부동산/리츠"
+    if any(token in text for token in ["혼합", "tif"]):
+        return "혼합자산"
+    if any(token in text for token in ["주식", "테크", "성장", "배당", "바이오", "반도체", "코스피", "코스닥", "나스닥", "s&p"]):
+        return "주식"
+    return "기타"
+
+
+def classify_style(replica_type: str, etf_type: str, etf_name: str) -> str:
+    text = compact_text(replica_type, etf_type, etf_name).lower()
+    if "레버리지" in text:
+        return "레버리지"
+    if "인버스" in text:
+        return "인버스"
+    if "커버드콜" in text:
+        return "커버드콜"
+    if "버퍼" in text:
+        return "버퍼형"
+    if "액티브" in text:
+        return "액티브"
+    return "기타"
+
+
+def classify_theme(etf_name: str, representative_sub: str, benchmark_name: str) -> str:
+    text = compact_text(etf_name, representative_sub, benchmark_name).lower()
+    for theme, tokens in THEME_RULES.items():
+        if any(token in text for token in tokens):
+            return theme
+    return "기타"
+
+
+def build_category_tags(asset_class: str, style: str, theme: str, representative_sub: str) -> str:
+    tags = [asset_class, style, theme]
+    if representative_sub and representative_sub != "nan":
+        tags.append(representative_sub)
+    return " | ".join(dict.fromkeys(tag for tag in tags if tag and tag != "기타"))
+
+
 def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     raw = fetch_bytes(session, FUNETF_FILTER_EXCEL_URL)
     xls = pd.read_excel(io.BytesIO(raw))
@@ -121,6 +196,11 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     short_col = find_column(xls, ["etf 단축코드", "단축코드", "종목코드"], default_idx=3)
     replica_col = find_column(xls, ["복제방식"], default_idx=28)
     aum_col = find_column(xls, ["운용규모(억원)", "운용규모"], default_idx=22)
+    etf_type_col = find_column(xls, ["etf 대유형"], default_idx=3)
+    etf_subtype_col = find_column(xls, ["etf 소유형"], default_idx=4)
+    representative_main_col = find_column(xls, ["etf 대표유형 대유형"], default_idx=31)
+    representative_sub_col = find_column(xls, ["etf 대표유형 소유형"], default_idx=32)
+    benchmark_col = find_column(xls, ["기초지수"], default_idx=27)
 
     manager_col = None
     for candidate in ["운용사명", "운용사", "자산운용사", "issuer"]:
@@ -151,6 +231,17 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
         if not fund_code:
             continue
 
+        asset_class = classify_asset_class(
+            str(row[etf_type_col]),
+            str(row[etf_subtype_col]),
+            str(row[representative_main_col]),
+            str(row[representative_sub_col]),
+            etf_name,
+        )
+        style = classify_style(replica_type, str(row[etf_type_col]), etf_name)
+        theme = classify_theme(etf_name, str(row[representative_sub_col]), str(row[benchmark_col]))
+        category_tags = build_category_tags(asset_class, style, theme, str(row[representative_sub_col]))
+
         records.append(
             {
                 "manager": manager,
@@ -162,6 +253,10 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
                 "aum_okr": parse_float(str(row[aum_col])),
                 "aum_unit": "억원",
                 "asof_date": datetime.now(timezone.utc).astimezone(KST).date().isoformat(),
+                "asset_class": asset_class,
+                "style": style,
+                "theme": theme,
+                "category_tags": category_tags,
                 "top_1": str(row.get("TOP 1", "")).strip(),
                 "top_1_weight_pct": parse_float(str(row.get("비율(%)", ""))),
                 "top_2": str(row.get("TOP 2", "")).strip(),
@@ -353,6 +448,8 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame) -> str:
     h1 {{ margin: 0 0 6px; font-size: 24px; }}
     .muted {{ color: #666; font-size: 14px; }}
     .filters {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }}
+    .filter-block {{ margin-top: 12px; }}
+    .filter-title {{ font-size: 12px; color: #666; margin-bottom: 6px; }}
     button {{ border: 1px solid #ddd; background: white; border-radius: 999px; padding: 8px 12px; cursor: pointer; }}
     button.active {{ background: #111; color: white; border-color: #111; }}
     table {{ width: 100%; border-collapse: collapse; font-size: 14px; }}
@@ -368,7 +465,9 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame) -> str:
     <div class="card">
       <h1>액티브 ETF 체크</h1>
       <div class="muted">삼성(KODEX), 미래에셋(TIGER), 타임폴리오(TIME) 액티브 ETF를 순자산총액(AUM) 기준으로 정렬합니다. 업데이트: {updated_at}</div>
-      <div class="filters" id="filters"></div>
+      <div class="filter-block" id="manager-filters"></div>
+      <div class="filter-block" id="asset-filters"></div>
+      <div class="filter-block" id="theme-filters"></div>
     </div>
     <div class="card">
       <table id="etf-table">
@@ -376,6 +475,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame) -> str:
           <tr>
             <th>운용사</th>
             <th>ETF</th>
+            <th>카테고리</th>
             <th class="num">AUM(억원)</th>
             <th>기준일</th>
             <th>상세</th>
@@ -402,6 +502,8 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame) -> str:
 const etfs = {etf_json};
 const holdings = {holdings_json};
 let currentManager = '전체';
+let currentAssetClass = '전체';
+let currentTheme = '전체';
 let currentFundCode = etfs.length ? etfs[0].fund_code : null;
 
 function formatNum(v) {{
@@ -411,31 +513,60 @@ function formatNum(v) {{
   return n.toLocaleString('ko-KR', {{ maximumFractionDigits: 2 }});
 }}
 
-function managers() {{
-  return ['전체', ...new Set(etfs.map(x => x.manager))];
+function uniqueOptions(key) {{
+  return ['전체', ...new Set(etfs.map(x => x[key]).filter(Boolean))];
 }}
 
 function filteredEtfs() {{
-  const rows = currentManager === '전체' ? etfs : etfs.filter(x => x.manager === currentManager);
+  const rows = etfs.filter(x => {{
+    if (currentManager !== '전체' && x.manager !== currentManager) return false;
+    if (currentAssetClass !== '전체' && x.asset_class !== currentAssetClass) return false;
+    if (currentTheme !== '전체' && x.theme !== currentTheme) return false;
+    return true;
+  }});
   return [...rows].sort((a, b) => Number(b.aum_okr || -1) - Number(a.aum_okr || -1));
 }}
 
-function renderFilters() {{
-  const root = document.getElementById('filters');
+function renderFilterGroup(rootId, title, currentValue, options, onSelect) {{
+  const root = document.getElementById(rootId);
   root.innerHTML = '';
-  managers().forEach(m => {{
+  const label = document.createElement('div');
+  label.className = 'filter-title';
+  label.textContent = title;
+  root.appendChild(label);
+
+  const wrap = document.createElement('div');
+  wrap.className = 'filters';
+  options.forEach(m => {{
     const btn = document.createElement('button');
     btn.textContent = m;
-    if (m === currentManager) btn.classList.add('active');
-    btn.onclick = () => {{
-      currentManager = m;
-      const rows = filteredEtfs();
-      currentFundCode = rows.length ? rows[0].fund_code : null;
-      renderFilters();
-      renderEtfs();
-      renderHoldings();
-    }};
-    root.appendChild(btn);
+    if (m === currentValue) btn.classList.add('active');
+    btn.onclick = () => onSelect(m);
+    wrap.appendChild(btn);
+  }});
+  root.appendChild(wrap);
+}}
+
+function rerenderAfterFilter() {{
+  const rows = filteredEtfs();
+  currentFundCode = rows.length ? rows[0].fund_code : null;
+  renderFilters();
+  renderEtfs();
+  renderHoldings();
+}}
+
+function renderFilters() {{
+  renderFilterGroup('manager-filters', '운용사', currentManager, uniqueOptions('manager'), value => {{
+    currentManager = value;
+    rerenderAfterFilter();
+  }});
+  renderFilterGroup('asset-filters', '자산군', currentAssetClass, uniqueOptions('asset_class'), value => {{
+    currentAssetClass = value;
+    rerenderAfterFilter();
+  }});
+  renderFilterGroup('theme-filters', '테마', currentTheme, uniqueOptions('theme'), value => {{
+    currentTheme = value;
+    rerenderAfterFilter();
   }});
 }}
 
@@ -450,6 +581,7 @@ function renderEtfs() {{
     tr.innerHTML = `
       <td>${{row.manager}}</td>
       <td><strong>${{row.etf_name}}</strong><div class="small">${{row.short_code}}</div></td>
+      <td><div>${{row.asset_class || '-'}}</div><div class="small">${{row.style || '-'}} / ${{row.theme || '-'}}</div></td>
       <td class="num">${{formatNum(row.aum_okr)}}</td>
       <td>${{row.asof_date || '-'}}</td>
       <td>${{row.detail_url ? '<a href="' + row.detail_url + '" target="_blank" rel="noreferrer">원본</a>' : '-'}}</td>`;
@@ -461,7 +593,7 @@ function renderHoldings() {{
   const tbody = document.querySelector('#holdings-table tbody');
   tbody.innerHTML = '';
   const selected = etfs.find(x => x.fund_code === currentFundCode);
-  document.getElementById('selected-name').textContent = selected ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}}` : '선택된 ETF가 없습니다.';
+  document.getElementById('selected-name').textContent = selected ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}} / 카테고리: ${{selected.category_tags || '-'}}` : '선택된 ETF가 없습니다.';
   const rows = holdings.filter(x => x.fund_code === currentFundCode).sort((a,b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1));
   rows.forEach(row => {{
     const tr = document.createElement('tr');
@@ -498,7 +630,7 @@ def main() -> None:
     summary_df["run_date_kst"] = datetime.now(timezone.utc).astimezone(KST).isoformat()
     summary_df = summary_df.sort_values(by=["aum_okr", "manager", "etf_name"], ascending=[False, True, True], na_position="last")
     summary_df = summary_df[
-        ["manager", "etf_name", "short_code", "fund_code", "detail_url", "source", "aum_okr", "aum_unit", "asof_date", "fetched_at_utc", "error", "run_date_kst"]
+        ["manager", "etf_name", "short_code", "fund_code", "detail_url", "source", "asset_class", "style", "theme", "category_tags", "aum_okr", "aum_unit", "asof_date", "fetched_at_utc", "error", "run_date_kst"]
     ]
 
     if holdings_frames:
