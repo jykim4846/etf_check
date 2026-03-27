@@ -186,6 +186,43 @@ def build_category_tags(asset_class: str, style: str, theme: str, representative
     return " | ".join(dict.fromkeys(tag for tag in tags if tag and tag != "기타"))
 
 
+def is_overseas_etf(
+    etf_type: str,
+    etf_subtype: str,
+    representative_main: str,
+    representative_sub: str,
+    etf_name: str,
+    benchmark_name: str,
+) -> bool:
+    combined = compact_text(etf_type, etf_subtype, representative_main, representative_sub, etf_name, benchmark_name).lower()
+
+    explicit_tokens = [
+        "해외주식",
+        "해외채권",
+        "글로벌",
+        "미국",
+        "차이나",
+        "중국",
+        "아시아",
+        "토탈월드",
+        "나스닥",
+        "s&p",
+        "dow jones",
+        "dow ",
+        "msci us",
+        "u.s.",
+        "us treasury",
+        "ice u.s.",
+        "solactive global",
+        "bloomberg greater china",
+    ]
+
+    if any(token in combined for token in explicit_tokens):
+        return True
+
+    return False
+
+
 def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     raw = fetch_bytes(session, FUNETF_FILTER_EXCEL_URL)
     xls = pd.read_excel(io.BytesIO(raw))
@@ -239,8 +276,21 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
             etf_name,
         )
         style = classify_style(replica_type, str(row[etf_type_col]), etf_name)
-        theme = classify_theme(etf_name, str(row[representative_sub_col]), str(row[benchmark_col]))
-        category_tags = build_category_tags(asset_class, style, theme, str(row[representative_sub_col]))
+        benchmark_name = str(row[benchmark_col])
+        representative_main = str(row[representative_main_col])
+        representative_sub = str(row[representative_sub_col])
+        if is_overseas_etf(
+            str(row[etf_type_col]),
+            str(row[etf_subtype_col]),
+            representative_main,
+            representative_sub,
+            etf_name,
+            benchmark_name,
+        ):
+            continue
+
+        theme = classify_theme(etf_name, representative_sub, benchmark_name)
+        category_tags = build_category_tags(asset_class, style, theme, representative_sub)
 
         records.append(
             {
