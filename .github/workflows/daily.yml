@@ -60,27 +60,3 @@ jobs:
           fi
           git commit -m "chore: update ETF data"
           git push
-
-      - name: Notify success
-        if: ${{ success() && secrets.NOTIFY_WEBHOOK_URL != '' }}
-        env:
-          NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_RUN_ID: ${{ github.run_id }}
-          GITHUB_SERVER_URL: ${{ github.server_url }}
-          GITHUB_ACTOR: ${{ github.actor }}
-          ATTEMPTS_USED: ${{ steps.collector.outputs.attempts_used }}
-          RUN_SUMMARY_PATH: ${{ env.RUN_SUMMARY_PATH }}
-        run: python scripts/send_notification.py success
-
-      - name: Notify failure
-        if: ${{ failure() && secrets.NOTIFY_WEBHOOK_URL != '' }}
-        env:
-          NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_RUN_ID: ${{ github.run_id }}
-          GITHUB_SERVER_URL: ${{ github.server_url }}
-          GITHUB_ACTOR: ${{ github.actor }}
-          ATTEMPTS_USED: ${{ steps.collector.outputs.attempts_used }}
-          RUN_SUMMARY_PATH: ${{ env.RUN_SUMMARY_PATH }}
-        run: python scripts/send_notification.py failure

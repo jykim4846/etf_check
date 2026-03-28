@@ -41,31 +41,6 @@ python main.py
 - 수동 실행도 가능
 - 데이터 파일과 `docs/index.html` 을 갱신 후 자동 커밋
 
-### 실행 알림 받기
-
-성공/실패 알림도 받을 수 있게 설정했습니다.
-
-1. GitHub 저장소
-2. **Settings**
-3. **Secrets and variables**
-4. **Actions**
-5. `NOTIFY_WEBHOOK_URL` 시크릿 추가
-
-지원 방식:
-
-- Slack Incoming Webhook
-- Discord Webhook
-- `text` 또는 `content` JSON payload를 받는 일반 웹훅
-
-알림에는 아래 정보가 포함됩니다.
-
-- 실행 성공/실패
-- 저장소 / 실행자 / Actions 실행 링크
-- 재시도 횟수
-- ETF 수 / 보유종목 수
-- 오류 ETF 수 / 오류 건수
-- 대표 오류 상위 몇 개
-
 워크플로는 수집 실패 시 10초 후 한 번 더 자동 재시도합니다.
 
 ### 화면에서 상태 보기
