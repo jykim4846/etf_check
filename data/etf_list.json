@@ -16,7 +16,7 @@
     "holdings_source":"KODEX",
     "holding_count":31,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -36,7 +36,7 @@
     "holdings_source":"KODEX",
     "holding_count":601,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -56,7 +56,7 @@
     "holdings_source":"KODEX",
     "holding_count":9,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -116,7 +116,7 @@
     "holdings_source":"KODEX",
     "holding_count":23,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -136,7 +136,7 @@
     "holdings_source":"TIGER",
     "holding_count":4,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -156,7 +156,7 @@
     "holdings_source":"TIGER",
     "holding_count":6,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -176,7 +176,7 @@
     "holdings_source":"KODEX",
     "holding_count":159,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -216,7 +216,7 @@
     "holdings_source":"TIGER",
     "holding_count":100,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -224,7 +224,7 @@
     "etf_name":"KoAct 코스닥액티브",
     "short_code":"0163Y0",
     "fund_code":"K553N9EU4486",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -244,7 +244,7 @@
     "etf_name":"KODEX 로봇액티브",
     "short_code":"445290",
     "fund_code":"K55105DW7453",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -276,7 +276,7 @@
     "holdings_source":"TIGER",
     "holding_count":94,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -284,7 +284,7 @@
     "etf_name":"KODEX 200액티브",
     "short_code":"494890",
     "fund_code":"K55105EE6431",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -316,7 +316,7 @@
     "holdings_source":"TIME",
     "holding_count":32,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -336,7 +336,7 @@
     "holdings_source":"TIGER",
     "holding_count":43,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -356,7 +356,7 @@
     "holdings_source":"TIGER",
     "holding_count":98,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -416,7 +416,7 @@
     "holdings_source":"TIME",
     "holding_count":69,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -436,7 +436,7 @@
     "holdings_source":"KODEX",
     "holding_count":56,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -476,7 +476,7 @@
     "holdings_source":"TIGER",
     "holding_count":60,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -496,7 +496,7 @@
     "holdings_source":"TIME",
     "holding_count":41,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -516,7 +516,7 @@
     "holdings_source":"TIGER",
     "holding_count":4,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -544,7 +544,7 @@
     "etf_name":"KODEX 국고채30년액티브",
     "short_code":"439870",
     "fund_code":"K55105DV4568",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"채권",
     "style":"액티브",
@@ -576,7 +576,7 @@
     "holdings_source":"KODEX",
     "holding_count":15,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -596,7 +596,7 @@
     "holdings_source":"KODEX",
     "holding_count":10,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -696,7 +696,7 @@
     "holdings_source":"TIME",
     "holding_count":28,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -704,7 +704,7 @@
     "etf_name":"KoAct 코리아밸류업액티브",
     "short_code":"495230",
     "fund_code":"K553N9EF9468",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -776,7 +776,7 @@
     "holdings_source":"TIME",
     "holding_count":34,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -796,7 +796,7 @@
     "holdings_source":"TIGER",
     "holding_count":4,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -824,7 +824,7 @@
     "etf_name":"KoAct K수출핵심기업TOP30액티브",
     "short_code":"0074K0",
     "fund_code":"K553N9EL0774",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -884,7 +884,7 @@
     "etf_name":"TIGER 기술이전바이오액티브",
     "short_code":"0168K0",
     "fund_code":"K55301EQ3782",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -924,7 +924,7 @@
     "etf_name":"KoAct 배당성장액티브",
     "short_code":"476850",
     "fund_code":"K553N9E80501",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -964,7 +964,7 @@
     "etf_name":"KODEX 메타버스액티브",
     "short_code":"401470",
     "fund_code":"K55105DM5970",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -996,7 +996,7 @@
     "holdings_source":"TIGER",
     "holding_count":28,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -1004,7 +1004,7 @@
     "etf_name":"KODEX 친환경조선해운액티브",
     "short_code":"445150",
     "fund_code":"K55105DW7461",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1036,7 +1036,7 @@
     "holdings_source":"TIGER",
     "holding_count":100,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -1056,7 +1056,7 @@
     "holdings_source":"TIME",
     "holding_count":29,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -1064,7 +1064,7 @@
     "etf_name":"KoAct 수소전력ESS인프라액티브",
     "short_code":"0150K0",
     "fund_code":"K553N9EQ9994",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"부동산\/리츠",
     "style":"액티브",
@@ -1104,7 +1104,7 @@
     "etf_name":"KODEX 자율주행액티브",
     "short_code":"385520",
     "fund_code":"K55105DH2784",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1156,7 +1156,7 @@
     "holdings_source":"TIGER",
     "holding_count":23,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -1164,7 +1164,7 @@
     "etf_name":"KODEX 혁신기술테마액티브",
     "short_code":"364690",
     "fund_code":"K55105D92619",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1204,7 +1204,7 @@
     "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
     "short_code":"482030",
     "fund_code":"K553N9E96812",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1236,7 +1236,7 @@
     "holdings_source":"TIME",
     "holding_count":24,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -1244,7 +1244,7 @@
     "etf_name":"KODEX 53-09 국고채액티브",
     "short_code":"457700",
     "fund_code":"K55105E17044",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"채권",
     "style":"액티브",
@@ -1276,7 +1276,7 @@
     "holdings_source":"TIME",
     "holding_count":29,
     "fetched_at_utc":"2026-03-28T15:35:48.856370+00:00",
-    "error":"",
+    "error":null,
     "run_date_kst":"2026-03-29T00:35:48.856761+09:00"
   },
   {
@@ -1284,7 +1284,7 @@
     "etf_name":"KODEX 코리아혁신성장액티브",
     "short_code":"373490",
     "fund_code":"K55105DC4892",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1304,7 +1304,7 @@
     "etf_name":"BNK 미래전략기술액티브",
     "short_code":"457930",
     "fund_code":"K55240E32568",
-    "detail_url":"",
+    "detail_url":null,
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",

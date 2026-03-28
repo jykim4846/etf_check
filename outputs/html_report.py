@@ -57,7 +57,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
     .nav-tabs {{ display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }}
     .view-section {{ display:none; }}
     .view-section.active {{ display:block; }}
-    .bio-grid {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:16px; }}
+    .bio-grid {{ display:grid; gap:16px; }}
     .bio-card {{ border:1px solid #eee; border-radius:12px; padding:14px; background:#fff; }}
     .bio-card h3 {{ margin:0 0 8px; font-size:18px; }}
     .bio-card .meta {{ color:#666; font-size:12px; margin-bottom:10px; }}
@@ -194,42 +194,64 @@ function renderBioSummary() {{
   const container = document.getElementById('bio-summary');
   const managers = ['삼성', '미래에셋', '타임폴리오'];
   const bioEtfs = etfs.filter(x => x.theme === '바이오');
-  container.innerHTML = managers.map(manager => {{
+  const topByManager = {{}};
+  managers.forEach(manager => {{
     const managerEtfs = bioEtfs.filter(x => x.manager === manager);
-    if (!managerEtfs.length) {{
-      return `<div class="bio-card"><h3>${{manager}}</h3><div class="meta">바이오 테마 ETF 없음</div></div>`;
-    }}
     const fundCodes = new Set(managerEtfs.map(x => x.fund_code));
     const rows = holdings
       .filter(x => fundCodes.has(x.fund_code))
       .sort((a, b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1))
-      .slice(0, 20);
-    const sourceSet = [...new Set(managerEtfs.map(x => x.holdings_source || x.source))].join(', ');
-    const etfNames = managerEtfs.map(x => x.etf_name).join(' / ');
-    const tableRows = rows.map(row => `
-      <tr>
-        <td>${{row.etf_name}}</td>
-        <td>${{row.holding_name}}</td>
-        <td class="num">${{formatNum(row.weight_pct)}}</td>
-      </tr>
-    `).join('');
-    return `
-      <div class="bio-card">
-        <h3>${{manager}}</h3>
-        <div class="meta">${{etfNames}}<br>보유종목소스: ${{sourceSet}}</div>
-        <table>
-          <thead>
-            <tr>
-              <th>ETF</th>
-              <th>종목명</th>
-              <th class="num">비중(%)</th>
-            </tr>
-          </thead>
-          <tbody>${{tableRows || '<tr><td colspan="3">데이터 없음</td></tr>'}}</tbody>
-        </table>
-      </div>
-    `;
+      .slice(0, 10);
+    topByManager[manager] = {{
+      etfNames: managerEtfs.map(x => x.etf_name).join(' / '),
+      sourceSet: [...new Set(managerEtfs.map(x => x.holdings_source || x.source))].join(', '),
+      rows,
+    }};
+  }});
+
+  const scoreMap = new Map();
+  managers.forEach(manager => {{
+    topByManager[manager].rows.forEach(row => {{
+      const prev = scoreMap.get(row.holding_name) || 0;
+      scoreMap.set(row.holding_name, Math.max(prev, Number(row.weight_pct || 0)));
+    }});
+  }});
+
+  const topHoldings = [...scoreMap.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 10)
+    .map(item => item[0]);
+
+  const metaHtml = managers.map(manager => {{
+    const meta = topByManager[manager];
+    return `<div><strong>${{manager}}</strong>: ${{meta.etfNames || '바이오 ETF 없음'}} / 소스: ${{meta.sourceSet || '-'}}<\/div>`;
   }}).join('');
+
+  const bodyRows = topHoldings.map(name => {{
+    const cols = managers.map(manager => {{
+      const row = topByManager[manager].rows.find(item => item.holding_name === name);
+      return `<td class="num">${{row ? formatNum(row.weight_pct) : '-'}}<\/td>`;
+    }}).join('');
+    return `<tr><td>${{name}}<\/td>${{cols}}<\/tr>`;
+  }}).join('');
+
+  container.innerHTML = `
+    <div class="bio-card">
+      <h3>바이오 보유종목 비교 Top 10</h3>
+      <div class="meta">${{metaHtml}}<\/div>
+      <table>
+        <thead>
+          <tr>
+            <th>종목명</th>
+            <th class="num">삼성</th>
+            <th class="num">미래에셋</th>
+            <th class="num">타임폴리오</th>
+          </tr>
+        </thead>
+        <tbody>${{bodyRows || '<tr><td colspan="4">데이터 없음<\/td><\/tr>'}}<\/tbody>
+      </table>
+    </div>
+  `;
 }}
 
 function rerenderAfterFilter() {{
