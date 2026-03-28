@@ -13,9 +13,9 @@
     "aum_okr":78656.63896802,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -31,9 +31,9 @@
     "aum_okr":78172.39356235,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -49,9 +49,9 @@
     "aum_okr":44870.60020393,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -67,9 +67,9 @@
     "aum_okr":39265.64838238,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -85,9 +85,9 @@
     "aum_okr":33294.84426211,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -103,9 +103,9 @@
     "aum_okr":28432.55941446,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -121,9 +121,9 @@
     "aum_okr":24329.93864805,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -139,9 +139,9 @@
     "aum_okr":15991.68747708,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -157,9 +157,9 @@
     "aum_okr":14488.12211969,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -175,9 +175,9 @@
     "aum_okr":11876.47189773,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -193,9 +193,9 @@
     "aum_okr":10652.1807317,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -211,9 +211,9 @@
     "aum_okr":10138.28533534,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -229,9 +229,9 @@
     "aum_okr":9856.35761023,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -247,9 +247,9 @@
     "aum_okr":9395.73650194,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -265,9 +265,9 @@
     "aum_okr":9313.06751828,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -283,9 +283,9 @@
     "aum_okr":6962.78771294,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -301,9 +301,9 @@
     "aum_okr":6730.44794265,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -319,9 +319,9 @@
     "aum_okr":6578.10191547,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -337,9 +337,9 @@
     "aum_okr":6346.88247206,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -355,9 +355,9 @@
     "aum_okr":5505.19903784,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -373,9 +373,9 @@
     "aum_okr":5435.14381804,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -391,9 +391,9 @@
     "aum_okr":5133.85228779,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -409,9 +409,9 @@
     "aum_okr":4845.94321655,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -427,9 +427,9 @@
     "aum_okr":4804.08162029,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -445,9 +445,9 @@
     "aum_okr":4593.08422136,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -463,9 +463,9 @@
     "aum_okr":4442.26419808,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -481,9 +481,9 @@
     "aum_okr":4039.08064468,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
-    "error":"fetch_top10_holdings: 403 Client Error: Forbidden for url: https:\/\/www.funetf.co.kr\/api\/public\/product\/view\/etfpdf?gijunYmd=20260327&wGijunYmd=20260323&gijunYmdNy=20260102&gijunYmd3month=20251229&jangYmd=20260327&jangState=JUNJJJ&usdGijunYmd=20260330&kodexPdfYmd=20260330&pfGijunYmd=20260202&pfGijunYmdBf12=20250203&pfGijunYmdInfo=20260130&pfGijunYmdBf12Info=20250131&itemId=KR70007F0000&fid=2ETFP7&fundCd=K55105EG9086&repFundCd=K55105EG9086&etfLtypeCd=13&etfStypeCd=1301&zeroinTypeLcd=29&jasanGb=&newPdfDate=&sctyType=&schIdx=Y&schSuikMode=&schNavMode=&schTrendBuyMode=&compareCd_1=&compareCd_2=&compareCd_3=&compareNm_1=&compareNm_2=&compareNm_3=&eventYmd=&roleGroupType=ANONYMOUS&roleType=ROLE_ANONYMOUS&_csrf=17132f66-21cd-4db0-a794-12b676642923&chkLike=K55105EG9086&schSuikPeriod=A&schSuikStDt=&schSuikEdDt=&calAmt2=&calAmt2Comma=&etfPdfYmd=20260330&cpnt01List=&rdoStock=GR&rdoBond=top5&schNavTerm=A&schNavStDt=&schNavEdDt=&schRiskTerm=60&schTrendBuyTerm=A&schTrendBuyStDt=&schTrendBuyEdDt=&trendKeywordTerm=M&schCtenDvsn=HOT_ETF",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
+    "error":"api_holdings_empty",
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -499,9 +499,9 @@
     "aum_okr":3496.6077412,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -517,9 +517,9 @@
     "aum_okr":3415.12211027,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -535,9 +535,9 @@
     "aum_okr":3270.33350849,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -553,16 +553,16 @@
     "aum_okr":3107.80446968,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KODEX ESG종합채권(A-이상)액티브",
     "short_code":"439860",
     "fund_code":"K55105DR2899",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR7439860008",
     "source":"FunETF",
     "asset_class":"채권",
     "style":"액티브",
@@ -571,16 +571,16 @@
     "aum_okr":3032.54318757,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
-    "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
+    "error":"api_holdings_empty",
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
     "etf_name":"TIGER 28-04 회사채(A+이상)액티브",
     "short_code":"0094K0",
     "fund_code":"K55301EM5013",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR70094K0007",
     "source":"FunETF",
     "asset_class":"채권",
     "style":"액티브",
@@ -589,16 +589,16 @@
     "aum_okr":2934.11181362,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
-    "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
+    "error":"fetch_top10_holdings: 403 Client Error: Forbidden for url: https:\/\/www.funetf.co.kr\/api\/public\/product\/view\/etfpdf?gijunYmd=20260327&wGijunYmd=20260323&gijunYmdNy=20260102&gijunYmd3month=20251229&jangYmd=20260327&jangState=JUNJJJ&usdGijunYmd=20260330&kodexPdfYmd=20260330&pfGijunYmd=20260202&pfGijunYmdBf12=20250203&pfGijunYmdInfo=20260130&pfGijunYmdBf12Info=20250131&itemId=KR70094K0007&fid=&fundCd=K55301EM5013&repFundCd=K55301EM5013&etfLtypeCd=13&etfStypeCd=1301&zeroinTypeLcd=10&jasanGb=&newPdfDate=&sctyType=&schIdx=Y&schSuikMode=&schNavMode=&schTrendBuyMode=&compareCd_1=&compareCd_2=&compareCd_3=&compareNm_1=&compareNm_2=&compareNm_3=&eventYmd=&roleGroupType=ANONYMOUS&roleType=ROLE_ANONYMOUS&_csrf=827af272-6366-4d88-b147-d5c89a85f0f7&chkLike=K55301EM5013&schSuikPeriod=A&schSuikStDt=&schSuikEdDt=&calAmt2=&calAmt2Comma=&etfPdfYmd=20260330&cpnt01List=&rdoStock=GR&rdoBond=top5&schNavTerm=A&schNavStDt=&schNavEdDt=&schRiskTerm=60&schTrendBuyTerm=A&schTrendBuyStDt=&schTrendBuyEdDt=&trendKeywordTerm=M&schCtenDvsn=HOT_ETF",
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KODEX 신재생에너지액티브",
     "short_code":"385510",
     "fund_code":"K55105DH2776",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR7385510003",
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -607,9 +607,9 @@
     "aum_okr":2852.63077297,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
-    "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
+    "error":"api_holdings_empty",
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -625,9 +625,9 @@
     "aum_okr":2632.66480412,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -643,9 +643,9 @@
     "aum_okr":2387.92808291,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -661,9 +661,9 @@
     "aum_okr":1774.5445401,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -679,9 +679,9 @@
     "aum_okr":1637.6796597,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -697,9 +697,9 @@
     "aum_okr":1473.7052423,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -715,16 +715,16 @@
     "aum_okr":1404.0566832,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KODEX 금융채1~2년(AA-이상)PLUS액티브",
     "short_code":"0162M0",
     "fund_code":"K55105ER7764",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR70162M0002",
     "source":"FunETF",
     "asset_class":"채권",
     "style":"액티브",
@@ -733,9 +733,9 @@
     "aum_okr":1372.96107828,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
-    "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
+    "error":"api_holdings_empty",
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -751,9 +751,9 @@
     "aum_okr":1271.91992527,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -769,9 +769,9 @@
     "aum_okr":1228.97785311,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -787,9 +787,9 @@
     "aum_okr":1143.87692097,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -805,9 +805,9 @@
     "aum_okr":1104.61189879,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -823,9 +823,9 @@
     "aum_okr":932.87050306,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -841,9 +841,9 @@
     "aum_okr":812.43153869,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -859,9 +859,9 @@
     "aum_okr":789.5914724,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -877,9 +877,9 @@
     "aum_okr":760.17953213,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -895,9 +895,9 @@
     "aum_okr":669.59305175,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -913,9 +913,9 @@
     "aum_okr":656.14121622,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -931,9 +931,9 @@
     "aum_okr":552.19927573,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -949,9 +949,9 @@
     "aum_okr":431.48835851,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -967,9 +967,9 @@
     "aum_okr":414.24679481,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -985,9 +985,9 @@
     "aum_okr":324.7294558,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -1003,9 +1003,9 @@
     "aum_okr":311.55130006,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -1021,9 +1021,9 @@
     "aum_okr":211.47611665,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1039,9 +1039,9 @@
     "aum_okr":184.76724914,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -1057,9 +1057,9 @@
     "aum_okr":180.96192084,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1075,9 +1075,9 @@
     "aum_okr":161.85666606,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -1093,9 +1093,9 @@
     "aum_okr":150.06039238,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1111,9 +1111,9 @@
     "aum_okr":136.4612221,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -1129,9 +1129,9 @@
     "aum_okr":133.52109845,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1147,9 +1147,9 @@
     "aum_okr":126.54556772,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"삼성",
@@ -1165,9 +1165,9 @@
     "aum_okr":119.28638371,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1183,8 +1183,8 @@
     "aum_okr":79.71445425,
     "aum_unit":"억원",
     "asof_date":"2026-03-28",
-    "fetched_at_utc":"2026-03-28T14:41:59.375821+00:00",
+    "fetched_at_utc":"2026-03-28T14:53:36.923447+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-28T23:41:59.376188+09:00"
+    "run_date_kst":"2026-03-28T23:53:36.923766+09:00"
   }
 ]
