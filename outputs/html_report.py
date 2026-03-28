@@ -52,6 +52,16 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
     .summary-item {{ border: 1px solid #eee; border-radius: 12px; padding: 12px; background: #fafafa; }}
     .summary-item strong {{ display: block; font-size: 18px; margin-top: 4px; }}
     .error-list {{ margin: 10px 0 0; padding-left: 18px; color: #444; }}
+    .badge {{ display:inline-block; padding:2px 8px; border-radius:999px; font-size:11px; font-weight:600; background:#eef3ff; color:#234; }}
+    .badge-fallback {{ background:#fff2e8; color:#a24b00; }}
+    .nav-tabs {{ display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }}
+    .view-section {{ display:none; }}
+    .view-section.active {{ display:block; }}
+    .bio-grid {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:16px; }}
+    .bio-card {{ border:1px solid #eee; border-radius:12px; padding:14px; background:#fff; }}
+    .bio-card h3 {{ margin:0 0 8px; font-size:18px; }}
+    .bio-card .meta {{ color:#666; font-size:12px; margin-bottom:10px; }}
+    .bio-card table {{ font-size:13px; }}
   </style>
 </head>
 <body>
@@ -75,37 +85,53 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
       <ul class="error-list">
         {top_error_html}
       </ul>
-      <div class="filter-block" id="manager-filters"></div>
-      <div class="filter-block" id="asset-filters"></div>
-      <div class="filter-block" id="theme-filters"></div>
+      <div class="nav-tabs">
+        <button id="show-bio-view" class="active">바이오 통합 보기</button>
+        <button id="show-list-view">전체 ETF 보기</button>
+      </div>
     </div>
-    <div class="card">
-      <table id="etf-table">
-        <thead>
-          <tr>
-            <th>운용사</th>
-            <th>ETF</th>
-            <th>카테고리</th>
-            <th class="num">AUM(억원)</th>
-            <th>기준일</th>
-            <th>상세</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <div id="bio-view" class="view-section active">
+      <div class="card">
+        <h2 style="margin-top:0;font-size:20px;">바이오 섹터 통합 요약</h2>
+        <div class="muted">기본 랜딩 뷰입니다. 세 운용사의 바이오 테마 ETF 보유종목과 비중을 한 번에 비교합니다.</div>
+        <div id="bio-summary" class="bio-grid" style="margin-top:16px;"></div>
+      </div>
     </div>
-    <div class="card">
-      <h2 style="margin-top:0;font-size:18px;">구성종목</h2>
-      <div class="small" id="selected-name">ETF를 선택하면 구성종목이 표시됩니다.</div>
-      <table id="holdings-table">
-        <thead>
-          <tr>
-            <th>종목명</th>
-            <th class="num">비중(%)</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <div id="list-view" class="view-section">
+      <div class="card">
+        <div class="filter-block" id="manager-filters"></div>
+        <div class="filter-block" id="asset-filters"></div>
+        <div class="filter-block" id="theme-filters"></div>
+      </div>
+      <div class="card">
+        <table id="etf-table">
+          <thead>
+            <tr>
+              <th>운용사</th>
+              <th>ETF</th>
+              <th>카테고리</th>
+              <th>보유종목</th>
+              <th class="num">AUM(억원)</th>
+              <th>기준일</th>
+              <th>상세</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0;font-size:18px;">구성종목</h2>
+        <div class="small" id="selected-name">ETF를 선택하면 구성종목이 표시됩니다.</div>
+        <table id="holdings-table">
+          <thead>
+            <tr>
+              <th>종목명</th>
+              <th class="num">비중(%)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
   </div>
 <script>
@@ -115,6 +141,13 @@ let currentManager = '전체';
 let currentAssetClass = '전체';
 let currentTheme = '전체';
 let currentFundCode = etfs.length ? etfs[0].fund_code : null;
+
+function switchView(nextView) {{
+  document.getElementById('bio-view').classList.toggle('active', nextView === 'bio');
+  document.getElementById('list-view').classList.toggle('active', nextView === 'list');
+  document.getElementById('show-bio-view').classList.toggle('active', nextView === 'bio');
+  document.getElementById('show-list-view').classList.toggle('active', nextView === 'list');
+}}
 
 function formatNum(v) {{
   if (v === '' || v === null || v === undefined) return '-';
@@ -157,6 +190,48 @@ function renderFilterGroup(rootId, title, currentValue, options, onSelect) {{
   root.appendChild(wrap);
 }}
 
+function renderBioSummary() {{
+  const container = document.getElementById('bio-summary');
+  const managers = ['삼성', '미래에셋', '타임폴리오'];
+  const bioEtfs = etfs.filter(x => x.theme === '바이오');
+  container.innerHTML = managers.map(manager => {{
+    const managerEtfs = bioEtfs.filter(x => x.manager === manager);
+    if (!managerEtfs.length) {{
+      return `<div class="bio-card"><h3>${{manager}}</h3><div class="meta">바이오 테마 ETF 없음</div></div>`;
+    }}
+    const fundCodes = new Set(managerEtfs.map(x => x.fund_code));
+    const rows = holdings
+      .filter(x => fundCodes.has(x.fund_code))
+      .sort((a, b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1))
+      .slice(0, 20);
+    const sourceSet = [...new Set(managerEtfs.map(x => x.holdings_source || x.source))].join(', ');
+    const etfNames = managerEtfs.map(x => x.etf_name).join(' / ');
+    const tableRows = rows.map(row => `
+      <tr>
+        <td>${{row.etf_name}}</td>
+        <td>${{row.holding_name}}</td>
+        <td class="num">${{formatNum(row.weight_pct)}}</td>
+      </tr>
+    `).join('');
+    return `
+      <div class="bio-card">
+        <h3>${{manager}}</h3>
+        <div class="meta">${{etfNames}}<br>보유종목소스: ${{sourceSet}}</div>
+        <table>
+          <thead>
+            <tr>
+              <th>ETF</th>
+              <th>종목명</th>
+              <th class="num">비중(%)</th>
+            </tr>
+          </thead>
+          <tbody>${{tableRows || '<tr><td colspan="3">데이터 없음</td></tr>'}}</tbody>
+        </table>
+      </div>
+    `;
+  }}).join('');
+}}
+
 function rerenderAfterFilter() {{
   const rows = filteredEtfs();
   currentFundCode = rows.length ? rows[0].fund_code : null;
@@ -188,10 +263,14 @@ function renderEtfs() {{
     tr.style.cursor = 'pointer';
     tr.onclick = () => {{ currentFundCode = row.fund_code; renderEtfs(); renderHoldings(); }};
     if (row.fund_code === currentFundCode) tr.style.background = '#fafafa';
+    const sourceBadge = row.holdings_source === 'FunETF'
+      ? '<span class="badge badge-fallback">fallback</span>'
+      : `<span class="badge">${{row.holdings_source || '-'}}</span>`;
     tr.innerHTML = `
       <td>${{row.manager}}</td>
-      <td><strong>${{row.etf_name}}</strong><div class="small">${{row.short_code}}</div></td>
+      <td><strong>${{row.etf_name}}</strong><div class="small">${{row.short_code}} · ${{sourceBadge}}</div></td>
       <td><div>${{row.asset_class || '-'}}</div><div class="small">${{row.style || '-'}} / ${{row.theme || '-'}}</div></td>
+      <td>${{formatNum(row.holding_count)}}개</td>
       <td class="num">${{formatNum(row.aum_okr)}}</td>
       <td>${{row.asof_date || '-'}}</td>
       <td>${{row.detail_url ? '<a href="' + row.detail_url + '" target="_blank" rel="noreferrer">원본</a>' : '-'}}</td>`;
@@ -203,7 +282,7 @@ function renderHoldings() {{
   const tbody = document.querySelector('#holdings-table tbody');
   tbody.innerHTML = '';
   const selected = etfs.find(x => x.fund_code === currentFundCode);
-  document.getElementById('selected-name').textContent = selected ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}} / 카테고리: ${{selected.category_tags || '-'}}` : '선택된 ETF가 없습니다.';
+  document.getElementById('selected-name').textContent = selected ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}} / 카테고리: ${{selected.category_tags || '-'}} / 보유종목소스: ${{selected.holdings_source || '-'}} / 개수: ${{selected.holding_count || 0}}` : '선택된 ETF가 없습니다.';
   const rows = holdings.filter(x => x.fund_code === currentFundCode).sort((a,b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1));
   rows.forEach(row => {{
     const tr = document.createElement('tr');
@@ -215,6 +294,9 @@ function renderHoldings() {{
 renderFilters();
 renderEtfs();
 renderHoldings();
+renderBioSummary();
+document.getElementById('show-bio-view').addEventListener('click', () => switchView('bio'));
+document.getElementById('show-list-view').addEventListener('click', () => switchView('list'));
 </script>
 </body>
 </html>

@@ -8,6 +8,9 @@ import pandas as pd
 import main
 import outputs.files as output_files
 import pipeline
+from collectors.timeetf import load_time_lineup
+from collectors.kodex import search_kodex_fid
+from collectors.tiger import short_code_to_kr_isin
 
 
 class ClassificationTests(unittest.TestCase):
@@ -89,6 +92,8 @@ class HtmlOutputTests(unittest.TestCase):
                     "aum_okr": 123.45,
                     "aum_unit": "억원",
                     "asof_date": "2026-03-27",
+                    "holdings_source": "FunETF",
+                    "holding_count": 1,
                     "fetched_at_utc": "2026-03-27T00:00:00+00:00",
                     "error": "",
                     "run_date_kst": "2026-03-27T09:00:00+09:00",
@@ -116,6 +121,58 @@ class HtmlOutputTests(unittest.TestCase):
         self.assertIn("테스트 ETF", html)
         self.assertIn("최근 수집 상태", html)
         self.assertIn("badge.svg", html)
+        self.assertIn("보유종목", html)
+        self.assertIn("fallback", html)
+
+
+class TimeOfficialSourceTests(unittest.TestCase):
+    def test_load_time_lineup_maps_full_name_to_detail_url(self):
+        html = """
+        <html><body>
+          <a href="./m11_view.php?idx=13">
+            <div class="tit"><strong>TIME</strong><div>K바이오액티브</div></div>
+          </a>
+        </body></html>
+        """
+
+        class DummyResponse:
+            def __init__(self, text):
+                self.text = text
+            def raise_for_status(self):
+                return None
+
+        class DummySession:
+            def get(self, url, timeout=None):
+                return DummyResponse(html)
+
+        lineup = load_time_lineup(DummySession())
+        self.assertIn("time k바이오액티브", lineup)
+        self.assertTrue(lineup["time k바이오액티브"].endswith("m11_view.php?idx=13"))
+
+
+class TigerOfficialSourceTests(unittest.TestCase):
+    def test_short_code_to_kr_isin(self):
+        self.assertEqual(short_code_to_kr_isin("329750"), "KR7329750004")
+
+
+class KodexOfficialSourceTests(unittest.TestCase):
+    def test_search_kodex_fid_prefers_short_code_match(self):
+        class DummyResponse:
+            def raise_for_status(self):
+                return None
+
+            def json(self):
+                return [
+                    {"stkTicker": "445290", "fId": "2ETFH5", "fNm": "KODEX 로봇액티브"}
+                ]
+
+        class DummySession:
+            def get(self, url, params=None, timeout=None, headers=None):
+                return DummyResponse()
+
+        fid, official_name = search_kodex_fid(DummySession(), "KODEX 로봇액티브", "445290")
+        self.assertEqual(fid, "2ETFH5")
+        self.assertEqual(official_name, "KODEX 로봇액티브")
 
 
 class MainPipelineTests(unittest.TestCase):
@@ -157,6 +214,8 @@ class MainPipelineTests(unittest.TestCase):
 
             output = pd.read_csv(data_dir / "etf_list.csv")
             self.assertIn("error", output.columns)
+            self.assertIn("holding_count", output.columns)
+            self.assertIn("holdings_source", output.columns)
             self.assertEqual(output.loc[0, "etf_name"], "테스트 ETF")
             self.assertIn("item_id_not_found", str(output.loc[0, "error"]))
             summary = pd.read_json(data_dir / "run_summary.json", typ="series")
