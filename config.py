@@ -54,3 +54,11 @@ THEME_RULES = {
 MAX_ETFS = int(os.getenv("MAX_ETFS", "0") or "0")
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "30") or "30")
 KST = timezone(timedelta(hours=9))
+
+BIO_TARGETS = [
+    {"manager": "삼성", "etf_name": "KoAct 바이오헬스케어액티브", "short_code": "462900"},
+    {"manager": "미래에셋", "etf_name": "TIGER 기술이전바이오액티브", "short_code": "0168K0"},
+    {"manager": "타임폴리오", "etf_name": "TIME K바이오액티브", "short_code": "463050"},
+]
+
+BIO_TARGET_SHORT_CODES = {item["short_code"] for item in BIO_TARGETS}

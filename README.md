@@ -1,8 +1,8 @@
 # etf_check
 
-삼성(KODEX), 미래에셋(TIGER), 타임폴리오(TIME) 액티브 ETF를 매일 수집해서:
+삼성(KoAct), 미래에셋(TIGER), 타임폴리오(TIME) 바이오 ETF 3개를 매일 수집해서:
 
-- ETF 목록
+- 바이오 ETF 목록
 - 순자산총액(AUM, 억원)
 - ETF별 구성종목 / 비중
 - 모바일에서 보기 쉬운 정적 페이지
@@ -86,9 +86,10 @@ MAX_ETFS=3 python main.py
 
 실제 수집 로직은 아래 흐름으로 동작합니다.
 
-1. `FunETF ETF 필터 엑셀`을 내려받아 액티브 ETF 전체 목록을 만든다.
-2. 종목명/운용사 규칙으로 삼성(KODEX), 미래에셋(TIGER), 타임폴리오(TIME)만 필터링한다.
-3. 각 ETF의 `FunETF 상세 페이지`를 다시 조회해서 AUM, 기준일, 구성종목/비중을 파싱한다.
+1. `FunETF ETF 필터 엑셀`을 내려받아 ETF 유니버스를 만든다.
+2. 그중 바이오 섹터 ETF 3개만 남긴다.
+3. 가능한 경우 각 운용사 공식 소스(TIME/TIGER/KODEX)를 우선 사용한다.
+4. 공식 소스 실패 시에만 FunETF fallback을 사용한다.
 
 참고용으로 공식 운용사 페이지 URL도 `data/meta.json`에 함께 남긴다.
 

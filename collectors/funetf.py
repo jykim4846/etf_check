@@ -15,6 +15,7 @@ from config import (
     FUNETF_SEARCH_API_URL,
     FUNETF_SEARCH_URL,
     HEADERS,
+    BIO_TARGET_SHORT_CODES,
     KST,
     MANAGER_RULES,
     MAX_ETFS,
@@ -178,6 +179,8 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
         fund_code = str(row[fund_code_col]).strip()
         short_code = str(row[short_col]).strip()
         if not fund_code:
+            continue
+        if short_code not in BIO_TARGET_SHORT_CODES:
             continue
 
         asset_class = classify_asset_class(

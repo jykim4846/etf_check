@@ -1,29 +1,17 @@
 {
-  "generated_at_utc": "2026-03-28T15:39:48.561669+00:00",
-  "run_date_kst": "2026-03-29T00:39:48.561826+09:00",
-  "etf_count": 66,
-  "holding_count": 1936,
-  "error_etf_count": 38,
-  "error_count": 85,
+  "generated_at_utc": "2026-03-28T15:47:54.236129+00:00",
+  "run_date_kst": "2026-03-29T00:47:54.236137+09:00",
+  "etf_count": 3,
+  "holding_count": 51,
+  "error_etf_count": 2,
+  "error_count": 3,
   "top_errors": [
     {
       "message": "api_holdings_empty",
-      "count": 20
-    },
-    {
-      "message": "resolve_item_id: FunETF search form not found",
-      "count": 17
-    },
-    {
-      "message": "item_id_not_found",
-      "count": 17
+      "count": 2
     },
     {
       "message": "tiger_official: TIGER item list was empty",
-      "count": 8
-    },
-    {
-      "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product/2ETF88.do",
       "count": 1
     }
   ]
