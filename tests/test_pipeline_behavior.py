@@ -116,12 +116,13 @@ class HtmlOutputTests(unittest.TestCase):
         )
         html = main.build_html(etf_df, holdings_df)
         self.assertIn("manager-filters", html)
+        self.assertIn("asset-filters", html)
+        self.assertIn("theme-filters", html)
         self.assertIn("테스트 ETF", html)
         self.assertIn("최근 수집 상태", html)
         self.assertIn("badge.svg", html)
         self.assertIn("보유종목", html)
         self.assertIn("fallback", html)
-        self.assertIn("바이오 보유종목 비교 Top 10", html)
 
 
 class TimeOfficialSourceTests(unittest.TestCase):

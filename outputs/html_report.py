@@ -28,7 +28,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bio ETF Check</title>
+  <title>ETF Check</title>
   <style>
     body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: #f7f7f8; color: #111; }}
     .wrap {{ max-width: 1100px; margin: 0 auto; padding: 20px; }}
@@ -67,8 +67,8 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>바이오 액티브 ETF 체크</h1>
-      <div class="muted">삼성(KoAct), 미래에셋(TIGER), 타임폴리오(TIME) 바이오 ETF 3개만 수집합니다. 업데이트: {updated_at}</div>
+      <h1>액티브 ETF 체크</h1>
+      <div class="muted">삼성(KODEX), 미래에셋(TIGER), 타임폴리오(TIME) 액티브 ETF를 순자산총액(AUM) 기준으로 정렬합니다. 업데이트: {updated_at}</div>
       <div class="status-row">
         <span class="status-badge">최근 수집 상태: {status_label}</span>
         <a href="https://github.com/jykim4846/etf_check/actions/workflows/daily.yml">
@@ -76,7 +76,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
         </a>
       </div>
       <div class="summary-grid">
-        <div class="summary-item"><div class="small">수집 ETF 수</div><strong>{etf_count}</strong></div>
+        <div class="summary-item"><div class="small">ETF 수</div><strong>{etf_count}</strong></div>
         <div class="summary-item"><div class="small">구성종목 행 수</div><strong>{holding_count}</strong></div>
         <div class="summary-item"><div class="small">오류 ETF 수</div><strong>{error_etf_count}</strong></div>
         <div class="summary-item"><div class="small">생성 시각</div><strong style="font-size:14px">{run_summary.get("run_date_kst", "-")}</strong></div>
@@ -87,19 +87,21 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
       </ul>
       <div class="nav-tabs">
         <button id="show-bio-view" class="active">바이오 통합 보기</button>
-        <button id="show-list-view">ETF 목록 보기</button>
+        <button id="show-list-view">전체 ETF 보기</button>
       </div>
     </div>
     <div id="bio-view" class="view-section active">
       <div class="card">
         <h2 style="margin-top:0;font-size:20px;">바이오 섹터 통합 요약</h2>
-        <div class="muted">기본 랜딩 뷰입니다. 세 운용사의 바이오 ETF 보유종목과 비중을 한 번에 비교합니다.</div>
+        <div class="muted">기본 랜딩 뷰입니다. 세 운용사의 바이오 테마 ETF 보유종목과 비중을 한 번에 비교합니다.</div>
         <div id="bio-summary" class="bio-grid" style="margin-top:16px;"></div>
       </div>
     </div>
     <div id="list-view" class="view-section">
       <div class="card">
         <div class="filter-block" id="manager-filters"></div>
+        <div class="filter-block" id="asset-filters"></div>
+        <div class="filter-block" id="theme-filters"></div>
       </div>
       <div class="card">
         <table id="etf-table">
@@ -136,6 +138,8 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
 const etfs = {etf_json};
 const holdings = {holdings_json};
 let currentManager = '전체';
+let currentAssetClass = '전체';
+let currentTheme = '전체';
 let currentFundCode = etfs.length ? etfs[0].fund_code : null;
 
 function switchView(nextView) {{
@@ -159,6 +163,8 @@ function uniqueOptions(key) {{
 function filteredEtfs() {{
   const rows = etfs.filter(x => {{
     if (currentManager !== '전체' && x.manager !== currentManager) return false;
+    if (currentAssetClass !== '전체' && x.asset_class !== currentAssetClass) return false;
+    if (currentTheme !== '전체' && x.theme !== currentTheme) return false;
     return true;
   }});
   return [...rows].sort((a, b) => Number(b.aum_okr || -1) - Number(a.aum_okr || -1));
@@ -259,6 +265,14 @@ function rerenderAfterFilter() {{
 function renderFilters() {{
   renderFilterGroup('manager-filters', '운용사', currentManager, uniqueOptions('manager'), value => {{
     currentManager = value;
+    rerenderAfterFilter();
+  }});
+  renderFilterGroup('asset-filters', '자산군', currentAssetClass, uniqueOptions('asset_class'), value => {{
+    currentAssetClass = value;
+    rerenderAfterFilter();
+  }});
+  renderFilterGroup('theme-filters', '테마', currentTheme, uniqueOptions('theme'), value => {{
+    currentTheme = value;
     rerenderAfterFilter();
   }});
 }}
