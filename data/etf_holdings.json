@@ -15294,7 +15294,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"한국쉘석유",
+    "holding_name":"삼성증권",
     "weight_pct":0.29,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15304,7 +15304,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"삼성증권",
+    "holding_name":"한국쉘석유",
     "weight_pct":0.29,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15564,7 +15564,17 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"제일기획",
+    "holding_name":"신도리코",
+    "weight_pct":0.09,
+    "asof_date":"2026-03-27",
+    "source":"TIGER"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 배당커버드콜액티브",
+    "short_code":"472150",
+    "fund_code":"K55301DY9046",
+    "holding_name":"롯데정밀화학",
     "weight_pct":0.09,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15584,17 +15594,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"신도리코",
-    "weight_pct":0.09,
-    "asof_date":"2026-03-27",
-    "source":"TIGER"
-  },
-  {
-    "manager":"미래에셋",
-    "etf_name":"TIGER 배당커버드콜액티브",
-    "short_code":"472150",
-    "fund_code":"K55301DY9046",
-    "holding_name":"롯데정밀화학",
+    "holding_name":"제일기획",
     "weight_pct":0.09,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15654,16 +15654,6 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"아세아제지",
-    "weight_pct":0.06,
-    "asof_date":"2026-03-27",
-    "source":"TIGER"
-  },
-  {
-    "manager":"미래에셋",
-    "etf_name":"TIGER 배당커버드콜액티브",
-    "short_code":"472150",
-    "fund_code":"K55301DY9046",
     "holding_name":"보령",
     "weight_pct":0.06,
     "asof_date":"2026-03-27",
@@ -15674,7 +15664,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"동아쏘시오홀딩스",
+    "holding_name":"아세아제지",
     "weight_pct":0.06,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15685,6 +15675,16 @@
     "short_code":"472150",
     "fund_code":"K55301DY9046",
     "holding_name":"KISCO홀딩스",
+    "weight_pct":0.06,
+    "asof_date":"2026-03-27",
+    "source":"TIGER"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 배당커버드콜액티브",
+    "short_code":"472150",
+    "fund_code":"K55301DY9046",
+    "holding_name":"동아쏘시오홀딩스",
     "weight_pct":0.06,
     "asof_date":"2026-03-27",
     "source":"TIGER"

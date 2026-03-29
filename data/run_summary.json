@@ -1,22 +1,22 @@
 {
-  "generated_at_utc": "2026-03-28T15:39:48.561669+00:00",
-  "run_date_kst": "2026-03-29T00:39:48.561826+09:00",
+  "generated_at_utc": "2026-03-29T00:04:02.751595+00:00",
+  "run_date_kst": "2026-03-29T09:04:02.751604+09:00",
   "etf_count": 66,
   "holding_count": 1936,
   "error_etf_count": 38,
-  "error_count": 85,
+  "error_count": 80,
   "top_errors": [
     {
       "message": "api_holdings_empty",
-      "count": 20
+      "count": 25
     },
     {
       "message": "resolve_item_id: FunETF search form not found",
-      "count": 17
+      "count": 12
     },
     {
       "message": "item_id_not_found",
-      "count": 17
+      "count": 12
     },
     {
       "message": "tiger_official: TIGER item list was empty",
