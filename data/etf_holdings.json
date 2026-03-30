@@ -5,8 +5,8 @@
     "short_code":"0086B0",
     "fund_code":"K55301EL4868",
     "holding_name":"맥쿼리인프라",
-    "weight_pct":27.9926190935,
-    "asof_date":"2026-03-29",
+    "weight_pct":27.7186917234,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15,8 +15,8 @@
     "short_code":"0086B0",
     "fund_code":"K55301EL4868",
     "holding_name":"SK리츠",
-    "weight_pct":17.7359762568,
-    "asof_date":"2026-03-29",
+    "weight_pct":18.0852390065,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -25,8 +25,8 @@
     "short_code":"0086B0",
     "fund_code":"K55301EL4868",
     "holding_name":"롯데리츠",
-    "weight_pct":11.4963182632,
-    "asof_date":"2026-03-29",
+    "weight_pct":11.4832005673,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -35,8 +35,8 @@
     "short_code":"0086B0",
     "fund_code":"K55301EL4868",
     "holding_name":"신한알파리츠",
-    "weight_pct":9.9673049069,
-    "asof_date":"2026-03-29",
+    "weight_pct":10.0170010788,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -45,8 +45,58 @@
     "short_code":"0086B0",
     "fund_code":"K55301EL4868",
     "holding_name":"ESR켄달스퀘어리츠",
-    "weight_pct":9.8132975417,
-    "asof_date":"2026-03-29",
+    "weight_pct":9.8392904365,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라TOP10액티브",
+    "short_code":"0086B0",
+    "fund_code":"K55301EL4868",
+    "holding_name":"한화리츠",
+    "weight_pct":8.1622099949,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라TOP10액티브",
+    "short_code":"0086B0",
+    "fund_code":"K55301EL4868",
+    "holding_name":"코람코라이프인프라리츠",
+    "weight_pct":5.7024823972,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라TOP10액티브",
+    "short_code":"0086B0",
+    "fund_code":"K55301EL4868",
+    "holding_name":"디앤디플랫폼리츠",
+    "weight_pct":3.0778381028,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라TOP10액티브",
+    "short_code":"0086B0",
+    "fund_code":"K55301EL4868",
+    "holding_name":"이지스밸류플러스리츠",
+    "weight_pct":3.0011215878,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라TOP10액티브",
+    "short_code":"0086B0",
+    "fund_code":"K55301EL4868",
+    "holding_name":"삼성FN리츠",
+    "weight_pct":2.9129251049,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -55,8 +105,8 @@
     "short_code":"462900",
     "fund_code":"K553N9E27494",
     "holding_name":"에이비엘바이오",
-    "weight_pct":11.6661368861,
-    "asof_date":"2026-03-29",
+    "weight_pct":11.6402837578,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -65,8 +115,8 @@
     "short_code":"462900",
     "fund_code":"K553N9E27494",
     "holding_name":"리가켐바이오",
-    "weight_pct":11.0111974627,
-    "asof_date":"2026-03-29",
+    "weight_pct":11.3466151301,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -75,8 +125,8 @@
     "short_code":"462900",
     "fund_code":"K553N9E27494",
     "holding_name":"올릭스",
-    "weight_pct":8.3920809435,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.3850951523,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -85,8 +135,8 @@
     "short_code":"462900",
     "fund_code":"K553N9E27494",
     "holding_name":"알지노믹스",
-    "weight_pct":6.3377255001,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.4140515714,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -95,8 +145,58 @@
     "short_code":"462900",
     "fund_code":"K553N9E27494",
     "holding_name":"삼천당제약",
-    "weight_pct":5.3571343787,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.1226182195,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"K553N9E27494",
+    "holding_name":"에스티팜",
+    "weight_pct":4.8838021416,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"K553N9E27494",
+    "holding_name":"한미약품",
+    "weight_pct":4.7518114244,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"K553N9E27494",
+    "holding_name":"셀트리온",
+    "weight_pct":4.4658598491,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"K553N9E27494",
+    "holding_name":"알테오젠",
+    "weight_pct":4.1606560886,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"K553N9E27494",
+    "holding_name":"에이프릴바이오",
+    "weight_pct":3.8276579967,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -105,8 +205,8 @@
     "short_code":"0086C0",
     "fund_code":"K55301EL7275",
     "holding_name":"TIGER 단기통안채",
-    "weight_pct":51.2076524986,
-    "asof_date":"2026-03-29",
+    "weight_pct":51.110059731,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -115,8 +215,8 @@
     "short_code":"0086C0",
     "fund_code":"K55301EL7275",
     "holding_name":"맥쿼리인프라",
-    "weight_pct":18.6370497189,
-    "asof_date":"2026-03-29",
+    "weight_pct":18.5195405321,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -125,8 +225,8 @@
     "short_code":"0086C0",
     "fund_code":"K55301EL7275",
     "holding_name":"SK리츠",
-    "weight_pct":6.2468261355,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.3922304341,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -135,8 +235,8 @@
     "short_code":"0086C0",
     "fund_code":"K55301EL7275",
     "holding_name":"ESR켄달스퀘어리츠",
-    "weight_pct":4.9281995198,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.9586213433,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -145,8 +245,58 @@
     "short_code":"0086C0",
     "fund_code":"K55301EL7275",
     "holding_name":"신한알파리츠",
-    "weight_pct":4.7558469784,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.7963591917,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라10채권혼합액티브",
+    "short_code":"0086C0",
+    "fund_code":"K55301EL7275",
+    "holding_name":"롯데리츠",
+    "weight_pct":4.6557618114,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라10채권혼합액티브",
+    "short_code":"0086C0",
+    "fund_code":"K55301EL7275",
+    "holding_name":"한화리츠",
+    "weight_pct":3.4117551549,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라10채권혼합액티브",
+    "short_code":"0086C0",
+    "fund_code":"K55301EL7275",
+    "holding_name":"코람코라이프인프라리츠",
+    "weight_pct":2.2929523384,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라10채권혼합액티브",
+    "short_code":"0086C0",
+    "fund_code":"K55301EL7275",
+    "holding_name":"디앤디플랫폼리츠",
+    "weight_pct":1.551033369,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 리츠부동산인프라10채권혼합액티브",
+    "short_code":"0086C0",
+    "fund_code":"K55301EL7275",
+    "holding_name":"삼성FN리츠",
+    "weight_pct":1.4080578694,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -6165,8 +6315,8 @@
     "short_code":"0043B0",
     "fund_code":"K55301EI2420",
     "holding_name":"비에스에프플러스제이차 20260310-92-1(단)",
-    "weight_pct":3.1424269404,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.0690126725,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -6175,8 +6325,18 @@
     "short_code":"0043B0",
     "fund_code":"K55301EI2420",
     "holding_name":"에이치씨디제십사차 20260305-92-1(단)",
-    "weight_pct":2.4094054734,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.3537748453,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 머니마켓액티브",
+    "short_code":"0043B0",
+    "fund_code":"K55301EI2420",
+    "holding_name":"디알제십팔차 20260327-54-4(단)",
+    "weight_pct":2.2074011479,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -6185,8 +6345,18 @@
     "short_code":"0043B0",
     "fund_code":"K55301EI2420",
     "holding_name":"키스이제이제십일차 20260320-31-1(단)",
-    "weight_pct":1.8193830569,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.7767882983,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 머니마켓액티브",
+    "short_code":"0043B0",
+    "fund_code":"K55301EI2420",
+    "holding_name":"스파클링제일차 20260327-45-1(단)",
+    "weight_pct":1.7219915791,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -6195,8 +6365,8 @@
     "short_code":"0043B0",
     "fund_code":"K55301EI2420",
     "holding_name":"헤라클레스제십차 20260109-90-1(단)",
-    "weight_pct":1.7475850123,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.7066505273,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -6205,8 +6375,38 @@
     "short_code":"0043B0",
     "fund_code":"K55301EI2420",
     "holding_name":"에이치씨디제십사차 20260325-92-2(단)",
-    "weight_pct":1.3272656516,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.2962559853,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 머니마켓액티브",
+    "short_code":"0043B0",
+    "fund_code":"K55301EI2420",
+    "holding_name":"디알제십팔차 20260320-52-3(단)",
+    "weight_pct":1.1947881353,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 머니마켓액티브",
+    "short_code":"0043B0",
+    "fund_code":"K55301EI2420",
+    "holding_name":"롯데카드576-2",
+    "weight_pct":1.1680530782,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 머니마켓액티브",
+    "short_code":"0043B0",
+    "fund_code":"K55301EI2420",
+    "holding_name":"국민은행4505이(01)1변-23",
+    "weight_pct":1.1675023521,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -7084,9 +7284,9 @@
     "etf_name":"TIGER 26-04 회사채(A+이상)액티브",
     "short_code":"0001S0",
     "fund_code":"K55301EG5110",
-    "holding_name":"타이거아이즈제삼차 20251229-88-1(단)",
-    "weight_pct":10.9128399972,
-    "asof_date":"2026-03-29",
+    "holding_name":"한국가스공사 20260327-25-175(단)",
+    "weight_pct":17.2927141124,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -7095,8 +7295,8 @@
     "short_code":"0001S0",
     "fund_code":"K55301EG5110",
     "holding_name":"한국도로공사고속도로건설채권526",
-    "weight_pct":5.5400935642,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.8635087355,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -7105,8 +7305,8 @@
     "short_code":"0001S0",
     "fund_code":"K55301EG5110",
     "holding_name":"한국전력공사채권1396",
-    "weight_pct":5.5170455689,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.8391662602,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -7115,8 +7315,8 @@
     "short_code":"0001S0",
     "fund_code":"K55301EG5110",
     "holding_name":"포스코퓨처엠20-1(녹)",
-    "weight_pct":5.4945100874,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.8154651664,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -7125,8 +7325,58 @@
     "short_code":"0001S0",
     "fund_code":"K55301EG5110",
     "holding_name":"국민은행4410이표일(03)1.5-16",
-    "weight_pct":5.4914113641,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.8121111719,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 26-04 회사채(A+이상)액티브",
+    "short_code":"0001S0",
+    "fund_code":"K55301EG5110",
+    "holding_name":"산은캐피탈737-2",
+    "weight_pct":5.7950380194,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 26-04 회사채(A+이상)액티브",
+    "short_code":"0001S0",
+    "fund_code":"K55301EG5110",
+    "holding_name":"더블에스에버2025 20260319-29-2(단)",
+    "weight_pct":5.7647980372,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 26-04 회사채(A+이상)액티브",
+    "short_code":"0001S0",
+    "fund_code":"K55301EG5110",
+    "holding_name":"신한은행29-10-할-6M-A",
+    "weight_pct":5.7640035647,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 26-04 회사채(A+이상)액티브",
+    "short_code":"0001S0",
+    "fund_code":"K55301EG5110",
+    "holding_name":"케이비캐피탈578-5",
+    "weight_pct":5.7390036985,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 26-04 회사채(A+이상)액티브",
+    "short_code":"0001S0",
+    "fund_code":"K55301EG5110",
+    "holding_name":"중소기업은행(신)2506할1A-23",
+    "weight_pct":5.7359548856,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -9155,8 +9405,8 @@
     "short_code":"0139F0",
     "fund_code":"K55301EP6638",
     "holding_name":"현대카드949-1",
-    "weight_pct":4.6696559431,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.6691606665,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -9165,8 +9415,8 @@
     "short_code":"0139F0",
     "fund_code":"K55301EP6638",
     "holding_name":"아이비케이캐피탈342-1",
-    "weight_pct":2.3423605277,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.3421850511,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -9175,8 +9425,8 @@
     "short_code":"0139F0",
     "fund_code":"K55301EP6638",
     "holding_name":"농업금융채권(중앙회)2025-12이1Y-A",
-    "weight_pct":2.3361058781,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.3360868471,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -9185,8 +9435,8 @@
     "short_code":"0139F0",
     "fund_code":"K55301EP6638",
     "holding_name":"하나카드252-3",
-    "weight_pct":1.5908506054,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.5907392303,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -9195,8 +9445,58 @@
     "short_code":"0139F0",
     "fund_code":"K55301EP6638",
     "holding_name":"JB 우리캐피탈507-7",
-    "weight_pct":1.5895854082,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.5894979449,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 12월자동연장금융채(AA-이상)액티브",
+    "short_code":"0139F0",
+    "fund_code":"K55301EP6638",
+    "holding_name":"현대캐피탈2001-1",
+    "weight_pct":1.5890338976,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 12월자동연장금융채(AA-이상)액티브",
+    "short_code":"0139F0",
+    "fund_code":"K55301EP6638",
+    "holding_name":"현대캐피탈2005-3",
+    "weight_pct":1.5869661818,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 12월자동연장금융채(AA-이상)액티브",
+    "short_code":"0139F0",
+    "fund_code":"K55301EP6638",
+    "holding_name":"케이비캐피탈546-6",
+    "weight_pct":1.5673868311,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 12월자동연장금융채(AA-이상)액티브",
+    "short_code":"0139F0",
+    "fund_code":"K55301EP6638",
+    "holding_name":"산은캐피탈778-1",
+    "weight_pct":1.5605868171,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 12월자동연장금융채(AA-이상)액티브",
+    "short_code":"0139F0",
+    "fund_code":"K55301EP6638",
+    "holding_name":"케이비국민카드440-1",
+    "weight_pct":1.5601112916,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -9765,8 +10065,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"삼천당제약",
-    "weight_pct":9.86,
-    "asof_date":"2026-03-27",
+    "weight_pct":9.44,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9775,8 +10075,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"리가켐바이오",
-    "weight_pct":7.83,
-    "asof_date":"2026-03-27",
+    "weight_pct":8.09,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9785,8 +10085,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"셀트리온",
-    "weight_pct":7.68,
-    "asof_date":"2026-03-27",
+    "weight_pct":7.78,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9796,7 +10096,7 @@
     "fund_code":"K553J1E46927",
     "holding_name":"에이비엘바이오",
     "weight_pct":7.64,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9805,8 +10105,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"올릭스",
-    "weight_pct":7.55,
-    "asof_date":"2026-03-27",
+    "weight_pct":7.56,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9815,8 +10115,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"에스티팜",
-    "weight_pct":4.42,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.54,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9825,18 +10125,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"알지노믹스",
-    "weight_pct":4.29,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"K553J1E46927",
-    "holding_name":"한미약품",
-    "weight_pct":3.65,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.35,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9846,7 +10136,17 @@
     "fund_code":"K553J1E46927",
     "holding_name":"알테오젠",
     "weight_pct":3.64,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"K553J1E46927",
+    "holding_name":"한미약품",
+    "weight_pct":3.63,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9855,8 +10155,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"에이프릴바이오",
-    "weight_pct":3.62,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.6,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9865,8 +10165,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"씨어스테크놀로지",
-    "weight_pct":3.29,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.17,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9875,8 +10175,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"삼성바이오로직스",
-    "weight_pct":3.0,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.03,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9885,8 +10185,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"현금",
-    "weight_pct":2.54,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.55,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9895,18 +10195,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"보로노이",
-    "weight_pct":2.42,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"K553J1E46927",
-    "holding_name":"오름테라퓨틱",
-    "weight_pct":2.2,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.4,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9915,8 +10205,18 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"셀트리온제약",
-    "weight_pct":2.18,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.21,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"K553J1E46927",
+    "holding_name":"오름테라퓨틱",
+    "weight_pct":2.12,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9925,8 +10225,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"인벤티지랩",
-    "weight_pct":1.92,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.0,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9935,8 +10235,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"코오롱티슈진",
-    "weight_pct":1.7,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.8,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9945,8 +10245,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"펩트론",
-    "weight_pct":1.65,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.72,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9955,8 +10255,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"오스코텍",
-    "weight_pct":1.55,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.54,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9965,18 +10265,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"리브스메드",
-    "weight_pct":1.49,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"K553J1E46927",
-    "holding_name":"로킷헬스케어",
-    "weight_pct":1.25,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.43,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9985,8 +10275,18 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"휴젤",
+    "weight_pct":1.23,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"K553J1E46927",
+    "holding_name":"로킷헬스케어",
     "weight_pct":1.2,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -9996,7 +10296,7 @@
     "fund_code":"K553J1E46927",
     "holding_name":"일동제약",
     "weight_pct":1.14,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10005,18 +10305,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"지투지바이오",
-    "weight_pct":1.1,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"K553J1E46927",
-    "holding_name":"앱클론",
-    "weight_pct":1.07,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.11,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10025,8 +10315,18 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"에임드바이오",
-    "weight_pct":1.04,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.02,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"K553J1E46927",
+    "holding_name":"앱클론",
+    "weight_pct":1.02,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10035,8 +10335,18 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"삼성에피스홀딩스",
-    "weight_pct":1.01,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.0,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"K553J1E46927",
+    "holding_name":"케어젠",
+    "weight_pct":0.93,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10046,27 +10356,7 @@
     "fund_code":"K553J1E46927",
     "holding_name":"메디포스트",
     "weight_pct":0.93,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"K553J1E46927",
-    "holding_name":"그래피",
-    "weight_pct":0.92,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"K553J1E46927",
-    "holding_name":"케어젠",
-    "weight_pct":0.91,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10075,8 +10365,18 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"파마리서치",
+    "weight_pct":0.89,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"K553J1E46927",
+    "holding_name":"그래피",
     "weight_pct":0.88,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10085,8 +10385,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"프로티나",
-    "weight_pct":0.74,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.73,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10095,8 +10395,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"디앤디파마텍",
-    "weight_pct":0.74,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.73,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10105,8 +10405,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"한올바이오파마",
-    "weight_pct":0.6,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.59,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10115,8 +10415,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"토모큐브",
-    "weight_pct":0.57,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.55,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10126,7 +10426,7 @@
     "fund_code":"K553J1E46927",
     "holding_name":"HK이노엔",
     "weight_pct":0.51,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10136,7 +10436,7 @@
     "fund_code":"K553J1E46927",
     "holding_name":"고영",
     "weight_pct":0.5,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10145,8 +10445,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"와이바이오로직스",
-    "weight_pct":0.32,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.33,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10155,8 +10455,8 @@
     "short_code":"463050",
     "fund_code":"K553J1E46927",
     "holding_name":"JW중외제약",
-    "weight_pct":0.3,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.31,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10166,7 +10466,7 @@
     "fund_code":"K553J1E46927",
     "holding_name":"차바이오텍",
     "weight_pct":0.18,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -10925,8 +11225,8 @@
     "short_code":"0007F0",
     "fund_code":"K55105EG9086",
     "holding_name":"중소기업은행(CD)",
-    "weight_pct":2.7120527712,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.7137508757,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -10935,8 +11235,8 @@
     "short_code":"0007F0",
     "fund_code":"K55105EG9086",
     "holding_name":"우리카드231-9(사)",
-    "weight_pct":1.8826839981,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.8827753532,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -10945,8 +11245,8 @@
     "short_code":"0007F0",
     "fund_code":"K55105EG9086",
     "holding_name":"케이비국민카드380",
-    "weight_pct":1.8659562554,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.8659190747,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -10955,8 +11255,8 @@
     "short_code":"0007F0",
     "fund_code":"K55105EG9086",
     "holding_name":"케이비캐피탈547-2",
-    "weight_pct":1.856196363,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.8566397621,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -10965,8 +11265,58 @@
     "short_code":"0007F0",
     "fund_code":"K55105EG9086",
     "holding_name":"우리금융캐피탈512-5",
-    "weight_pct":1.8549529794,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.8551090619,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 27-12 회사채(AA-이상)액티브",
+    "short_code":"0007F0",
+    "fund_code":"K55105EG9086",
+    "holding_name":"엔에이치농협캐피탈240-5",
+    "weight_pct":1.8547501647,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 27-12 회사채(AA-이상)액티브",
+    "short_code":"0007F0",
+    "fund_code":"K55105EG9086",
+    "holding_name":"BNK캐피탈358-5",
+    "weight_pct":1.8533896249,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 27-12 회사채(AA-이상)액티브",
+    "short_code":"0007F0",
+    "fund_code":"K55105EG9086",
+    "holding_name":"농협금융지주46-2",
+    "weight_pct":1.8507710872,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 27-12 회사채(AA-이상)액티브",
+    "short_code":"0007F0",
+    "fund_code":"K55105EG9086",
+    "holding_name":"케이비국민카드416-1",
+    "weight_pct":1.8498155142,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 27-12 회사채(AA-이상)액티브",
+    "short_code":"0007F0",
+    "fund_code":"K55105EG9086",
+    "holding_name":"KB금융지주49-3",
+    "weight_pct":1.8485597456,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -10975,8 +11325,8 @@
     "short_code":"0162M0",
     "fund_code":"K55105ER7764",
     "holding_name":"하나은행49-02이1.5갑-25",
-    "weight_pct":18.6217746728,
-    "asof_date":"2026-03-29",
+    "weight_pct":18.6242156965,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -10985,8 +11335,8 @@
     "short_code":"0162M0",
     "fund_code":"K55105ER7764",
     "holding_name":"농업금융채권(은행) 2026-02이1.5Y-C",
-    "weight_pct":9.3032293274,
-    "asof_date":"2026-03-29",
+    "weight_pct":9.3045033834,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -10995,8 +11345,8 @@
     "short_code":"0162M0",
     "fund_code":"K55105ER7764",
     "holding_name":"현대커머셜449-2",
-    "weight_pct":4.760686187,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.761051307,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11005,8 +11355,8 @@
     "short_code":"0162M0",
     "fund_code":"K55105ER7764",
     "holding_name":"하나카드234-6",
-    "weight_pct":4.7407026634,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.7392978311,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11015,18 +11365,58 @@
     "short_code":"0162M0",
     "fund_code":"K55105ER7764",
     "holding_name":"신한카드2168",
-    "weight_pct":4.7244173098,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.723026404,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
     "manager":"삼성",
-    "etf_name":"KODEX 신재생에너지액티브",
-    "short_code":"385510",
-    "fund_code":"K55105DH2776",
-    "holding_name":"HD현대에너지솔루션",
-    "weight_pct":6.9812533764,
-    "asof_date":"2026-03-29",
+    "etf_name":"KODEX 금융채1~2년(AA-이상)PLUS액티브",
+    "short_code":"0162M0",
+    "fund_code":"K55105ER7764",
+    "holding_name":"우리카드243-5(사)",
+    "weight_pct":4.6939579423,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 금융채1~2년(AA-이상)PLUS액티브",
+    "short_code":"0162M0",
+    "fund_code":"K55105ER7764",
+    "holding_name":"산은캐피탈754-2",
+    "weight_pct":4.6557460706,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 금융채1~2년(AA-이상)PLUS액티브",
+    "short_code":"0162M0",
+    "fund_code":"K55105ER7764",
+    "holding_name":"하나캐피탈473-3",
+    "weight_pct":4.6537538878,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 금융채1~2년(AA-이상)PLUS액티브",
+    "short_code":"0162M0",
+    "fund_code":"K55105ER7764",
+    "holding_name":"현대카드955-1",
+    "weight_pct":4.6508893997,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 금융채1~2년(AA-이상)PLUS액티브",
+    "short_code":"0162M0",
+    "fund_code":"K55105ER7764",
+    "holding_name":"우리금융캐피탈539-3",
+    "weight_pct":4.6471713032,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11035,8 +11425,18 @@
     "short_code":"385510",
     "fund_code":"K55105DH2776",
     "holding_name":"OCI홀딩스",
-    "weight_pct":6.968977423,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.9825892194,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 신재생에너지액티브",
+    "short_code":"385510",
+    "fund_code":"K55105DH2776",
+    "holding_name":"HD현대에너지솔루션",
+    "weight_pct":6.8698226611,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11045,8 +11445,8 @@
     "short_code":"385510",
     "fund_code":"K55105DH2776",
     "holding_name":"SK오션플랜트",
-    "weight_pct":6.412601517,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.1622460235,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11055,8 +11455,18 @@
     "short_code":"385510",
     "fund_code":"K55105DH2776",
     "holding_name":"씨에스윈드",
-    "weight_pct":6.1227736336,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.0967092046,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 신재생에너지액티브",
+    "short_code":"385510",
+    "fund_code":"K55105DH2776",
+    "holding_name":"비나텍",
+    "weight_pct":5.4468831697,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11065,8 +11475,48 @@
     "short_code":"385510",
     "fund_code":"K55105DH2776",
     "holding_name":"비에이치아이",
-    "weight_pct":5.5302366276,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.4013121906,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 신재생에너지액티브",
+    "short_code":"385510",
+    "fund_code":"K55105DH2776",
+    "holding_name":"삼성SDI",
+    "weight_pct":5.2392054059,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 신재생에너지액티브",
+    "short_code":"385510",
+    "fund_code":"K55105DH2776",
+    "holding_name":"한화솔루션",
+    "weight_pct":4.7654168281,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 신재생에너지액티브",
+    "short_code":"385510",
+    "fund_code":"K55105DH2776",
+    "holding_name":"LS ELECTRIC",
+    "weight_pct":4.4353745254,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 신재생에너지액티브",
+    "short_code":"385510",
+    "fund_code":"K55105DH2776",
+    "holding_name":"효성중공업",
+    "weight_pct":4.1593840086,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11075,8 +11525,8 @@
     "short_code":"439860",
     "fund_code":"K55105DR2899",
     "holding_name":"산금24신이02000521-1(녹)",
-    "weight_pct":4.9801766888,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.9861429116,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11085,8 +11535,8 @@
     "short_code":"439860",
     "fund_code":"K55105DR2899",
     "holding_name":"하나캐피탈440-3(지)",
-    "weight_pct":4.9590119921,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.9621530592,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11095,8 +11545,8 @@
     "short_code":"439860",
     "fund_code":"K55105DR2899",
     "holding_name":"신한캐피탈483-2",
-    "weight_pct":2.5696559476,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.568240349,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11105,8 +11555,18 @@
     "short_code":"439860",
     "fund_code":"K55105DR2899",
     "holding_name":"케이씨씨75-2",
-    "weight_pct":2.5251171663,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.5256685454,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX ESG종합채권(A-이상)액티브",
+    "short_code":"439860",
+    "fund_code":"K55105DR2899",
+    "holding_name":"기업은행(신)2404이3A-23(사)",
+    "weight_pct":2.5082093787,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11115,8 +11575,48 @@
     "short_code":"439860",
     "fund_code":"K55105DR2899",
     "holding_name":"한국도로공사고속도로건설채권855",
-    "weight_pct":2.5122964556,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.5071846044,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX ESG종합채권(A-이상)액티브",
+    "short_code":"439860",
+    "fund_code":"K55105DR2899",
+    "holding_name":"하나캐피탈414-6(지)",
+    "weight_pct":2.5038249183,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX ESG종합채권(A-이상)액티브",
+    "short_code":"439860",
+    "fund_code":"K55105DR2899",
+    "holding_name":"신한금융지주159-1",
+    "weight_pct":2.5026214586,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX ESG종합채권(A-이상)액티브",
+    "short_code":"439860",
+    "fund_code":"K55105DR2899",
+    "holding_name":"제주은행24-04이2갑-18(사)",
+    "weight_pct":2.5004552311,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX ESG종합채권(A-이상)액티브",
+    "short_code":"439860",
+    "fund_code":"K55105DR2899",
+    "holding_name":"하나금융지주62-1",
+    "weight_pct":2.4999291759,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11125,8 +11625,8 @@
     "short_code":"0094K0",
     "fund_code":"K55301EM5013",
     "holding_name":"통영에코파워5",
-    "weight_pct":5.6084414377,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.6105878274,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11135,8 +11635,8 @@
     "short_code":"0094K0",
     "fund_code":"K55301EM5013",
     "holding_name":"롯데쇼핑106-2",
-    "weight_pct":5.5140004236,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.5152916462,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11145,8 +11645,8 @@
     "short_code":"0094K0",
     "fund_code":"K55301EM5013",
     "holding_name":"JB 우리캐피탈545-4",
-    "weight_pct":5.5127009244,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.5143200422,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11155,8 +11655,8 @@
     "short_code":"0094K0",
     "fund_code":"K55301EM5013",
     "holding_name":"삼성카드2820",
-    "weight_pct":5.4500662541,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.451085945,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11165,8 +11665,58 @@
     "short_code":"0094K0",
     "fund_code":"K55301EM5013",
     "holding_name":"롯데캐피탈465-2",
-    "weight_pct":2.9458126847,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.9490254905,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 28-04 회사채(A+이상)액티브",
+    "short_code":"0094K0",
+    "fund_code":"K55301EM5013",
+    "holding_name":"에코비트7(녹)",
+    "weight_pct":2.8592175133,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 28-04 회사채(A+이상)액티브",
+    "short_code":"0094K0",
+    "fund_code":"K55301EM5013",
+    "holding_name":"메리츠캐피탈282-3",
+    "weight_pct":2.850364366,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 28-04 회사채(A+이상)액티브",
+    "short_code":"0094K0",
+    "fund_code":"K55301EM5013",
+    "holding_name":"메리츠캐피탈283-4",
+    "weight_pct":2.8427826271,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 28-04 회사채(A+이상)액티브",
+    "short_code":"0094K0",
+    "fund_code":"K55301EM5013",
+    "holding_name":"한국투자증권30-1",
+    "weight_pct":2.8417643113,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 28-04 회사채(A+이상)액티브",
+    "short_code":"0094K0",
+    "fund_code":"K55301EM5013",
+    "holding_name":"알씨아이파이낸셜서비스코리아130",
+    "weight_pct":2.833396966,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11175,8 +11725,8 @@
     "short_code":"0119H0",
     "fund_code":"K55105EN8642",
     "holding_name":"현대카드890-5",
-    "weight_pct":4.9745747319,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.974414144,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11185,8 +11735,8 @@
     "short_code":"0119H0",
     "fund_code":"K55105EN8642",
     "holding_name":"KT199-3",
-    "weight_pct":4.9218246635,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.9219758143,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11195,8 +11745,8 @@
     "short_code":"0119H0",
     "fund_code":"K55105EN8642",
     "holding_name":"국민은행(CD)",
-    "weight_pct":4.8213541488,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.8267027614,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11205,8 +11755,8 @@
     "short_code":"0119H0",
     "fund_code":"K55105EN8642",
     "holding_name":"아이비케이캐피탈343-2",
-    "weight_pct":4.7893249281,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.7890780494,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -11215,8 +11765,58 @@
     "short_code":"0119H0",
     "fund_code":"K55105EN8642",
     "holding_name":"산은캐피탈778-3",
-    "weight_pct":4.7745533909,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.7742458215,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 28-12 회사채(AA-이상)액티브",
+    "short_code":"0119H0",
+    "fund_code":"K55105EN8642",
+    "holding_name":"농협금융지주54-2",
+    "weight_pct":4.7732829526,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 28-12 회사채(AA-이상)액티브",
+    "short_code":"0119H0",
+    "fund_code":"K55105EN8642",
+    "holding_name":"우리금융캐피탈537-5",
+    "weight_pct":4.7702778304,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 28-12 회사채(AA-이상)액티브",
+    "short_code":"0119H0",
+    "fund_code":"K55105EN8642",
+    "holding_name":"현대커머셜562-4",
+    "weight_pct":4.7653558708,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 28-12 회사채(AA-이상)액티브",
+    "short_code":"0119H0",
+    "fund_code":"K55105EN8642",
+    "holding_name":"하나캐피탈471-3",
+    "weight_pct":4.7621379465,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 28-12 회사채(AA-이상)액티브",
+    "short_code":"0119H0",
+    "fund_code":"K55105EN8642",
+    "holding_name":"아이비케이캐피탈340-3",
+    "weight_pct":4.761977738,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -12205,8 +12805,8 @@
     "short_code":"273130",
     "fund_code":"K55105BR0838",
     "holding_name":"국고채권03250-3512(25-11)",
-    "weight_pct":3.6512116879,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.5225301022,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -12215,8 +12815,8 @@
     "short_code":"273130",
     "fund_code":"K55105BR0838",
     "holding_name":"국고채권01875-5103(21-2)",
-    "weight_pct":3.2487864304,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.1205699104,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -12225,8 +12825,28 @@
     "short_code":"273130",
     "fund_code":"K55105BR0838",
     "holding_name":"국고채권03625-5309(23-7)",
-    "weight_pct":2.3453575992,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.2542054751,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 종합채권(AA-이상)액티브",
+    "short_code":"273130",
+    "fund_code":"K55105BR0838",
+    "holding_name":"2026-06 국채선물10(신)",
+    "weight_pct":2.0091833629,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 종합채권(AA-이상)액티브",
+    "short_code":"273130",
+    "fund_code":"K55105BR0838",
+    "holding_name":"국고채권03500-5603(26-2)",
+    "weight_pct":1.7167466037,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -12235,8 +12855,8 @@
     "short_code":"273130",
     "fund_code":"K55105BR0838",
     "holding_name":"국고채권02000-4903(19-2)",
-    "weight_pct":1.4920050672,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.4339777741,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -12245,8 +12865,38 @@
     "short_code":"273130",
     "fund_code":"K55105BR0838",
     "holding_name":"국고채권02250-3709(17-5)",
-    "weight_pct":1.4113004373,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.3605906661,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 종합채권(AA-이상)액티브",
+    "short_code":"273130",
+    "fund_code":"K55105BR0838",
+    "holding_name":"국고채권02625-4803(18-2)",
+    "weight_pct":1.0954553599,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 종합채권(AA-이상)액티브",
+    "short_code":"273130",
+    "fund_code":"K55105BR0838",
+    "holding_name":"국고채권03250-5403(24-2)",
+    "weight_pct":1.0729637251,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 종합채권(AA-이상)액티브",
+    "short_code":"273130",
+    "fund_code":"K55105BR0838",
+    "holding_name":"LG에너지솔루션4-1",
+    "weight_pct":1.0547599703,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13255,8 +13905,8 @@
     "short_code":"0082V0",
     "fund_code":"K55105EI4473",
     "holding_name":"KODEX 미국S&P500",
-    "weight_pct":29.4597312347,
-    "asof_date":"2026-03-29",
+    "weight_pct":29.5173721291,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13265,8 +13915,8 @@
     "short_code":"0082V0",
     "fund_code":"K55105EI4473",
     "holding_name":"Vanguard Total World Stock ETF",
-    "weight_pct":24.6208874287,
-    "asof_date":"2026-03-29",
+    "weight_pct":24.4868451577,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13275,8 +13925,8 @@
     "short_code":"0082V0",
     "fund_code":"K55105EI4473",
     "holding_name":"iShares MSCI ACWI ETF",
-    "weight_pct":24.080746656,
-    "asof_date":"2026-03-29",
+    "weight_pct":23.9095675175,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13285,8 +13935,8 @@
     "short_code":"0082V0",
     "fund_code":"K55105EI4473",
     "holding_name":"KODEX 종합채권(AA-이상)액티브",
-    "weight_pct":6.5596826214,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.5954262346,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13295,8 +13945,58 @@
     "short_code":"0082V0",
     "fund_code":"K55105EI4473",
     "holding_name":"KODEX 국고채30년액티브",
-    "weight_pct":3.8181015744,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.8253406301,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2060액티브",
+    "short_code":"0082V0",
+    "fund_code":"K55105EI4473",
+    "holding_name":"KODEX 국고채10년액티브",
+    "weight_pct":3.7259846767,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2060액티브",
+    "short_code":"0082V0",
+    "fund_code":"K55105EI4473",
+    "holding_name":"KODEX 단기채권PLUS",
+    "weight_pct":3.5174427382,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2060액티브",
+    "short_code":"0082V0",
+    "fund_code":"K55105EI4473",
+    "holding_name":"KODEX 국고채3년",
+    "weight_pct":3.2919729734,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2060액티브",
+    "short_code":"0082V0",
+    "fund_code":"K55105EI4473",
+    "holding_name":"VANGUARD S&P 500 ETF",
+    "weight_pct":1.1300479428,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2060액티브",
+    "short_code":"0082V0",
+    "fund_code":"K55105EI4473",
+    "holding_name":"설정현금액",
+    "weight_pct":0.0,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13306,7 +14006,7 @@
     "fund_code":"K55105E17036",
     "holding_name":"국고채권03250-3306(23-5)",
     "weight_pct":100.0,
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13316,7 +14016,7 @@
     "fund_code":"K55105E17036",
     "holding_name":"원화현금",
     "weight_pct":0.0,
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13325,8 +14025,8 @@
     "short_code":"433970",
     "fund_code":"K55105DT5353",
     "holding_name":"Vanguard Total World Stock ETF",
-    "weight_pct":24.396184952,
-    "asof_date":"2026-03-29",
+    "weight_pct":23.6697662466,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13335,18 +14035,8 @@
     "short_code":"433970",
     "fund_code":"K55105DT5353",
     "holding_name":"KODEX 종합채권(AA-이상)액티브",
-    "weight_pct":17.0873642021,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KODEX TDF2030액티브",
-    "short_code":"433970",
-    "fund_code":"K55105DT5353",
-    "holding_name":"State Street SPDR Portfolio",
-    "weight_pct":12.838933495,
-    "asof_date":"2026-03-29",
+    "weight_pct":17.4764394075,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13355,8 +14045,18 @@
     "short_code":"433970",
     "fund_code":"K55105DT5353",
     "holding_name":"KODEX 국고채10년액티브",
-    "weight_pct":12.2206511163,
-    "asof_date":"2026-03-29",
+    "weight_pct":12.4915209326,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2030액티브",
+    "short_code":"433970",
+    "fund_code":"K55105DT5353",
+    "holding_name":"State Street SPDR Portfolio",
+    "weight_pct":12.4436508151,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13365,8 +14065,58 @@
     "short_code":"433970",
     "fund_code":"K55105DT5353",
     "holding_name":"KODEX 국고채30년액티브",
-    "weight_pct":9.9400869893,
-    "asof_date":"2026-03-29",
+    "weight_pct":10.1304948426,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2030액티브",
+    "short_code":"433970",
+    "fund_code":"K55105DT5353",
+    "holding_name":"KODEX 단기채권PLUS",
+    "weight_pct":8.4636320004,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2030액티브",
+    "short_code":"433970",
+    "fund_code":"K55105DT5353",
+    "holding_name":"iShares MSCI ACWI ETF",
+    "weight_pct":6.0608528685,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2030액티브",
+    "short_code":"433970",
+    "fund_code":"K55105DT5353",
+    "holding_name":"KODEX 국고채3년",
+    "weight_pct":5.5084066289,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2030액티브",
+    "short_code":"433970",
+    "fund_code":"K55105DT5353",
+    "holding_name":"KODEX 미국배당커버드콜액티브",
+    "weight_pct":3.7552362577,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2030액티브",
+    "short_code":"433970",
+    "fund_code":"K55105DT5353",
+    "holding_name":"설정현금액",
+    "weight_pct":0.0,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13375,8 +14125,8 @@
     "short_code":"433980",
     "fund_code":"K55105DT5361",
     "holding_name":"State Street SPDR Portfolio",
-    "weight_pct":26.4559152512,
-    "asof_date":"2026-03-29",
+    "weight_pct":26.2913590259,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13385,8 +14135,8 @@
     "short_code":"433980",
     "fund_code":"K55105DT5361",
     "holding_name":"Vanguard Total World Stock ETF",
-    "weight_pct":24.4599331062,
-    "asof_date":"2026-03-29",
+    "weight_pct":24.3208917691,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13395,8 +14145,8 @@
     "short_code":"433980",
     "fund_code":"K55105DT5361",
     "holding_name":"iShares MSCI ACWI ETF",
-    "weight_pct":11.5210655302,
-    "asof_date":"2026-03-29",
+    "weight_pct":11.436566813,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13405,8 +14155,8 @@
     "short_code":"433980",
     "fund_code":"K55105DT5361",
     "holding_name":"KODEX 종합채권(AA-이상)액티브",
-    "weight_pct":10.7484377897,
-    "asof_date":"2026-03-29",
+    "weight_pct":10.8573004526,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13415,8 +14165,58 @@
     "short_code":"433980",
     "fund_code":"K55105DT5361",
     "holding_name":"KODEX 국고채10년액티브",
-    "weight_pct":8.0277925222,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.1043043749,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2040액티브",
+    "short_code":"433980",
+    "fund_code":"K55105DT5361",
+    "holding_name":"KODEX 국고채30년액티브",
+    "weight_pct":6.7645296129,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2040액티브",
+    "short_code":"433980",
+    "fund_code":"K55105DT5361",
+    "holding_name":"KODEX 단기채권PLUS",
+    "weight_pct":5.5927592538,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2040액티브",
+    "short_code":"433980",
+    "fund_code":"K55105DT5361",
+    "holding_name":"KODEX 국고채3년",
+    "weight_pct":3.7040935247,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2040액티브",
+    "short_code":"433980",
+    "fund_code":"K55105DT5361",
+    "holding_name":"KODEX 미국배당커버드콜액티브",
+    "weight_pct":2.9281951732,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2040액티브",
+    "short_code":"433980",
+    "fund_code":"K55105DT5361",
+    "holding_name":"설정현금액",
+    "weight_pct":0.0,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13425,8 +14225,8 @@
     "short_code":"434060",
     "fund_code":"K55105DT5379",
     "holding_name":"Vanguard Total World Stock ETF",
-    "weight_pct":25.6685305508,
-    "asof_date":"2026-03-29",
+    "weight_pct":25.5750539562,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13435,8 +14235,8 @@
     "short_code":"434060",
     "fund_code":"K55105DT5379",
     "holding_name":"State Street SPDR Portfolio",
-    "weight_pct":25.6430980881,
-    "asof_date":"2026-03-29",
+    "weight_pct":25.5359523635,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13445,8 +14245,8 @@
     "short_code":"434060",
     "fund_code":"K55105DT5379",
     "holding_name":"iShares MSCI ACWI ETF",
-    "weight_pct":19.1609758392,
-    "asof_date":"2026-03-29",
+    "weight_pct":19.0595206513,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13455,8 +14255,8 @@
     "short_code":"434060",
     "fund_code":"K55105DT5379",
     "holding_name":"KODEX 종합채권(AA-이상)액티브",
-    "weight_pct":8.7074644825,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.8137259487,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13465,8 +14265,58 @@
     "short_code":"434060",
     "fund_code":"K55105DT5379",
     "holding_name":"KODEX 국고채10년액티브",
-    "weight_pct":6.1393153203,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.210561482,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2050액티브",
+    "short_code":"434060",
+    "fund_code":"K55105DT5379",
+    "holding_name":"KODEX 국고채30년액티브",
+    "weight_pct":5.1696955485,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2050액티브",
+    "short_code":"434060",
+    "fund_code":"K55105DT5379",
+    "holding_name":"KODEX 단기채권PLUS",
+    "weight_pct":4.1937159177,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2050액티브",
+    "short_code":"434060",
+    "fund_code":"K55105DT5379",
+    "holding_name":"KODEX 국고채3년",
+    "weight_pct":2.8174313654,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2050액티브",
+    "short_code":"434060",
+    "fund_code":"K55105DT5379",
+    "holding_name":"INVESCO NASDAQ 100 ETF",
+    "weight_pct":2.6243427668,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX TDF2050액티브",
+    "short_code":"434060",
+    "fund_code":"K55105DT5379",
+    "holding_name":"설정현금액",
+    "weight_pct":0.0,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13475,8 +14325,8 @@
     "short_code":"471230",
     "fund_code":"K55105E67924",
     "holding_name":"국고채권02625-3506(25-5)",
-    "weight_pct":72.9718074065,
-    "asof_date":"2026-03-29",
+    "weight_pct":69.0606203177,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13485,8 +14335,8 @@
     "short_code":"471230",
     "fund_code":"K55105E67924",
     "holding_name":"국고채권03250-3512(25-11)",
-    "weight_pct":27.0281925935,
-    "asof_date":"2026-03-29",
+    "weight_pct":30.9393796823,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13496,7 +14346,7 @@
     "fund_code":"K55105E67924",
     "holding_name":"원화현금",
     "weight_pct":0.0,
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13505,8 +14355,8 @@
     "short_code":"363570",
     "fund_code":"K55105D79160",
     "holding_name":"국고채권03000-3412(24-13)",
-    "weight_pct":9.835388447,
-    "asof_date":"2026-03-29",
+    "weight_pct":9.840709252,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13515,8 +14365,8 @@
     "short_code":"363570",
     "fund_code":"K55105D79160",
     "holding_name":"국고02625-5503(25-2)",
-    "weight_pct":9.4886805303,
-    "asof_date":"2026-03-29",
+    "weight_pct":9.4421747278,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13525,8 +14375,8 @@
     "short_code":"363570",
     "fund_code":"K55105D79160",
     "holding_name":"국고채권03500-5603(26-2)",
-    "weight_pct":7.4584904792,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.4233011268,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13535,8 +14385,8 @@
     "short_code":"363570",
     "fund_code":"K55105D79160",
     "holding_name":"국고채권03250-3512(25-11)",
-    "weight_pct":6.9505870279,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.9509265711,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13545,8 +14395,58 @@
     "short_code":"363570",
     "fund_code":"K55105D79160",
     "holding_name":"국고채권03250-5403(24-2)",
-    "weight_pct":5.7829292162,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.759456636,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 장기종합채권(AA-이상)액티브",
+    "short_code":"363570",
+    "fund_code":"K55105D79160",
+    "holding_name":"토지주택채권559",
+    "weight_pct":5.6544103829,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 장기종합채권(AA-이상)액티브",
+    "short_code":"363570",
+    "fund_code":"K55105D79160",
+    "holding_name":"국고채권02625-3003(25-3)",
+    "weight_pct":5.5791562385,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 장기종합채권(AA-이상)액티브",
+    "short_code":"363570",
+    "fund_code":"K55105D79160",
+    "holding_name":"국고채권02500-3009(25-8)",
+    "weight_pct":4.6836577489,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 장기종합채권(AA-이상)액티브",
+    "short_code":"363570",
+    "fund_code":"K55105D79160",
+    "holding_name":"국고채권02875-4409(24-10)",
+    "weight_pct":4.2663458392,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 장기종합채권(AA-이상)액티브",
+    "short_code":"363570",
+    "fund_code":"K55105D79160",
+    "holding_name":"신한캐피탈483-2",
+    "weight_pct":3.0110373809,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13555,8 +14455,8 @@
     "short_code":"487130",
     "fund_code":"K553N9EC3266",
     "holding_name":"SK하이닉스",
-    "weight_pct":11.5572647772,
-    "asof_date":"2026-03-29",
+    "weight_pct":9.5676546163,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13565,8 +14465,8 @@
     "short_code":"487130",
     "fund_code":"K553N9EC3266",
     "holding_name":"LS ELECTRIC",
-    "weight_pct":7.1637844196,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.9879895382,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13575,8 +14475,18 @@
     "short_code":"487130",
     "fund_code":"K553N9EC3266",
     "holding_name":"삼성SDI",
-    "weight_pct":5.2700335326,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.4739940126,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct AI인프라액티브",
+    "short_code":"487130",
+    "fund_code":"K553N9EC3266",
+    "holding_name":"LG이노텍",
+    "weight_pct":5.4155426644,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13585,8 +14495,8 @@
     "short_code":"487130",
     "fund_code":"K553N9EC3266",
     "holding_name":"피에스케이",
-    "weight_pct":4.6658180917,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.6593759852,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13595,8 +14505,48 @@
     "short_code":"487130",
     "fund_code":"K553N9EC3266",
     "holding_name":"코리아써키트",
-    "weight_pct":4.3342387629,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.582071437,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct AI인프라액티브",
+    "short_code":"487130",
+    "fund_code":"K553N9EC3266",
+    "holding_name":"주성엔지니어링",
+    "weight_pct":4.0690954259,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct AI인프라액티브",
+    "short_code":"487130",
+    "fund_code":"K553N9EC3266",
+    "holding_name":"비에이치아이",
+    "weight_pct":3.7434575929,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct AI인프라액티브",
+    "short_code":"487130",
+    "fund_code":"K553N9EC3266",
+    "holding_name":"현대건설",
+    "weight_pct":3.6317158797,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct AI인프라액티브",
+    "short_code":"487130",
+    "fund_code":"K553N9EC3266",
+    "holding_name":"HD현대일렉트릭",
+    "weight_pct":3.3610673119,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13606,7 +14556,7 @@
     "fund_code":"K55105E17044",
     "holding_name":"국고채권03625-5309(23-7)",
     "weight_pct":100.0,
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13616,7 +14566,7 @@
     "fund_code":"K55105E17044",
     "holding_name":"원화현금",
     "weight_pct":0.0,
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13625,8 +14575,8 @@
     "short_code":"439870",
     "fund_code":"K55105DV4568",
     "holding_name":"국고채권02875-4409(24-10)",
-    "weight_pct":14.0548754994,
-    "asof_date":"2026-03-29",
+    "weight_pct":13.823435085,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13635,8 +14585,8 @@
     "short_code":"439870",
     "fund_code":"K55105DV4568",
     "holding_name":"국고채권02625-4803(18-2)",
-    "weight_pct":11.4573405725,
-    "asof_date":"2026-03-29",
+    "weight_pct":11.2567813355,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13645,8 +14595,8 @@
     "short_code":"439870",
     "fund_code":"K55105DV4568",
     "holding_name":"국고채권02000-4903(19-2)",
-    "weight_pct":8.7507299598,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.5905150301,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13655,8 +14605,8 @@
     "short_code":"439870",
     "fund_code":"K55105DV4568",
     "holding_name":"국고채권03125-5209(22-9)",
-    "weight_pct":8.0169644401,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.8697408937,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13665,8 +14615,58 @@
     "short_code":"439870",
     "fund_code":"K55105DV4568",
     "holding_name":"국고채권03500-5603(26-2)",
-    "weight_pct":7.4937946917,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.3493194016,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 국고채30년액티브",
+    "short_code":"439870",
+    "fund_code":"K55105DV4568",
+    "holding_name":"국고채권02750-5409(24-8)",
+    "weight_pct":7.0957284431,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 국고채30년액티브",
+    "short_code":"439870",
+    "fund_code":"K55105DV4568",
+    "holding_name":"국고채권03875-4309(23-9)",
+    "weight_pct":6.7742437402,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 국고채30년액티브",
+    "short_code":"439870",
+    "fund_code":"K55105DV4568",
+    "holding_name":"국고채권03250-5303(23-2)",
+    "weight_pct":6.5099781977,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 국고채30년액티브",
+    "short_code":"439870",
+    "fund_code":"K55105DV4568",
+    "holding_name":"국고채권02500-5203(22-2)",
+    "weight_pct":6.1892271802,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 국고채30년액티브",
+    "short_code":"439870",
+    "fund_code":"K55105DV4568",
+    "holding_name":"국고채권01500-5003(20-2)",
+    "weight_pct":4.9774645547,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -13675,8 +14675,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"쎄트렉아이",
-    "weight_pct":7.07,
-    "asof_date":"2026-03-27",
+    "weight_pct":7.12,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13685,8 +14685,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"POSCO홀딩스",
-    "weight_pct":5.22,
-    "asof_date":"2026-03-27",
+    "weight_pct":5.15,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13695,18 +14695,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"대한광통신",
-    "weight_pct":4.89,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K이노베이션액티브",
-    "short_code":"385710",
-    "fund_code":"K553J1DJ0288",
-    "holding_name":"비나텍",
-    "weight_pct":4.85,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.82,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13715,8 +14705,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"삼성SDI",
-    "weight_pct":4.77,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.81,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13724,9 +14714,9 @@
     "etf_name":"TIME K이노베이션액티브",
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
-    "holding_name":"하이브",
-    "weight_pct":4.61,
-    "asof_date":"2026-03-27",
+    "holding_name":"비나텍",
+    "weight_pct":4.77,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13735,8 +14725,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"LG에너지솔루션",
-    "weight_pct":4.6,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.64,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13744,29 +14734,9 @@
     "etf_name":"TIME K이노베이션액티브",
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
-    "holding_name":"에이비엘바이오",
-    "weight_pct":4.33,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K이노베이션액티브",
-    "short_code":"385710",
-    "fund_code":"K553J1DJ0288",
-    "holding_name":"파두",
-    "weight_pct":4.11,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K이노베이션액티브",
-    "short_code":"385710",
-    "fund_code":"K553J1DJ0288",
-    "holding_name":"인텔리안테크",
-    "weight_pct":4.11,
-    "asof_date":"2026-03-27",
+    "holding_name":"하이브",
+    "weight_pct":4.58,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13775,8 +14745,38 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"미래에셋벤처투자",
-    "weight_pct":3.97,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.5,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K이노베이션액티브",
+    "short_code":"385710",
+    "fund_code":"K553J1DJ0288",
+    "holding_name":"에이비엘바이오",
+    "weight_pct":4.27,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K이노베이션액티브",
+    "short_code":"385710",
+    "fund_code":"K553J1DJ0288",
+    "holding_name":"파두",
+    "weight_pct":4.14,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K이노베이션액티브",
+    "short_code":"385710",
+    "fund_code":"K553J1DJ0288",
+    "holding_name":"인텔리안테크",
+    "weight_pct":4.08,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13785,18 +14785,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"이노스페이스",
-    "weight_pct":3.78,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K이노베이션액티브",
-    "short_code":"385710",
-    "fund_code":"K553J1DJ0288",
-    "holding_name":"삼천당제약",
-    "weight_pct":3.62,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.7,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13805,8 +14795,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"로보티즈",
-    "weight_pct":3.54,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.63,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13814,19 +14804,9 @@
     "etf_name":"TIME K이노베이션액티브",
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
-    "holding_name":"비츠로넥스텍",
-    "weight_pct":3.34,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K이노베이션액티브",
-    "short_code":"385710",
-    "fund_code":"K553J1DJ0288",
-    "holding_name":"RF머트리얼즈",
-    "weight_pct":3.3,
-    "asof_date":"2026-03-27",
+    "holding_name":"삼천당제약",
+    "weight_pct":3.42,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13835,8 +14815,28 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"엔씨소프트",
-    "weight_pct":3.26,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.27,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K이노베이션액티브",
+    "short_code":"385710",
+    "fund_code":"K553J1DJ0288",
+    "holding_name":"RF머트리얼즈",
+    "weight_pct":3.22,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K이노베이션액티브",
+    "short_code":"385710",
+    "fund_code":"K553J1DJ0288",
+    "holding_name":"비츠로넥스텍",
+    "weight_pct":3.18,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13845,8 +14845,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"대주전자재료",
-    "weight_pct":3.19,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.09,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13855,18 +14855,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"SK이노베이션",
-    "weight_pct":3.12,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K이노베이션액티브",
-    "short_code":"385710",
-    "fund_code":"K553J1DJ0288",
-    "holding_name":"알테오젠",
-    "weight_pct":3.06,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.08,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13875,8 +14865,18 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"에스피지",
-    "weight_pct":3.02,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.07,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K이노베이션액티브",
+    "short_code":"385710",
+    "fund_code":"K553J1DJ0288",
+    "holding_name":"알테오젠",
+    "weight_pct":3.01,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13885,8 +14885,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"더존비즈온",
-    "weight_pct":2.86,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.83,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13895,8 +14895,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"엘앤씨바이오",
-    "weight_pct":1.99,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.03,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13905,8 +14905,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"크래프톤",
-    "weight_pct":1.94,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.01,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13915,8 +14915,18 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"오름테라퓨틱",
-    "weight_pct":1.86,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.78,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K이노베이션액티브",
+    "short_code":"385710",
+    "fund_code":"K553J1DJ0288",
+    "holding_name":"리가켐바이오",
+    "weight_pct":1.67,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13926,17 +14936,7 @@
     "fund_code":"K553J1DJ0288",
     "holding_name":"넷마블",
     "weight_pct":1.65,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K이노베이션액티브",
-    "short_code":"385710",
-    "fund_code":"K553J1DJ0288",
-    "holding_name":"리가켐바이오",
-    "weight_pct":1.64,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13945,8 +14945,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"레이크머티리얼즈",
-    "weight_pct":1.6,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.62,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13955,8 +14955,8 @@
     "short_code":"385710",
     "fund_code":"K553J1DJ0288",
     "holding_name":"현금",
-    "weight_pct":0.73,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.87,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13965,8 +14965,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"에이피알",
-    "weight_pct":8.17,
-    "asof_date":"2026-03-27",
+    "weight_pct":8.38,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13975,8 +14975,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"하이브",
-    "weight_pct":8.01,
-    "asof_date":"2026-03-27",
+    "weight_pct":7.87,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13985,8 +14985,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"올릭스",
-    "weight_pct":7.04,
-    "asof_date":"2026-03-27",
+    "weight_pct":6.87,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -13995,8 +14995,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"신세계",
-    "weight_pct":5.84,
-    "asof_date":"2026-03-27",
+    "weight_pct":5.76,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14005,8 +15005,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"휴젤",
-    "weight_pct":5.59,
-    "asof_date":"2026-03-27",
+    "weight_pct":5.54,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14015,8 +15015,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"CJ",
-    "weight_pct":5.35,
-    "asof_date":"2026-03-27",
+    "weight_pct":5.29,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14025,28 +15025,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"서부T&D",
-    "weight_pct":4.74,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K컬처액티브",
-    "short_code":"410870",
-    "fund_code":"K553J1DP1767",
-    "holding_name":"JYP Ent.",
-    "weight_pct":4.52,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K컬처액티브",
-    "short_code":"410870",
-    "fund_code":"K553J1DP1767",
-    "holding_name":"와이지엔터테인먼트",
-    "weight_pct":4.44,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.68,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14055,8 +15035,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"현금",
-    "weight_pct":4.24,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.5,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14064,9 +15044,19 @@
     "etf_name":"TIME K컬처액티브",
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
-    "holding_name":"롯데쇼핑",
-    "weight_pct":4.01,
-    "asof_date":"2026-03-27",
+    "holding_name":"JYP Ent.",
+    "weight_pct":4.41,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K컬처액티브",
+    "short_code":"410870",
+    "fund_code":"K553J1DP1767",
+    "holding_name":"와이지엔터테인먼트",
+    "weight_pct":4.32,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14075,8 +15065,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"제닉",
-    "weight_pct":3.7,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.09,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14085,8 +15075,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"펄어비스",
-    "weight_pct":3.57,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.02,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14094,9 +15084,9 @@
     "etf_name":"TIME K컬처액티브",
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
-    "holding_name":"에스엠",
-    "weight_pct":3.23,
-    "asof_date":"2026-03-27",
+    "holding_name":"롯데쇼핑",
+    "weight_pct":3.91,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14105,8 +15095,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"엘앤씨바이오",
-    "weight_pct":3.11,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.14,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14114,9 +15104,9 @@
     "etf_name":"TIME K컬처액티브",
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
-    "holding_name":"아이티센글로벌",
-    "weight_pct":2.95,
-    "asof_date":"2026-03-27",
+    "holding_name":"에스엠",
+    "weight_pct":3.12,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14125,8 +15115,18 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"코스메카코리아",
-    "weight_pct":2.74,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.9,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K컬처액티브",
+    "short_code":"410870",
+    "fund_code":"K553J1DP1767",
+    "holding_name":"아이티센글로벌",
+    "weight_pct":2.81,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14135,8 +15135,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"파마리서치",
-    "weight_pct":2.64,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.6,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14145,8 +15145,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"CJ ENM",
-    "weight_pct":2.61,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.54,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14155,18 +15155,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"삼양식품",
-    "weight_pct":2.09,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K컬처액티브",
-    "short_code":"410870",
-    "fund_code":"K553J1DP1767",
-    "holding_name":"스튜디오드래곤",
-    "weight_pct":1.67,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.02,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14175,8 +15165,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"GS피앤엘",
-    "weight_pct":1.56,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.64,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14184,9 +15174,9 @@
     "etf_name":"TIME K컬처액티브",
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
-    "holding_name":"한스바이오메드",
-    "weight_pct":1.48,
-    "asof_date":"2026-03-27",
+    "holding_name":"스튜디오드래곤",
+    "weight_pct":1.62,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14195,8 +15185,18 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"더핑크퐁컴퍼니",
-    "weight_pct":1.46,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.45,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K컬처액티브",
+    "short_code":"410870",
+    "fund_code":"K553J1DP1767",
+    "holding_name":"한스바이오메드",
+    "weight_pct":1.41,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14205,8 +15205,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"달바글로벌",
-    "weight_pct":1.26,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.32,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14215,8 +15215,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"로킷헬스케어",
-    "weight_pct":1.15,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.07,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14225,8 +15225,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"미스토홀딩스",
-    "weight_pct":1.06,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.03,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14235,8 +15235,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"클래시스",
-    "weight_pct":0.93,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.92,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14245,8 +15245,8 @@
     "short_code":"410870",
     "fund_code":"K553J1DP1767",
     "holding_name":"그래피",
-    "weight_pct":0.86,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.79,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -14254,19 +15254,9 @@
     "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
     "short_code":"482030",
     "fund_code":"K553N9E96812",
-    "holding_name":"에스앤에스텍",
-    "weight_pct":6.3848518261,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
-    "short_code":"482030",
-    "fund_code":"K553N9E96812",
     "holding_name":"에코프로",
-    "weight_pct":6.2310760045,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.3815817486,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14274,9 +15264,9 @@
     "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
     "short_code":"482030",
     "fund_code":"K553N9E96812",
-    "holding_name":"포스코인터내셔널",
-    "weight_pct":5.973675871,
-    "asof_date":"2026-03-29",
+    "holding_name":"에스앤에스텍",
+    "weight_pct":6.2165379568,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14285,8 +15275,18 @@
     "short_code":"482030",
     "fund_code":"K553N9E96812",
     "holding_name":"대주전자재료",
-    "weight_pct":5.9629647042,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.9031304198,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
+    "short_code":"482030",
+    "fund_code":"K553N9E96812",
+    "holding_name":"포스코인터내셔널",
+    "weight_pct":5.7334523522,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14295,8 +15295,58 @@
     "short_code":"482030",
     "fund_code":"K553N9E96812",
     "holding_name":"엘앤에프",
-    "weight_pct":4.5832999889,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.9625732042,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
+    "short_code":"482030",
+    "fund_code":"K553N9E96812",
+    "holding_name":"에코프로비엠",
+    "weight_pct":4.5397499147,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
+    "short_code":"482030",
+    "fund_code":"K553N9E96812",
+    "holding_name":"솔브레인",
+    "weight_pct":4.2401113632,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
+    "short_code":"482030",
+    "fund_code":"K553N9E96812",
+    "holding_name":"에이치브이엠",
+    "weight_pct":4.2047771018,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
+    "short_code":"482030",
+    "fund_code":"K553N9E96812",
+    "holding_name":"한솔케미칼",
+    "weight_pct":4.0649457777,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 반도체&2차전지핵심소재액티브",
+    "short_code":"482030",
+    "fund_code":"K553N9E96812",
+    "holding_name":"포스코퓨처엠",
+    "weight_pct":4.0211125558,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14464,7 +15514,7 @@
     "etf_name":"TIGER 코리아테크액티브",
     "short_code":"471780",
     "fund_code":"K55301E68232",
-    "holding_name":"파크시스템스",
+    "holding_name":"기가비스",
     "weight_pct":1.57,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -14474,7 +15524,7 @@
     "etf_name":"TIGER 코리아테크액티브",
     "short_code":"471780",
     "fund_code":"K55301E68232",
-    "holding_name":"기가비스",
+    "holding_name":"파크시스템스",
     "weight_pct":1.57,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -14544,7 +15594,7 @@
     "etf_name":"TIGER 코리아테크액티브",
     "short_code":"471780",
     "fund_code":"K55301E68232",
-    "holding_name":"에스앤에스텍",
+    "holding_name":"한국피아이엠",
     "weight_pct":0.99,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -14554,7 +15604,7 @@
     "etf_name":"TIGER 코리아테크액티브",
     "short_code":"471780",
     "fund_code":"K55301E68232",
-    "holding_name":"한국피아이엠",
+    "holding_name":"에스앤에스텍",
     "weight_pct":0.99,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -14585,8 +15635,18 @@
     "short_code":"401470",
     "fund_code":"K55105DM5970",
     "holding_name":"하이브",
-    "weight_pct":8.4492892297,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.4423609376,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 메타버스액티브",
+    "short_code":"401470",
+    "fund_code":"K55105DM5970",
+    "holding_name":"SK하이닉스",
+    "weight_pct":7.6500895051,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14595,28 +15655,8 @@
     "short_code":"401470",
     "fund_code":"K55105DM5970",
     "holding_name":"삼성전기",
-    "weight_pct":8.1028262015,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KODEX 메타버스액티브",
-    "short_code":"401470",
-    "fund_code":"K55105DM5970",
-    "holding_name":"SK하이닉스",
-    "weight_pct":7.8241702528,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KODEX 메타버스액티브",
-    "short_code":"401470",
-    "fund_code":"K55105DM5970",
-    "holding_name":"삼성전자",
-    "weight_pct":6.947494199,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.6135814858,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14625,8 +15665,68 @@
     "short_code":"401470",
     "fund_code":"K55105DM5970",
     "holding_name":"크래프톤",
-    "weight_pct":6.6543184304,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.9383016607,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 메타버스액티브",
+    "short_code":"401470",
+    "fund_code":"K55105DM5970",
+    "holding_name":"삼성전자",
+    "weight_pct":6.8586952133,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 메타버스액티브",
+    "short_code":"401470",
+    "fund_code":"K55105DM5970",
+    "holding_name":"넷마블",
+    "weight_pct":6.5338923738,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 메타버스액티브",
+    "short_code":"401470",
+    "fund_code":"K55105DM5970",
+    "holding_name":"와이지엔터테인먼트",
+    "weight_pct":5.2759303363,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 메타버스액티브",
+    "short_code":"401470",
+    "fund_code":"K55105DM5970",
+    "holding_name":"에스엠",
+    "weight_pct":5.0480634001,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 메타버스액티브",
+    "short_code":"401470",
+    "fund_code":"K55105DM5970",
+    "holding_name":"티쓰리",
+    "weight_pct":4.622635925,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 메타버스액티브",
+    "short_code":"401470",
+    "fund_code":"K55105DM5970",
+    "holding_name":"JYP Ent.",
+    "weight_pct":4.313849201,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14635,8 +15735,8 @@
     "short_code":"0150K0",
     "fund_code":"K553N9EQ9994",
     "holding_name":"서진시스템",
-    "weight_pct":7.9944499268,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.5775513482,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14645,8 +15745,8 @@
     "short_code":"0150K0",
     "fund_code":"K553N9EQ9994",
     "holding_name":"비에이치아이",
-    "weight_pct":7.8206741821,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.5281725123,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14655,8 +15755,8 @@
     "short_code":"0150K0",
     "fund_code":"K553N9EQ9994",
     "holding_name":"비나텍",
-    "weight_pct":6.9504672561,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.0305243306,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14665,8 +15765,8 @@
     "short_code":"0150K0",
     "fund_code":"K553N9EQ9994",
     "holding_name":"LS머트리얼즈",
-    "weight_pct":6.1532020779,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.9402794973,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14675,8 +15775,58 @@
     "short_code":"0150K0",
     "fund_code":"K553N9EQ9994",
     "holding_name":"삼성SDI",
-    "weight_pct":5.514149238,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.7089780516,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 수소전력ESS인프라액티브",
+    "short_code":"0150K0",
+    "fund_code":"K553N9EQ9994",
+    "holding_name":"성일하이텍",
+    "weight_pct":5.4484400322,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 수소전력ESS인프라액티브",
+    "short_code":"0150K0",
+    "fund_code":"K553N9EQ9994",
+    "holding_name":"HD건설기계",
+    "weight_pct":5.2480140027,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 수소전력ESS인프라액티브",
+    "short_code":"0150K0",
+    "fund_code":"K553N9EQ9994",
+    "holding_name":"에코프로비엠",
+    "weight_pct":4.74093773,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 수소전력ESS인프라액티브",
+    "short_code":"0150K0",
+    "fund_code":"K553N9EQ9994",
+    "holding_name":"한중엔시에스",
+    "weight_pct":4.5451941081,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 수소전력ESS인프라액티브",
+    "short_code":"0150K0",
+    "fund_code":"K553N9EQ9994",
+    "holding_name":"SNT에너지",
+    "weight_pct":4.2927237505,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14685,8 +15835,8 @@
     "short_code":"0074K0",
     "fund_code":"K553N9EL0774",
     "holding_name":"삼성전자",
-    "weight_pct":9.4310255572,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.5167370122,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14695,8 +15845,8 @@
     "short_code":"0074K0",
     "fund_code":"K553N9EL0774",
     "holding_name":"SK하이닉스",
-    "weight_pct":8.0626094234,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.1023401413,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14705,18 +15855,8 @@
     "short_code":"0074K0",
     "fund_code":"K553N9EL0774",
     "holding_name":"한화오션",
-    "weight_pct":6.3067273241,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KoAct K수출핵심기업TOP30액티브",
-    "short_code":"0074K0",
-    "fund_code":"K553N9EL0774",
-    "holding_name":"한화비전",
-    "weight_pct":5.7695037832,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.2571828156,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14725,8 +15865,68 @@
     "short_code":"0074K0",
     "fund_code":"K553N9EL0774",
     "holding_name":"한국항공우주",
-    "weight_pct":5.2618293426,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.2839305983,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct K수출핵심기업TOP30액티브",
+    "short_code":"0074K0",
+    "fund_code":"K553N9EL0774",
+    "holding_name":"한화시스템",
+    "weight_pct":4.8284371234,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct K수출핵심기업TOP30액티브",
+    "short_code":"0074K0",
+    "fund_code":"K553N9EL0774",
+    "holding_name":"한화비전",
+    "weight_pct":4.6350348576,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct K수출핵심기업TOP30액티브",
+    "short_code":"0074K0",
+    "fund_code":"K553N9EL0774",
+    "holding_name":"현대차",
+    "weight_pct":4.4593629826,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct K수출핵심기업TOP30액티브",
+    "short_code":"0074K0",
+    "fund_code":"K553N9EL0774",
+    "holding_name":"효성중공업",
+    "weight_pct":4.1926237475,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct K수출핵심기업TOP30액티브",
+    "short_code":"0074K0",
+    "fund_code":"K553N9EL0774",
+    "holding_name":"에이피알",
+    "weight_pct":4.0986187308,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct K수출핵심기업TOP30액티브",
+    "short_code":"0074K0",
+    "fund_code":"K553N9EL0774",
+    "holding_name":"와이지엔터테인먼트",
+    "weight_pct":3.9329610012,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14735,28 +15935,8 @@
     "short_code":"445150",
     "fund_code":"K55105DW7461",
     "holding_name":"HD현대",
-    "weight_pct":9.5776921358,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KODEX 친환경조선해운액티브",
-    "short_code":"445150",
-    "fund_code":"K55105DW7461",
-    "holding_name":"한국카본",
-    "weight_pct":8.5875328464,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KODEX 친환경조선해운액티브",
-    "short_code":"445150",
-    "fund_code":"K55105DW7461",
-    "holding_name":"한화엔진",
-    "weight_pct":8.372983585,
-    "asof_date":"2026-03-29",
+    "weight_pct":9.5184563831,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14765,8 +15945,28 @@
     "short_code":"445150",
     "fund_code":"K55105DW7461",
     "holding_name":"삼성중공업",
-    "weight_pct":8.2516404463,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.3744955374,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 친환경조선해운액티브",
+    "short_code":"445150",
+    "fund_code":"K55105DW7461",
+    "holding_name":"한국카본",
+    "weight_pct":8.3580563826,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 친환경조선해운액티브",
+    "short_code":"445150",
+    "fund_code":"K55105DW7461",
+    "holding_name":"한화엔진",
+    "weight_pct":8.1656811208,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -14775,8 +15975,58 @@
     "short_code":"445150",
     "fund_code":"K55105DW7461",
     "holding_name":"한화오션",
-    "weight_pct":7.9302319272,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.9944198017,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 친환경조선해운액티브",
+    "short_code":"445150",
+    "fund_code":"K55105DW7461",
+    "holding_name":"HD현대중공업",
+    "weight_pct":7.747361905,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 친환경조선해운액티브",
+    "short_code":"445150",
+    "fund_code":"K55105DW7461",
+    "holding_name":"HD현대마린엔진",
+    "weight_pct":6.9479174481,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 친환경조선해운액티브",
+    "short_code":"445150",
+    "fund_code":"K55105DW7461",
+    "holding_name":"HD한국조선해양",
+    "weight_pct":6.6126267996,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 친환경조선해운액티브",
+    "short_code":"445150",
+    "fund_code":"K55105DW7461",
+    "holding_name":"동성화인텍",
+    "weight_pct":5.1388364484,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 친환경조선해운액티브",
+    "short_code":"445150",
+    "fund_code":"K55105DW7461",
+    "holding_name":"HD현대마린솔루션",
+    "weight_pct":4.9076542553,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15204,16 +16454,6 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"코스맥스",
-    "weight_pct":0.37,
-    "asof_date":"2026-03-27",
-    "source":"TIGER"
-  },
-  {
-    "manager":"미래에셋",
-    "etf_name":"TIGER 배당커버드콜액티브",
-    "short_code":"472150",
-    "fund_code":"K55301DY9046",
     "holding_name":"하이브",
     "weight_pct":0.37,
     "asof_date":"2026-03-27",
@@ -15225,6 +16465,16 @@
     "short_code":"472150",
     "fund_code":"K55301DY9046",
     "holding_name":"LG화학",
+    "weight_pct":0.37,
+    "asof_date":"2026-03-27",
+    "source":"TIGER"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 배당커버드콜액티브",
+    "short_code":"472150",
+    "fund_code":"K55301DY9046",
+    "holding_name":"코스맥스",
     "weight_pct":0.37,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15384,7 +16634,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"BNK금융지주",
+    "holding_name":"DL이앤씨",
     "weight_pct":0.16,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15394,7 +16644,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"DL이앤씨",
+    "holding_name":"BNK금융지주",
     "weight_pct":0.16,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15454,7 +16704,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"두산밥캣",
+    "holding_name":"코오롱인더",
     "weight_pct":0.14,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15464,7 +16714,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"코오롱인더",
+    "holding_name":"두산밥캣",
     "weight_pct":0.14,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15504,7 +16754,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"iM금융지주",
+    "holding_name":"케이씨텍",
     "weight_pct":0.12,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15514,7 +16764,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"케이씨텍",
+    "holding_name":"iM금융지주",
     "weight_pct":0.12,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15564,7 +16814,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"신도리코",
+    "holding_name":"제일기획",
     "weight_pct":0.09,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15594,7 +16844,7 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"제일기획",
+    "holding_name":"신도리코",
     "weight_pct":0.09,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15664,16 +16914,6 @@
     "etf_name":"TIGER 배당커버드콜액티브",
     "short_code":"472150",
     "fund_code":"K55301DY9046",
-    "holding_name":"아세아제지",
-    "weight_pct":0.06,
-    "asof_date":"2026-03-27",
-    "source":"TIGER"
-  },
-  {
-    "manager":"미래에셋",
-    "etf_name":"TIGER 배당커버드콜액티브",
-    "short_code":"472150",
-    "fund_code":"K55301DY9046",
     "holding_name":"KISCO홀딩스",
     "weight_pct":0.06,
     "asof_date":"2026-03-27",
@@ -15685,6 +16925,16 @@
     "short_code":"472150",
     "fund_code":"K55301DY9046",
     "holding_name":"동아쏘시오홀딩스",
+    "weight_pct":0.06,
+    "asof_date":"2026-03-27",
+    "source":"TIGER"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 배당커버드콜액티브",
+    "short_code":"472150",
+    "fund_code":"K55301DY9046",
+    "holding_name":"아세아제지",
     "weight_pct":0.06,
     "asof_date":"2026-03-27",
     "source":"TIGER"
@@ -15765,8 +17015,8 @@
     "short_code":"476850",
     "fund_code":"K553N9E80501",
     "holding_name":"삼성전자우",
-    "weight_pct":22.1952003985,
-    "asof_date":"2026-03-29",
+    "weight_pct":22.3340268724,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15775,8 +17025,8 @@
     "short_code":"476850",
     "fund_code":"K553N9E80501",
     "holding_name":"SK하이닉스",
-    "weight_pct":14.6279918835,
-    "asof_date":"2026-03-29",
+    "weight_pct":14.5574714622,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15785,8 +17035,8 @@
     "short_code":"476850",
     "fund_code":"K553N9E80501",
     "holding_name":"한국카본",
-    "weight_pct":3.3938087163,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.2340786275,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15795,8 +17045,8 @@
     "short_code":"476850",
     "fund_code":"K553N9E80501",
     "holding_name":"키움증권",
-    "weight_pct":2.4546358492,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.5694065488,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15805,8 +17055,58 @@
     "short_code":"476850",
     "fund_code":"K553N9E80501",
     "holding_name":"코나아이",
-    "weight_pct":2.2992838615,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.2790022701,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 배당성장액티브",
+    "short_code":"476850",
+    "fund_code":"K553N9E80501",
+    "holding_name":"다우데이타",
+    "weight_pct":2.263139422,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 배당성장액티브",
+    "short_code":"476850",
+    "fund_code":"K553N9E80501",
+    "holding_name":"현대차",
+    "weight_pct":2.0804014563,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 배당성장액티브",
+    "short_code":"476850",
+    "fund_code":"K553N9E80501",
+    "holding_name":"한국금융지주",
+    "weight_pct":2.0241743899,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 배당성장액티브",
+    "short_code":"476850",
+    "fund_code":"K553N9E80501",
+    "holding_name":"효성중공업",
+    "weight_pct":1.8238015715,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 배당성장액티브",
+    "short_code":"476850",
+    "fund_code":"K553N9E80501",
+    "holding_name":"한화에어로스페이스",
+    "weight_pct":1.8197123303,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15815,8 +17115,8 @@
     "short_code":"457930",
     "fund_code":"K55240E32568",
     "holding_name":"삼성전자",
-    "weight_pct":10.0520139546,
-    "asof_date":"2026-03-29",
+    "weight_pct":10.0655279367,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15825,8 +17125,8 @@
     "short_code":"457930",
     "fund_code":"K55240E32568",
     "holding_name":"SK하이닉스",
-    "weight_pct":9.8919420068,
-    "asof_date":"2026-03-29",
+    "weight_pct":9.8102471862,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15835,8 +17135,8 @@
     "short_code":"457930",
     "fund_code":"K55240E32568",
     "holding_name":"현대차",
-    "weight_pct":4.786936566,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.8530627059,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15845,8 +17145,28 @@
     "short_code":"457930",
     "fund_code":"K55240E32568",
     "holding_name":"한화에어로스페이스",
-    "weight_pct":3.3176098257,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.2467753315,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"BNK 미래전략기술액티브",
+    "short_code":"457930",
+    "fund_code":"K55240E32568",
+    "holding_name":"인텔리안테크",
+    "weight_pct":3.1692008095,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"BNK 미래전략기술액티브",
+    "short_code":"457930",
+    "fund_code":"K55240E32568",
+    "holding_name":"한미반도체",
+    "weight_pct":3.0988768111,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15855,8 +17175,38 @@
     "short_code":"457930",
     "fund_code":"K55240E32568",
     "holding_name":"한화시스템",
-    "weight_pct":3.1627708682,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.037026957,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"BNK 미래전략기술액티브",
+    "short_code":"457930",
+    "fund_code":"K55240E32568",
+    "holding_name":"두산에너빌리티",
+    "weight_pct":3.0046580054,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"BNK 미래전략기술액티브",
+    "short_code":"457930",
+    "fund_code":"K55240E32568",
+    "holding_name":"RFHIC",
+    "weight_pct":2.9872157081,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"BNK 미래전략기술액티브",
+    "short_code":"457930",
+    "fund_code":"K55240E32568",
+    "holding_name":"기아",
+    "weight_pct":2.8299994289,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -15865,8 +17215,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"SK하이닉스",
-    "weight_pct":17.46,
-    "asof_date":"2026-03-27",
+    "weight_pct":17.29,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15876,7 +17226,7 @@
     "fund_code":"K553J1DW4846",
     "holding_name":"삼성전자",
     "weight_pct":14.49,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15885,8 +17235,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"미래에셋증권",
-    "weight_pct":4.28,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.4,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15896,27 +17246,7 @@
     "fund_code":"K553J1DW4846",
     "holding_name":"삼양식품",
     "weight_pct":3.33,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME Korea플러스배당액티브",
-    "short_code":"441800",
-    "fund_code":"K553J1DW4846",
-    "holding_name":"두산",
-    "weight_pct":3.25,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME Korea플러스배당액티브",
-    "short_code":"441800",
-    "fund_code":"K553J1DW4846",
-    "holding_name":"SK",
-    "weight_pct":3.15,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15925,8 +17255,28 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"키움증권",
+    "weight_pct":3.26,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME Korea플러스배당액티브",
+    "short_code":"441800",
+    "fund_code":"K553J1DW4846",
+    "holding_name":"두산",
+    "weight_pct":3.16,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME Korea플러스배당액티브",
+    "short_code":"441800",
+    "fund_code":"K553J1DW4846",
+    "holding_name":"SK",
     "weight_pct":3.13,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15935,8 +17285,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"한화투자증권",
-    "weight_pct":3.08,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.13,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15945,8 +17295,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"NH투자증권",
-    "weight_pct":2.81,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.9,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15955,8 +17305,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"JB금융지주",
-    "weight_pct":2.7,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.81,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15965,18 +17315,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"삼성증권",
-    "weight_pct":2.65,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME Korea플러스배당액티브",
-    "short_code":"441800",
-    "fund_code":"K553J1DW4846",
-    "holding_name":"신한지주",
-    "weight_pct":2.62,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.75,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15985,8 +17325,18 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"기업은행",
-    "weight_pct":2.62,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.64,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME Korea플러스배당액티브",
+    "short_code":"441800",
+    "fund_code":"K553J1DW4846",
+    "holding_name":"신한지주",
+    "weight_pct":2.63,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -15995,8 +17345,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"BNK금융지주",
-    "weight_pct":2.58,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.62,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16005,8 +17355,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"현대차",
-    "weight_pct":2.57,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.6,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16015,8 +17365,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"우리금융지주",
-    "weight_pct":2.47,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.51,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16025,8 +17375,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"하나금융지주",
-    "weight_pct":2.42,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.46,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16035,8 +17385,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"메리츠금융지주",
-    "weight_pct":2.35,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.4,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16045,18 +17395,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"한화",
-    "weight_pct":2.06,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME Korea플러스배당액티브",
-    "short_code":"441800",
-    "fund_code":"K553J1DW4846",
-    "holding_name":"삼성생명",
-    "weight_pct":2.04,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.07,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16065,8 +17405,18 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"한국금융지주",
-    "weight_pct":2.02,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.06,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME Korea플러스배당액티브",
+    "short_code":"441800",
+    "fund_code":"K553J1DW4846",
+    "holding_name":"삼성생명",
+    "weight_pct":2.05,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16075,8 +17425,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"KB금융",
-    "weight_pct":1.99,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.0,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16085,8 +17435,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"CJ",
-    "weight_pct":1.9,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.94,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16095,8 +17445,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"이마트",
-    "weight_pct":1.83,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.88,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16105,18 +17455,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"CJ제일제당",
-    "weight_pct":1.62,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME Korea플러스배당액티브",
-    "short_code":"441800",
-    "fund_code":"K553J1DW4846",
-    "holding_name":"LS",
-    "weight_pct":1.56,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.61,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16126,7 +17466,17 @@
     "fund_code":"K553J1DW4846",
     "holding_name":"SK텔레콤",
     "weight_pct":1.51,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME Korea플러스배당액티브",
+    "short_code":"441800",
+    "fund_code":"K553J1DW4846",
+    "holding_name":"LS",
+    "weight_pct":1.51,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16135,8 +17485,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"KT&G",
-    "weight_pct":1.46,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.48,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16145,8 +17495,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"현대차2우B",
-    "weight_pct":1.18,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.21,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16155,8 +17505,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"KT",
-    "weight_pct":1.11,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.13,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16165,8 +17515,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"삼성물산",
-    "weight_pct":0.94,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.91,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16175,8 +17525,8 @@
     "short_code":"441800",
     "fund_code":"K553J1DW4846",
     "holding_name":"현금",
-    "weight_pct":0.85,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.14,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -16185,8 +17535,8 @@
     "short_code":"373490",
     "fund_code":"K55105DC4892",
     "holding_name":"SK하이닉스",
-    "weight_pct":8.8481503267,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.8440437692,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16195,8 +17545,8 @@
     "short_code":"373490",
     "fund_code":"K55105DC4892",
     "holding_name":"삼성전자",
-    "weight_pct":8.4794752983,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.5576093453,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16205,8 +17555,8 @@
     "short_code":"373490",
     "fund_code":"K55105DC4892",
     "holding_name":"현대차",
-    "weight_pct":7.5255730377,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.6894947962,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16215,8 +17565,8 @@
     "short_code":"373490",
     "fund_code":"K55105DC4892",
     "holding_name":"기아",
-    "weight_pct":6.8291784804,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.9565628983,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16225,8 +17575,58 @@
     "short_code":"373490",
     "fund_code":"K55105DC4892",
     "holding_name":"셀트리온",
-    "weight_pct":5.6562230451,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.8055961594,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 코리아혁신성장액티브",
+    "short_code":"373490",
+    "fund_code":"K55105DC4892",
+    "holding_name":"네이버\/NAVER",
+    "weight_pct":4.9966648721,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 코리아혁신성장액티브",
+    "short_code":"373490",
+    "fund_code":"K55105DC4892",
+    "holding_name":"삼성전기",
+    "weight_pct":4.7524872292,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 코리아혁신성장액티브",
+    "short_code":"373490",
+    "fund_code":"K55105DC4892",
+    "holding_name":"삼성SDI",
+    "weight_pct":4.6813518686,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 코리아혁신성장액티브",
+    "short_code":"373490",
+    "fund_code":"K55105DC4892",
+    "holding_name":"현대모비스",
+    "weight_pct":4.4385748623,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 코리아혁신성장액티브",
+    "short_code":"373490",
+    "fund_code":"K55105DC4892",
+    "holding_name":"비나텍",
+    "weight_pct":3.9474522582,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16235,8 +17635,8 @@
     "short_code":"364690",
     "fund_code":"K55105D92619",
     "holding_name":"삼성전자",
-    "weight_pct":22.3214940109,
-    "asof_date":"2026-03-29",
+    "weight_pct":22.423205691,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16245,8 +17645,8 @@
     "short_code":"364690",
     "fund_code":"K55105D92619",
     "holding_name":"SK하이닉스",
-    "weight_pct":13.4011565923,
-    "asof_date":"2026-03-29",
+    "weight_pct":13.3331153546,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16255,8 +17655,8 @@
     "short_code":"364690",
     "fund_code":"K55105D92619",
     "holding_name":"한화에어로스페이스",
-    "weight_pct":7.117236782,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.9876204855,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16265,8 +17665,8 @@
     "short_code":"364690",
     "fund_code":"K55105D92619",
     "holding_name":"SK스퀘어",
-    "weight_pct":3.3100729811,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.2489449095,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16275,8 +17675,8 @@
     "short_code":"364690",
     "fund_code":"K55105D92619",
     "holding_name":"HD현대일렉트릭",
-    "weight_pct":3.2481199217,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.1007440083,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16285,8 +17685,8 @@
     "short_code":"495230",
     "fund_code":"K553N9EF9468",
     "holding_name":"SK하이닉스",
-    "weight_pct":23.869833721,
-    "asof_date":"2026-03-29",
+    "weight_pct":23.7162732748,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16295,8 +17695,8 @@
     "short_code":"495230",
     "fund_code":"K553N9EF9468",
     "holding_name":"삼성전자",
-    "weight_pct":22.0962114611,
-    "asof_date":"2026-03-29",
+    "weight_pct":22.1666445203,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16305,8 +17705,8 @@
     "short_code":"495230",
     "fund_code":"K553N9EF9468",
     "holding_name":"현대차",
-    "weight_pct":4.3255690377,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.3933938905,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16315,8 +17715,8 @@
     "short_code":"495230",
     "fund_code":"K553N9EF9468",
     "holding_name":"KB금융",
-    "weight_pct":3.7197114636,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.7398744947,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -16325,8 +17725,8 @@
     "short_code":"495230",
     "fund_code":"K553N9EF9468",
     "holding_name":"기아",
-    "weight_pct":3.3255958886,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.3673975312,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -17335,8 +18735,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"SK하이닉스",
-    "weight_pct":24.05,
-    "asof_date":"2026-03-27",
+    "weight_pct":23.84,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17345,8 +18745,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"삼성전자",
-    "weight_pct":16.07,
-    "asof_date":"2026-03-27",
+    "weight_pct":16.08,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17355,8 +18755,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"현대차",
-    "weight_pct":6.16,
-    "asof_date":"2026-03-27",
+    "weight_pct":6.24,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17365,8 +18765,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"미래에셋증권",
-    "weight_pct":4.11,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.24,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17375,8 +18775,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"한화에어로스페이스",
-    "weight_pct":3.54,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.46,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17385,8 +18785,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"한화투자증권",
-    "weight_pct":3.17,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.22,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17395,18 +18795,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"하나금융지주",
-    "weight_pct":2.72,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코리아밸류업액티브",
-    "short_code":"495060",
-    "fund_code":"K553J1EF9274",
-    "holding_name":"두산",
-    "weight_pct":2.54,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.77,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17415,8 +18805,18 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"현대모비스",
-    "weight_pct":2.45,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.52,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코리아밸류업액티브",
+    "short_code":"495060",
+    "fund_code":"K553J1EF9274",
+    "holding_name":"두산",
+    "weight_pct":2.48,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17425,8 +18825,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"LS",
-    "weight_pct":2.45,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.37,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17435,8 +18835,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"SK",
-    "weight_pct":2.37,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.36,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17446,17 +18846,7 @@
     "fund_code":"K553J1EF9274",
     "holding_name":"삼양식품",
     "weight_pct":2.01,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코리아밸류업액티브",
-    "short_code":"495060",
-    "fund_code":"K553J1EF9274",
-    "holding_name":"SK스퀘어",
-    "weight_pct":1.99,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17466,7 +18856,17 @@
     "fund_code":"K553J1EF9274",
     "holding_name":"LIG넥스원",
     "weight_pct":1.97,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코리아밸류업액티브",
+    "short_code":"495060",
+    "fund_code":"K553J1EF9274",
+    "holding_name":"SK스퀘어",
+    "weight_pct":1.95,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17475,8 +18875,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"키움증권",
-    "weight_pct":1.87,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.95,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17485,28 +18885,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"CJ",
-    "weight_pct":1.79,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코리아밸류업액티브",
-    "short_code":"495060",
-    "fund_code":"K553J1EF9274",
-    "holding_name":"효성중공업",
-    "weight_pct":1.79,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코리아밸류업액티브",
-    "short_code":"495060",
-    "fund_code":"K553J1EF9274",
-    "holding_name":"우리금융지주",
-    "weight_pct":1.6,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.83,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17515,8 +18895,28 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"미래에셋벤처투자",
-    "weight_pct":1.51,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.75,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코리아밸류업액티브",
+    "short_code":"495060",
+    "fund_code":"K553J1EF9274",
+    "holding_name":"효성중공업",
+    "weight_pct":1.68,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코리아밸류업액티브",
+    "short_code":"495060",
+    "fund_code":"K553J1EF9274",
+    "holding_name":"우리금융지주",
+    "weight_pct":1.62,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17525,8 +18925,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"한화",
-    "weight_pct":1.48,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.49,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17535,8 +18935,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"HD현대일렉트릭",
-    "weight_pct":1.29,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.23,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17546,37 +18946,7 @@
     "fund_code":"K553J1EF9274",
     "holding_name":"SK텔레콤",
     "weight_pct":1.18,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코리아밸류업액티브",
-    "short_code":"495060",
-    "fund_code":"K553J1EF9274",
-    "holding_name":"한화시스템",
-    "weight_pct":1.15,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코리아밸류업액티브",
-    "short_code":"495060",
-    "fund_code":"K553J1EF9274",
-    "holding_name":"HD현대",
-    "weight_pct":1.12,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코리아밸류업액티브",
-    "short_code":"495060",
-    "fund_code":"K553J1EF9274",
-    "holding_name":"LS ELECTRIC",
-    "weight_pct":1.12,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17585,8 +18955,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"현금",
-    "weight_pct":1.11,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.15,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17594,9 +18964,29 @@
     "etf_name":"TIME 코리아밸류업액티브",
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
-    "holding_name":"삼성물산",
-    "weight_pct":0.99,
-    "asof_date":"2026-03-27",
+    "holding_name":"한화시스템",
+    "weight_pct":1.1,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코리아밸류업액티브",
+    "short_code":"495060",
+    "fund_code":"K553J1EF9274",
+    "holding_name":"HD현대",
+    "weight_pct":1.08,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코리아밸류업액티브",
+    "short_code":"495060",
+    "fund_code":"K553J1EF9274",
+    "holding_name":"LS ELECTRIC",
+    "weight_pct":1.08,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17605,8 +18995,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"한국금융지주",
-    "weight_pct":0.96,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.98,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17615,8 +19005,18 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"KT&G",
+    "weight_pct":0.98,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코리아밸류업액티브",
+    "short_code":"495060",
+    "fund_code":"K553J1EF9274",
+    "holding_name":"삼성물산",
     "weight_pct":0.96,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17625,8 +19025,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"기아",
-    "weight_pct":0.95,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.96,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17636,7 +19036,7 @@
     "fund_code":"K553J1EF9274",
     "holding_name":"KB금융",
     "weight_pct":0.94,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17645,8 +19045,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"포스코인터내셔널",
-    "weight_pct":0.91,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.87,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17655,8 +19055,8 @@
     "short_code":"495060",
     "fund_code":"K553J1EF9274",
     "holding_name":"한미반도체",
-    "weight_pct":0.87,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.86,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17666,7 +19066,7 @@
     "fund_code":"K553J1EF9274",
     "holding_name":"신한지주",
     "weight_pct":0.83,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17675,8 +19075,8 @@
     "short_code":"494890",
     "fund_code":"K55105EE6431",
     "holding_name":"삼성전자",
-    "weight_pct":31.1969925888,
-    "asof_date":"2026-03-29",
+    "weight_pct":31.2668968825,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -17685,8 +19085,8 @@
     "short_code":"494890",
     "fund_code":"K55105EE6431",
     "holding_name":"SK하이닉스",
-    "weight_pct":18.9064589026,
-    "asof_date":"2026-03-29",
+    "weight_pct":18.7670996318,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -17695,8 +19095,8 @@
     "short_code":"494890",
     "fund_code":"K55105EE6431",
     "holding_name":"현대차",
-    "weight_pct":2.4304270852,
-    "asof_date":"2026-03-29",
+    "weight_pct":2.4662062988,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -17705,8 +19105,8 @@
     "short_code":"494890",
     "fund_code":"K55105EE6431",
     "holding_name":"SK스퀘어",
-    "weight_pct":1.9397631556,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.8995515942,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -17715,8 +19115,8 @@
     "short_code":"494890",
     "fund_code":"K55105EE6431",
     "holding_name":"KB금융",
-    "weight_pct":1.8130994534,
-    "asof_date":"2026-03-29",
+    "weight_pct":1.8212070142,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -17725,8 +19125,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"SK하이닉스",
-    "weight_pct":23.13,
-    "asof_date":"2026-03-27",
+    "weight_pct":22.99,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17735,8 +19135,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"삼성전자",
-    "weight_pct":20.17,
-    "asof_date":"2026-03-27",
+    "weight_pct":20.25,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17745,18 +19145,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"두산",
-    "weight_pct":4.26,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스피액티브",
-    "short_code":"385720",
-    "fund_code":"K553J1DJ0270",
-    "holding_name":"삼양식품",
-    "weight_pct":4.08,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.16,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17765,8 +19155,18 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"현대차",
-    "weight_pct":4.07,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.14,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스피액티브",
+    "short_code":"385720",
+    "fund_code":"K553J1DJ0270",
+    "holding_name":"삼양식품",
+    "weight_pct":4.09,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17775,18 +19175,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"LIG넥스원",
-    "weight_pct":3.66,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스피액티브",
-    "short_code":"385720",
-    "fund_code":"K553J1DJ0270",
-    "holding_name":"한화에어로스페이스",
-    "weight_pct":3.34,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.68,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17795,8 +19185,18 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"미래에셋증권",
-    "weight_pct":3.27,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.38,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스피액티브",
+    "short_code":"385720",
+    "fund_code":"K553J1DJ0270",
+    "holding_name":"한화에어로스페이스",
+    "weight_pct":3.28,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17805,8 +19205,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"삼성전기",
-    "weight_pct":2.96,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.83,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17815,8 +19215,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"두산에너빌리티",
-    "weight_pct":2.76,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.7,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17825,18 +19225,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"포스코인터내셔널",
-    "weight_pct":2.45,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스피액티브",
-    "short_code":"385720",
-    "fund_code":"K553J1DJ0270",
-    "holding_name":"LS ELECTRIC",
-    "weight_pct":2.12,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.34,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17845,8 +19235,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"LG에너지솔루션",
-    "weight_pct":2.09,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.15,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17854,9 +19244,9 @@
     "etf_name":"TIME 코스피액티브",
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
-    "holding_name":"삼천당제약",
-    "weight_pct":1.96,
-    "asof_date":"2026-03-27",
+    "holding_name":"LS ELECTRIC",
+    "weight_pct":2.05,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17865,8 +19255,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"한국콜마",
-    "weight_pct":1.93,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.01,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17875,8 +19265,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"파두",
-    "weight_pct":1.91,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.97,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17884,9 +19274,9 @@
     "etf_name":"TIME 코스피액티브",
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
-    "holding_name":"HD건설기계",
-    "weight_pct":1.61,
-    "asof_date":"2026-03-27",
+    "holding_name":"삼천당제약",
+    "weight_pct":1.89,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17895,8 +19285,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"에이피알",
-    "weight_pct":1.56,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.65,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17905,8 +19295,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"ISC",
-    "weight_pct":1.55,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.63,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17914,9 +19304,9 @@
     "etf_name":"TIME 코스피액티브",
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
-    "holding_name":"효성중공업",
-    "weight_pct":1.42,
-    "asof_date":"2026-03-27",
+    "holding_name":"HD건설기계",
+    "weight_pct":1.62,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17925,18 +19315,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"코스맥스",
-    "weight_pct":1.4,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스피액티브",
-    "short_code":"385720",
-    "fund_code":"K553J1DJ0270",
-    "holding_name":"OCI홀딩스",
-    "weight_pct":1.39,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.53,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17945,8 +19325,28 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"삼성SDI",
-    "weight_pct":1.38,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.42,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스피액티브",
+    "short_code":"385720",
+    "fund_code":"K553J1DJ0270",
+    "holding_name":"OCI홀딩스",
+    "weight_pct":1.36,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스피액티브",
+    "short_code":"385720",
+    "fund_code":"K553J1DJ0270",
+    "holding_name":"효성중공업",
+    "weight_pct":1.34,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17956,7 +19356,7 @@
     "fund_code":"K553J1DJ0270",
     "holding_name":"SK",
     "weight_pct":1.32,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17965,8 +19365,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"SK스퀘어",
-    "weight_pct":1.31,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.28,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17975,8 +19375,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"현금",
-    "weight_pct":1.05,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.12,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17985,8 +19385,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"대주전자재료",
-    "weight_pct":0.99,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.98,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -17995,8 +19395,8 @@
     "short_code":"385720",
     "fund_code":"K553J1DJ0270",
     "holding_name":"대덕전자",
-    "weight_pct":0.87,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.86,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18005,8 +19405,28 @@
     "short_code":"385520",
     "fund_code":"K55105DH2784",
     "holding_name":"현대차",
-    "weight_pct":7.5701997627,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.6227317561,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 자율주행액티브",
+    "short_code":"385520",
+    "fund_code":"K55105DH2784",
+    "holding_name":"현대모비스",
+    "weight_pct":5.7082083874,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KODEX 자율주행액티브",
+    "short_code":"385520",
+    "fund_code":"K55105DH2784",
+    "holding_name":"기아",
+    "weight_pct":5.4649254671,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18015,28 +19435,8 @@
     "short_code":"385520",
     "fund_code":"K55105DH2784",
     "holding_name":"삼성전기",
-    "weight_pct":5.6875202639,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KODEX 자율주행액티브",
-    "short_code":"385520",
-    "fund_code":"K55105DH2784",
-    "holding_name":"현대모비스",
-    "weight_pct":5.5865270471,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KODEX 자율주행액티브",
-    "short_code":"385520",
-    "fund_code":"K55105DH2784",
-    "holding_name":"기아",
-    "weight_pct":5.4439349246,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.3838216544,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18045,8 +19445,8 @@
     "short_code":"385520",
     "fund_code":"K55105DH2784",
     "holding_name":"삼성전자",
-    "weight_pct":4.998077052,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.9708595199,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18055,8 +19455,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"삼성전자",
-    "weight_pct":9.51,
-    "asof_date":"2026-03-27",
+    "weight_pct":9.62,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18065,8 +19465,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"SK하이닉스",
-    "weight_pct":8.29,
-    "asof_date":"2026-03-27",
+    "weight_pct":8.31,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18075,8 +19475,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"한화솔루션",
-    "weight_pct":8.13,
-    "asof_date":"2026-03-27",
+    "weight_pct":7.99,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18085,18 +19485,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"현대차",
-    "weight_pct":7.43,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K신재생에너지액티브",
-    "short_code":"404120",
-    "fund_code":"K553J1DO1974",
-    "holding_name":"비에이치아이",
-    "weight_pct":7.35,
-    "asof_date":"2026-03-27",
+    "weight_pct":7.61,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18105,8 +19495,18 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"삼성SDI",
-    "weight_pct":7.23,
-    "asof_date":"2026-03-27",
+    "weight_pct":7.5,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K신재생에너지액티브",
+    "short_code":"404120",
+    "fund_code":"K553J1DO1974",
+    "holding_name":"비에이치아이",
+    "weight_pct":7.09,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18115,8 +19515,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"LS ELECTRIC",
-    "weight_pct":5.78,
-    "asof_date":"2026-03-27",
+    "weight_pct":5.63,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18125,8 +19525,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"비나텍",
-    "weight_pct":5.4,
-    "asof_date":"2026-03-27",
+    "weight_pct":5.47,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18135,18 +19535,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"한화",
-    "weight_pct":4.57,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K신재생에너지액티브",
-    "short_code":"404120",
-    "fund_code":"K553J1DO1974",
-    "holding_name":"산일전기",
-    "weight_pct":4.38,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.65,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18155,8 +19545,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"기아",
-    "weight_pct":4.02,
-    "asof_date":"2026-03-27",
+    "weight_pct":4.11,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18164,19 +19554,9 @@
     "etf_name":"TIME K신재생에너지액티브",
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
-    "holding_name":"동진쎄미켐",
-    "weight_pct":3.05,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K신재생에너지액티브",
-    "short_code":"404120",
-    "fund_code":"K553J1DO1974",
-    "holding_name":"HD현대중공업",
-    "weight_pct":3.03,
-    "asof_date":"2026-03-27",
+    "holding_name":"산일전기",
+    "weight_pct":3.94,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18185,8 +19565,18 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"에코프로머티",
-    "weight_pct":3.03,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.23,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K신재생에너지액티브",
+    "short_code":"404120",
+    "fund_code":"K553J1DO1974",
+    "holding_name":"동진쎄미켐",
+    "weight_pct":3.07,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18195,8 +19585,18 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"현대모비스",
-    "weight_pct":2.94,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.05,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K신재생에너지액티브",
+    "short_code":"404120",
+    "fund_code":"K553J1DO1974",
+    "holding_name":"HD현대중공업",
+    "weight_pct":3.0,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18205,8 +19605,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"고려아연",
-    "weight_pct":2.68,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.61,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18215,8 +19615,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"대주전자재료",
-    "weight_pct":2.47,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.46,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18225,8 +19625,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"원익IPS",
-    "weight_pct":2.32,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.34,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18235,8 +19635,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"씨에스윈드",
-    "weight_pct":2.21,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.17,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18245,8 +19645,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"삼성물산",
-    "weight_pct":1.45,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.42,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18255,8 +19655,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"POSCO홀딩스",
-    "weight_pct":1.37,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.39,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18265,8 +19665,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"현금",
-    "weight_pct":1.34,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.37,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18275,8 +19675,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"엔켐",
-    "weight_pct":1.14,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.1,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18285,8 +19685,8 @@
     "short_code":"404120",
     "fund_code":"K553J1DO1974",
     "holding_name":"레이크머티리얼즈",
-    "weight_pct":0.87,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.9,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18525,8 +19925,8 @@
     "short_code":"445290",
     "fund_code":"K55105DW7453",
     "holding_name":"삼성전자",
-    "weight_pct":10.3589086282,
-    "asof_date":"2026-03-29",
+    "weight_pct":10.2531131585,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18535,8 +19935,8 @@
     "short_code":"445290",
     "fund_code":"K55105DW7453",
     "holding_name":"로보티즈",
-    "weight_pct":8.2867110481,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.5384347394,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18545,8 +19945,8 @@
     "short_code":"445290",
     "fund_code":"K55105DW7453",
     "holding_name":"현대차",
-    "weight_pct":6.2850737155,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.2983512725,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18555,8 +19955,8 @@
     "short_code":"445290",
     "fund_code":"K55105DW7453",
     "holding_name":"현대오토에버",
-    "weight_pct":6.1998437953,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.2533486988,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18565,8 +19965,8 @@
     "short_code":"445290",
     "fund_code":"K55105DW7453",
     "holding_name":"레인보우로보틱스",
-    "weight_pct":6.0648598545,
-    "asof_date":"2026-03-29",
+    "weight_pct":6.113318369,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -18575,8 +19975,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"삼천당제약",
-    "weight_pct":8.35,
-    "asof_date":"2026-03-27",
+    "weight_pct":8.06,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18585,8 +19985,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"에이비엘바이오",
-    "weight_pct":6.18,
-    "asof_date":"2026-03-27",
+    "weight_pct":6.22,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18595,8 +19995,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"알지노믹스",
-    "weight_pct":3.9,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.98,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18605,8 +20005,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"로보티즈",
-    "weight_pct":3.8,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.96,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18615,8 +20015,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"에코프로",
-    "weight_pct":3.64,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.73,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18625,18 +20025,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"리가켐바이오",
-    "weight_pct":3.48,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"리브스메드",
-    "weight_pct":3.0,
-    "asof_date":"2026-03-27",
+    "weight_pct":3.61,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18645,8 +20035,18 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"ISC",
-    "weight_pct":2.84,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.98,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"리브스메드",
+    "weight_pct":2.9,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18655,8 +20055,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"오름테라퓨틱",
-    "weight_pct":2.44,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.37,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18665,18 +20065,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"쎄트렉아이",
-    "weight_pct":2.21,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"에임드바이오",
-    "weight_pct":2.19,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.27,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18685,8 +20075,18 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"에스티팜",
-    "weight_pct":2.13,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.2,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"에임드바이오",
+    "weight_pct":2.15,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18695,8 +20095,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"올릭스",
-    "weight_pct":2.06,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.08,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18705,8 +20105,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"알테오젠",
-    "weight_pct":2.03,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.04,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18715,8 +20115,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"기가비스",
-    "weight_pct":1.98,
-    "asof_date":"2026-03-27",
+    "weight_pct":2.02,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18725,18 +20125,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"브이엠",
-    "weight_pct":1.95,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"한국피아이엠",
-    "weight_pct":1.9,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.93,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18745,8 +20135,18 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"이오테크닉스",
-    "weight_pct":1.82,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.87,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"한국피아이엠",
+    "weight_pct":1.86,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18756,17 +20156,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"원익IPS",
     "weight_pct":1.82,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"현금",
-    "weight_pct":1.82,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18775,8 +20165,18 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"아이티센글로벌",
-    "weight_pct":1.81,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.78,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"현금",
+    "weight_pct":1.78,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18785,8 +20185,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"비에이치아이",
-    "weight_pct":1.76,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.69,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18795,8 +20195,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"에이치브이엠",
-    "weight_pct":1.75,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.64,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18805,18 +20205,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"주성엔지니어링",
-    "weight_pct":1.45,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"하나마이크론",
-    "weight_pct":1.4,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.43,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18825,8 +20215,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"RFHIC",
-    "weight_pct":1.39,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.42,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18834,9 +20224,9 @@
     "etf_name":"TIME 코스닥액티브",
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
-    "holding_name":"유진테크",
-    "weight_pct":1.32,
-    "asof_date":"2026-03-27",
+    "holding_name":"하나마이크론",
+    "weight_pct":1.34,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18845,8 +20235,18 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"RF머트리얼즈",
-    "weight_pct":1.31,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.3,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"유진테크",
+    "weight_pct":1.25,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18855,18 +20255,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"대주전자재료",
-    "weight_pct":1.14,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"노타",
-    "weight_pct":1.11,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.12,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18875,8 +20265,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"지투지바이오",
-    "weight_pct":1.1,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.12,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18885,18 +20275,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"디앤디파마텍",
-    "weight_pct":1.08,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"LS머트리얼즈",
     "weight_pct":1.07,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18905,8 +20285,28 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"한중엔시에스",
-    "weight_pct":1.05,
-    "asof_date":"2026-03-27",
+    "weight_pct":1.07,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"LS머트리얼즈",
+    "weight_pct":1.03,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"노타",
+    "weight_pct":1.0,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18915,8 +20315,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"심텍",
-    "weight_pct":1.01,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.97,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18925,8 +20325,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"씨어스테크놀로지",
-    "weight_pct":1.0,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.97,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18935,8 +20335,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"에스피지",
-    "weight_pct":0.93,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.96,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18945,8 +20345,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"리노공업",
-    "weight_pct":0.89,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.91,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18955,8 +20355,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"파두",
-    "weight_pct":0.88,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.91,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18966,7 +20366,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"보로노이",
     "weight_pct":0.87,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18975,8 +20375,18 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"티씨케이",
-    "weight_pct":0.84,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.83,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"실리콘투",
+    "weight_pct":0.8,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18986,7 +20396,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"파인엠텍",
     "weight_pct":0.76,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -18996,17 +20406,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"오스코텍",
     "weight_pct":0.76,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"실리콘투",
-    "weight_pct":0.75,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19015,8 +20415,28 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"케어젠",
+    "weight_pct":0.75,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"두산테스나",
     "weight_pct":0.73,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"레이크머티리얼즈",
+    "weight_pct":0.73,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19026,27 +20446,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"덕산네오룩스",
     "weight_pct":0.71,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"레이크머티리얼즈",
-    "weight_pct":0.7,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"두산테스나",
-    "weight_pct":0.67,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19056,7 +20456,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"프로티나",
     "weight_pct":0.66,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19065,8 +20465,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"디케이티",
-    "weight_pct":0.65,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.66,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19075,8 +20475,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"티엘비",
-    "weight_pct":0.64,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.63,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19085,28 +20485,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"우리기술",
-    "weight_pct":0.62,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"앱클론",
-    "weight_pct":0.6,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"LS마린솔루션",
-    "weight_pct":0.59,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.61,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19115,8 +20495,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"와이바이오로직스",
-    "weight_pct":0.58,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.6,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19125,8 +20505,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"티에프이",
-    "weight_pct":0.56,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.6,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19134,9 +20514,19 @@
     "etf_name":"TIME 코스닥액티브",
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
-    "holding_name":"피에스케이",
-    "weight_pct":0.56,
-    "asof_date":"2026-03-27",
+    "holding_name":"LS마린솔루션",
+    "weight_pct":0.58,
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"앱클론",
+    "weight_pct":0.57,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19146,7 +20536,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"네오셈",
     "weight_pct":0.56,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19154,9 +20544,9 @@
     "etf_name":"TIME 코스닥액티브",
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
-    "holding_name":"아이티켐",
-    "weight_pct":0.5,
-    "asof_date":"2026-03-27",
+    "holding_name":"피에스케이",
+    "weight_pct":0.55,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19166,7 +20556,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"HPSP",
     "weight_pct":0.49,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19174,9 +20564,9 @@
     "etf_name":"TIME 코스닥액티브",
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
-    "holding_name":"알멕",
-    "weight_pct":0.47,
-    "asof_date":"2026-03-27",
+    "holding_name":"아이티켐",
+    "weight_pct":0.48,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19186,7 +20576,17 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"한텍",
     "weight_pct":0.45,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"알멕",
+    "weight_pct":0.45,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19195,18 +20595,8 @@
     "short_code":"0162Y0",
     "fund_code":"K553J1ET1739",
     "holding_name":"태웅",
-    "weight_pct":0.41,
-    "asof_date":"2026-03-27",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME 코스닥액티브",
-    "short_code":"0162Y0",
-    "fund_code":"K553J1ET1739",
-    "holding_name":"서진시스템",
-    "weight_pct":0.4,
-    "asof_date":"2026-03-27",
+    "weight_pct":0.43,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19216,7 +20606,17 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"와이지엔터테인먼트",
     "weight_pct":0.38,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME 코스닥액티브",
+    "short_code":"0162Y0",
+    "fund_code":"K553J1ET1739",
+    "holding_name":"서진시스템",
+    "weight_pct":0.37,
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19226,7 +20626,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"선익시스템",
     "weight_pct":0.35,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19236,7 +20636,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"솔브레인",
     "weight_pct":0.34,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19246,7 +20646,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"태광",
     "weight_pct":0.3,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19256,7 +20656,7 @@
     "fund_code":"K553J1ET1739",
     "holding_name":"대한광통신",
     "weight_pct":0.16,
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "source":"TIME"
   },
   {
@@ -19265,8 +20665,8 @@
     "short_code":"0163Y0",
     "fund_code":"K553N9EU4486",
     "holding_name":"성호전자",
-    "weight_pct":8.4661342936,
-    "asof_date":"2026-03-29",
+    "weight_pct":8.2570663349,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -19275,18 +20675,8 @@
     "short_code":"0163Y0",
     "fund_code":"K553N9EU4486",
     "holding_name":"큐리언트",
-    "weight_pct":5.9428693336,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KoAct 코스닥액티브",
-    "short_code":"0163Y0",
-    "fund_code":"K553N9EU4486",
-    "holding_name":"에이치브이엠",
-    "weight_pct":3.626743921,
-    "asof_date":"2026-03-29",
+    "weight_pct":5.6977413912,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -19295,8 +20685,8 @@
     "short_code":"0163Y0",
     "fund_code":"K553N9EU4486",
     "holding_name":"에이비엘바이오",
-    "weight_pct":3.5152380423,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.5172899621,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -19305,8 +20695,18 @@
     "short_code":"0163Y0",
     "fund_code":"K553N9EU4486",
     "holding_name":"알지노믹스",
-    "weight_pct":3.453927427,
-    "asof_date":"2026-03-29",
+    "weight_pct":3.7060441359,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 코스닥액티브",
+    "short_code":"0163Y0",
+    "fund_code":"K553N9EU4486",
+    "holding_name":"리가켐바이오",
+    "weight_pct":3.6730032652,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -19315,18 +20715,8 @@
     "short_code":"0168K0",
     "fund_code":"K55301EQ3782",
     "holding_name":"리가켐바이오",
-    "weight_pct":12.8519994564,
-    "asof_date":"2026-03-29",
-    "source":"FunETF"
-  },
-  {
-    "manager":"미래에셋",
-    "etf_name":"TIGER 기술이전바이오액티브",
-    "short_code":"0168K0",
-    "fund_code":"K55301EQ3782",
-    "holding_name":"삼천당제약",
-    "weight_pct":10.7568323302,
-    "asof_date":"2026-03-29",
+    "weight_pct":13.2637738976,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -19335,8 +20725,18 @@
     "short_code":"0168K0",
     "fund_code":"K55301EQ3782",
     "holding_name":"올릭스",
-    "weight_pct":10.0322788572,
-    "asof_date":"2026-03-29",
+    "weight_pct":10.5970177209,
+    "asof_date":"2026-03-30",
+    "source":"FunETF"
+  },
+  {
+    "manager":"미래에셋",
+    "etf_name":"TIGER 기술이전바이오액티브",
+    "short_code":"0168K0",
+    "fund_code":"K55301EQ3782",
+    "holding_name":"삼천당제약",
+    "weight_pct":9.2715212138,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -19345,8 +20745,8 @@
     "short_code":"0168K0",
     "fund_code":"K55301EQ3782",
     "holding_name":"에이비엘바이오",
-    "weight_pct":7.3529172706,
-    "asof_date":"2026-03-29",
+    "weight_pct":7.3478590566,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   },
   {
@@ -19355,8 +20755,8 @@
     "short_code":"0168K0",
     "fund_code":"K55301EQ3782",
     "holding_name":"알지노믹스",
-    "weight_pct":4.8498636957,
-    "asof_date":"2026-03-29",
+    "weight_pct":4.9157885503,
+    "asof_date":"2026-03-30",
     "source":"FunETF"
   }
 ]

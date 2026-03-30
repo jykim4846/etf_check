@@ -1,29 +1,29 @@
 {
-  "generated_at_utc": "2026-03-29T00:04:02.751595+00:00",
-  "run_date_kst": "2026-03-29T09:04:02.751604+09:00",
+  "generated_at_utc": "2026-03-30T00:06:56.061040+00:00",
+  "run_date_kst": "2026-03-30T09:06:56.061051+09:00",
   "etf_count": 66,
-  "holding_count": 1936,
-  "error_etf_count": 38,
-  "error_count": 80,
+  "holding_count": 2076,
+  "error_etf_count": 32,
+  "error_count": 43,
   "top_errors": [
-    {
-      "message": "api_holdings_empty",
-      "count": 25
-    },
-    {
-      "message": "resolve_item_id: FunETF search form not found",
-      "count": 12
-    },
-    {
-      "message": "item_id_not_found",
-      "count": 12
-    },
     {
       "message": "tiger_official: TIGER item list was empty",
       "count": 8
     },
     {
+      "message": "resolve_item_id: FunETF search form not found",
+      "count": 6
+    },
+    {
+      "message": "item_id_not_found",
+      "count": 6
+    },
+    {
       "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product/2ETF88.do",
+      "count": 1
+    },
+    {
+      "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=445290",
       "count": 1
     }
   ]

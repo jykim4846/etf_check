@@ -15,9 +15,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":31,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -35,9 +35,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":601,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -55,9 +55,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":9,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -72,12 +72,12 @@
     "category_tags":"채권 | 액티브 | 종합채권",
     "aum_okr":39265.64838238,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product\/2ETF88.do ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product\/2ETF88.do",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -92,12 +92,12 @@
     "category_tags":"채권 | 액티브 | 금리형 | 단기금리형(파킹형)",
     "aum_okr":33294.84426211,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"tiger_official: TIGER item list was empty ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"tiger_official: TIGER item list was empty",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -115,9 +115,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":23,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -135,9 +135,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":4,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -155,9 +155,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":6,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -175,9 +175,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":159,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -192,12 +192,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":11876.47189773,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"tiger_official: TIGER item list was empty ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"tiger_official: TIGER item list was empty",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -215,9 +215,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":100,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -232,12 +232,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":10138.28533534,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -252,12 +252,12 @@
     "category_tags":"주식 | 액티브 | AI |  AI&로봇",
     "aum_okr":9856.35761023,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=445290 ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -275,9 +275,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":94,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -292,12 +292,12 @@
     "category_tags":"주식 | 액티브 | 코스피 200",
     "aum_okr":9313.06751828,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=494890 ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -312,12 +312,12 @@
     "category_tags":"주식 | 액티브 | 배당 | 국내",
     "aum_okr":6962.78771294,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":32,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -335,9 +335,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":43,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -355,9 +355,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":98,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -372,12 +372,12 @@
     "category_tags":"주식 | 액티브 | 바이오 | 바이오헬스",
     "aum_okr":6346.88247206,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -392,12 +392,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":5505.19903784,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=471230 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=471230",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -412,12 +412,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":5435.14381804,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":69,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -435,9 +435,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":56,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -452,12 +452,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":4845.94321655,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=434060 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=434060",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -475,9 +475,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":60,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -492,12 +492,12 @@
     "category_tags":"주식 | 액티브 | 바이오 | 바이오헬스",
     "aum_okr":4593.08422136,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":41,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -515,9 +515,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":4,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -532,12 +532,12 @@
     "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":4039.08064468,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0007F0 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0007F0",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -552,12 +552,12 @@
     "category_tags":"채권 | 액티브 | 국내",
     "aum_okr":3496.6077412,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=439870 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=439870",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -575,9 +575,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":15,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -595,9 +595,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"KODEX",
     "holding_count":10,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -612,12 +612,12 @@
     "category_tags":"채권 | 액티브 | 종합채권",
     "aum_okr":3107.80446968,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=363570 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=363570",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -632,12 +632,12 @@
     "category_tags":"채권 | 액티브 | 종합채권",
     "aum_okr":3032.54318757,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=439860 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=439860",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -652,12 +652,12 @@
     "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":2934.11181362,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"tiger_official: TIGER item list was empty ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"tiger_official: TIGER item list was empty",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -672,12 +672,12 @@
     "category_tags":"주식 | 액티브 | 전력\/에너지 | 에너지&화학",
     "aum_okr":2852.63077297,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=385510 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=385510",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -692,12 +692,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":2632.66480412,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":28,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -712,12 +712,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":2387.92808291,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -732,12 +732,12 @@
     "category_tags":"채권 | 액티브 | AA+미만",
     "aum_okr":1774.5445401,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"tiger_official: TIGER item list was empty ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"tiger_official: TIGER item list was empty",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -752,12 +752,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":1637.6796597,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0119H0 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0119H0",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -772,12 +772,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":1473.7052423,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":34,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -795,9 +795,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":4,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -812,19 +812,19 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":1372.96107828,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0162M0 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0162M0",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KoAct K수출핵심기업TOP30액티브",
     "short_code":"0074K0",
     "fund_code":"K553N9EL0774",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR70074K0001",
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -832,12 +832,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":1271.91992527,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -852,12 +852,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":1228.97785311,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=433980 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=433980",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -872,12 +872,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":1143.87692097,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0082V0 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=0082V0",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -892,12 +892,12 @@
     "category_tags":"주식 | 액티브 | 바이오",
     "aum_okr":1104.61189879,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"tiger_official: TIGER item list was empty ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -912,19 +912,19 @@
     "category_tags":"부동산\/리츠 | 액티브 | 리츠\/부동산",
     "aum_okr":932.87050306,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"tiger_official: TIGER item list was empty ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"tiger_official: TIGER item list was empty",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KoAct 배당성장액티브",
     "short_code":"476850",
     "fund_code":"K553N9E80501",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR7476850003",
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -932,12 +932,12 @@
     "category_tags":"주식 | 액티브 | 배당",
     "aum_okr":812.43153869,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -952,12 +952,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":789.5914724,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=433970 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=433970",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -972,12 +972,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":760.17953213,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=401470 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=401470",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -995,16 +995,16 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":28,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KODEX 친환경조선해운액티브",
     "short_code":"445150",
     "fund_code":"K55105DW7461",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR7445150006",
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1012,12 +1012,12 @@
     "category_tags":"주식 | 액티브 | 전력\/에너지 | 조선",
     "aum_okr":656.14121622,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=445150 ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=445150",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1035,9 +1035,9 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":100,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1052,12 +1052,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":431.48835851,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":29,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -1072,12 +1072,12 @@
     "category_tags":"부동산\/리츠 | 액티브 | 리츠\/부동산",
     "aum_okr":414.24679481,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"fetch_top10_holdings: 403 Client Error: Forbidden for url: https:\/\/www.funetf.co.kr\/api\/public\/product\/view\/etfpdf?gijunYmd=20260327&wGijunYmd=20260323&gijunYmdNy=20260102&gijunYmd3month=20251229&jangYmd=20260327&jangState=JUNJJJ&usdGijunYmd=20260330&kodexPdfYmd=20260330&pfGijunYmd=20260202&pfGijunYmdBf12=20250203&pfGijunYmdInfo=20260130&pfGijunYmdBf12Info=20250131&itemId=KR70150K0008&fid=2ETFT9&fundCd=K553N9EQ9994&repFundCd=K553N9EQ9994&etfLtypeCd=11&etfStypeCd=1103&zeroinTypeLcd=20&jasanGb=&newPdfDate=&sctyType=&schIdx=Y&schSuikMode=&schNavMode=&schTrendBuyMode=&compareCd_1=&compareCd_2=&compareCd_3=&compareNm_1=&compareNm_2=&compareNm_3=&eventYmd=&roleGroupType=ANONYMOUS&roleType=ROLE_ANONYMOUS&_csrf=ea0ad875-807a-4e37-a7aa-38e507133762&chkLike=K553N9EQ9994&schSuikPeriod=A&schSuikStDt=&schSuikEdDt=&calAmt2=&calAmt2Comma=&etfPdfYmd=20260330&cpnt01List=&rdoStock=GR&rdoBond=top5&schNavTerm=A&schNavStDt=&schNavEdDt=&schRiskTerm=60&schTrendBuyTerm=A&schTrendBuyStDt=&schTrendBuyEdDt=&trendKeywordTerm=M&schCtenDvsn=HOT_ETF",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -1092,12 +1092,12 @@
     "category_tags":"부동산\/리츠 | 액티브 | AI |  AI&로봇",
     "aum_okr":324.7294558,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -1112,12 +1112,12 @@
     "category_tags":"주식 | 액티브 | 모빌리티",
     "aum_okr":311.55130006,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=385520 ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -1132,12 +1132,12 @@
     "category_tags":"채권 | 액티브 | AA+이상",
     "aum_okr":211.47611665,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":2,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=457690 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=457690",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1155,16 +1155,16 @@
     "asof_date":"2026-03-27",
     "holdings_source":"TIGER",
     "holding_count":23,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KODEX 혁신기술테마액티브",
     "short_code":"364690",
     "fund_code":"K55105D92619",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR7364690008",
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1172,12 +1172,12 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":180.96192084,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=364690 ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=364690 ; fetch_top10_holdings: 403 Client Error: Forbidden for url: https:\/\/www.funetf.co.kr\/api\/public\/product\/view\/etfpdf?gijunYmd=20260327&wGijunYmd=20260323&gijunYmdNy=20260102&gijunYmd3month=20251229&jangYmd=20260330&jangState=JANGJOONG&usdGijunYmd=20260330&kodexPdfYmd=20260330&pfGijunYmd=20260202&pfGijunYmdBf12=20250203&pfGijunYmdInfo=20260130&pfGijunYmdBf12Info=20250131&itemId=KR7364690008&fid=2ETFC8&fundCd=K55105D92619&repFundCd=K55105D92619&etfLtypeCd=11&etfStypeCd=1102&zeroinTypeLcd=20&jasanGb=&newPdfDate=&sctyType=&schIdx=Y&schSuikMode=&schNavMode=&schTrendBuyMode=&compareCd_1=&compareCd_2=&compareCd_3=&compareNm_1=&compareNm_2=&compareNm_3=&eventYmd=&roleGroupType=ANONYMOUS&roleType=ROLE_ANONYMOUS&_csrf=0647120d-c850-4608-9324-7fd3091d9689&chkLike=K55105D92619&schSuikPeriod=A&schSuikStDt=&schSuikEdDt=&calAmt2=&calAmt2Comma=&etfPdfYmd=20260330&cpnt01List=&rdoStock=GR&rdoBond=top5&schNavTerm=A&schNavStDt=&schNavEdDt=&schRiskTerm=60&schTrendBuyTerm=A&schTrendBuyStDt=&schTrendBuyEdDt=&trendKeywordTerm=M&schCtenDvsn=HOT_ETF",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
@@ -1192,12 +1192,12 @@
     "category_tags":"채권 | 액티브",
     "aum_okr":161.85666606,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"tiger_official: TIGER item list was empty ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"tiger_official: TIGER item list was empty",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -1212,12 +1212,12 @@
     "category_tags":"주식 | 액티브 | 반도체",
     "aum_okr":150.06039238,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1232,12 +1232,12 @@
     "category_tags":"주식 | 액티브 | 전력\/에너지",
     "aum_okr":136.4612221,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":24,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
@@ -1252,12 +1252,12 @@
     "category_tags":"채권 | 액티브 | AA+이상",
     "aum_okr":133.52109845,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
     "holding_count":2,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=457700 ; api_holdings_empty",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=457700",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -1272,19 +1272,19 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":126.54556772,
     "aum_unit":"억원",
-    "asof_date":"2026-03-27",
+    "asof_date":"2026-03-30",
     "holdings_source":"TIME",
     "holding_count":29,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
     "error":"",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"삼성",
     "etf_name":"KODEX 코리아혁신성장액티브",
     "short_code":"373490",
     "fund_code":"K55105DC4892",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR7373490002",
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1292,19 +1292,19 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":119.28638371,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=373490 ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"kodex_official: 403 Client Error: Forbidden for url: https:\/\/www.samsungfund.com\/api\/v1\/kodex\/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=373490",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   },
   {
     "manager":"미래에셋",
     "etf_name":"BNK 미래전략기술액티브",
     "short_code":"457930",
     "fund_code":"K55240E32568",
-    "detail_url":"",
+    "detail_url":"https:\/\/www.funetf.co.kr\/product\/etf\/view\/KR7457930006",
     "source":"FunETF",
     "asset_class":"주식",
     "style":"액티브",
@@ -1312,11 +1312,11 @@
     "category_tags":"주식 | 액티브",
     "aum_okr":79.71445425,
     "aum_unit":"억원",
-    "asof_date":"2026-03-29",
+    "asof_date":"2026-03-30",
     "holdings_source":"FunETF",
-    "holding_count":5,
-    "fetched_at_utc":"2026-03-29T00:04:02.726811+00:00",
-    "error":"tiger_official: TIGER item list was empty ; resolve_item_id: FunETF search form not found ; item_id_not_found",
-    "run_date_kst":"2026-03-29T09:04:02.727123+09:00"
+    "holding_count":10,
+    "fetched_at_utc":"2026-03-30T00:06:56.036009+00:00",
+    "error":"tiger_official: TIGER item list was empty",
+    "run_date_kst":"2026-03-30T09:06:56.036341+09:00"
   }
 ]
