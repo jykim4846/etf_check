@@ -1,22 +1,22 @@
 {
-  "generated_at_utc": "2026-03-30T00:06:56.061040+00:00",
-  "run_date_kst": "2026-03-30T09:06:56.061051+09:00",
+  "generated_at_utc": "2026-03-31T05:31:12.850374+00:00",
+  "run_date_kst": "2026-03-31T14:31:12.850381+09:00",
   "etf_count": 66,
-  "holding_count": 2076,
-  "error_etf_count": 32,
-  "error_count": 43,
+  "holding_count": 1662,
+  "error_etf_count": 48,
+  "error_count": 88,
   "top_errors": [
     {
-      "message": "tiger_official: TIGER item list was empty",
-      "count": 8
-    },
-    {
       "message": "resolve_item_id: FunETF search form not found",
-      "count": 6
+      "count": 23
     },
     {
       "message": "item_id_not_found",
-      "count": 6
+      "count": 23
+    },
+    {
+      "message": "tiger_official: 403 Client Error: Forbidden for url: https://investments.miraeasset.com/tigeretf/ko/product/search/detail/pdf.ajax",
+      "count": 20
     },
     {
       "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product/2ETF88.do",
