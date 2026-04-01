@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-03-31T05:31:12.850374+00:00",
-  "run_date_kst": "2026-03-31T14:31:12.850381+09:00",
+  "generated_at_utc": "2026-04-01T00:06:53.334764+00:00",
+  "run_date_kst": "2026-04-01T09:06:53.334772+09:00",
   "etf_count": 66,
-  "holding_count": 1662,
-  "error_etf_count": 48,
-  "error_count": 88,
+  "holding_count": 1619,
+  "error_etf_count": 50,
+  "error_count": 87,
   "top_errors": [
     {
       "message": "resolve_item_id: FunETF search form not found",
-      "count": 23
+      "count": 22
     },
     {
       "message": "item_id_not_found",
-      "count": 23
+      "count": 22
     },
     {
       "message": "tiger_official: 403 Client Error: Forbidden for url: https://investments.miraeasset.com/tigeretf/ko/product/search/detail/pdf.ajax",
