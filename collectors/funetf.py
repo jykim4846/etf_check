@@ -6,8 +6,6 @@ from datetime import datetime, timezone
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
 
 from .tiger import short_code_to_kr_isin
 from config import (
@@ -39,15 +37,6 @@ from transforms import (
 def session_with_retries() -> requests.Session:
     session = requests.Session()
     session.headers.update(HEADERS)
-    retry = Retry(
-        total=3,
-        backoff_factor=1.0,
-        status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset({"GET"}),
-    )
-    adapter = HTTPAdapter(max_retries=retry)
-    session.mount("http://", adapter)
-    session.mount("https://", adapter)
     return session
 
 
@@ -147,6 +136,16 @@ def _row_text(row: pd.Series, column: str | None) -> str:
     return str(value).strip()
 
 
+def _supports_official_collection(manager: str, etf_name: str) -> bool:
+    if manager == "타임폴리오":
+        return True
+    if manager == "미래에셋":
+        return True
+    if manager == "삼성" and str(etf_name).startswith("KODEX"):
+        return True
+    return False
+
+
 def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     raw = fetch_bytes(session, FUNETF_FILTER_EXCEL_URL)
     xls = pd.read_excel(io.BytesIO(raw))
@@ -195,6 +194,8 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
         name_manager = manager_from_text(etf_name)
         manager = row_manager or name_manager
         if manager not in MANAGER_RULES:
+            continue
+        if not _supports_official_collection(manager, etf_name):
             continue
 
         fund_code = _row_text(row, fund_code_col) or short_code_to_kr_isin(short_code)

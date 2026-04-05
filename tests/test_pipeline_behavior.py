@@ -97,7 +97,6 @@ class HtmlOutputTests(unittest.TestCase):
                     "holdings_source": "FunETF",
                     "holding_count": 1,
                     "fetched_at_utc": "2026-03-27T00:00:00+00:00",
-                    "error": "",
                     "run_date_kst": "2026-03-27T09:00:00+09:00",
                 }
             ]
@@ -121,10 +120,9 @@ class HtmlOutputTests(unittest.TestCase):
         self.assertIn("asset-filters", html)
         self.assertIn("theme-filters", html)
         self.assertIn("테스트 ETF", html)
-        self.assertIn("최근 수집 상태", html)
-        self.assertIn("badge.svg", html)
+        self.assertIn("수동 재수집 실행", html)
         self.assertIn("보유종목", html)
-        self.assertIn("fallback", html)
+        self.assertIn("바이오 종목별 편입 비중", html)
 
 
 class TimeOfficialSourceTests(unittest.TestCase):
@@ -222,11 +220,11 @@ class FunEtfUniverseTests(unittest.TestCase):
 
 
 class MainPipelineTests(unittest.TestCase):
-    def test_main_writes_outputs_and_preserves_error_column(self):
+    def test_main_writes_outputs_from_official_sources(self):
         summary = pd.DataFrame(
             [
                 {
-                    "manager": "삼성",
+                    "manager": "미래에셋",
                     "etf_name": "테스트 ETF",
                     "short_code": "123456",
                     "fund_code": "FUND123",
@@ -239,8 +237,20 @@ class MainPipelineTests(unittest.TestCase):
                     "aum_okr": 123.45,
                     "aum_unit": "억원",
                     "asof_date": "2026-03-27",
-                    "top_1": "삼성전자",
-                    "top_1_weight_pct": 10.0,
+                }
+            ]
+        )
+        official_holdings = pd.DataFrame(
+            [
+                {
+                    "manager": "미래에셋",
+                    "etf_name": "테스트 ETF",
+                    "short_code": "123456",
+                    "fund_code": "FUND123",
+                    "holding_name": "알테오젠",
+                    "weight_pct": 9.7,
+                    "asof_date": "2026-03-27",
+                    "source": "TIGER",
                 }
             ]
         )
@@ -249,24 +259,31 @@ class MainPipelineTests(unittest.TestCase):
             tmp_path = Path(tmp_dir)
             data_dir = tmp_path / "data"
             docs_dir = tmp_path / "docs"
+            public_dir = tmp_path / "public"
             data_dir.mkdir()
             docs_dir.mkdir()
+            public_dir.mkdir()
 
             with patch.object(output_files, "DATA_DIR", data_dir), \
                  patch.object(output_files, "DOCS_DIR", docs_dir), \
+                 patch.object(output_files, "PUBLIC_DIR", public_dir), \
                  patch.object(pipeline, "load_etf_universe", return_value=summary), \
-                 patch.object(pipeline, "resolve_item_id", return_value=(None, "")):
+                 patch.object(pipeline, "load_kodex_catalog", return_value=[]), \
+                 patch.object(
+                     pipeline,
+                     "fetch_tiger_holdings",
+                     return_value=("https://example.com", "2026-03-27", official_holdings),
+                 ):
                 main.main()
 
             output = pd.read_csv(data_dir / "etf_list.csv")
-            self.assertIn("error", output.columns)
             self.assertIn("holding_count", output.columns)
             self.assertIn("holdings_source", output.columns)
             self.assertEqual(output.loc[0, "etf_name"], "테스트 ETF")
-            self.assertIn("item_id_not_found", str(output.loc[0, "error"]))
+            self.assertEqual(output.loc[0, "holdings_source"], "TIGER")
             summary = pd.read_json(data_dir / "run_summary.json", typ="series")
             self.assertEqual(int(summary["etf_count"]), 1)
-            self.assertEqual(int(summary["error_etf_count"]), 1)
+            self.assertEqual(int(summary["holding_count"]), 1)
 
 
 if __name__ == "__main__":

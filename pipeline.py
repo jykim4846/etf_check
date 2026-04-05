@@ -8,10 +8,8 @@ from collectors import (
     fetch_kodex_holdings,
     fetch_tiger_holdings,
     fetch_time_holdings,
-    fetch_top10_holdings,
     load_kodex_catalog,
     load_etf_universe,
-    resolve_item_id,
     session_with_retries,
 )
 from config import KST
@@ -67,110 +65,54 @@ def collect_etf_data() -> tuple[pd.DataFrame, pd.DataFrame]:
     etf_df = load_etf_universe(session)
     if etf_df.empty:
         raise RuntimeError("액티브 ETF 목록을 찾지 못했습니다. 사이트 구조가 바뀌었는지 확인하세요.")
-    kodex_catalog = None
-    try:
-        kodex_catalog = load_kodex_catalog(session)
-    except Exception:
-        kodex_catalog = None
+    kodex_catalog = load_kodex_catalog(session)
 
     holdings_frames: list[pd.DataFrame] = []
     enriched_rows: list[dict] = []
 
     for row in etf_df.to_dict(orient="records"):
-        row_series = pd.Series(row)
-        errors: list[str] = []
-        item_id = None
-        detail_url = ""
-        holdings = pd.DataFrame()
-
         if row["manager"] == "타임폴리오":
-            try:
-                detail_url, official_asof_date, holdings = fetch_time_holdings(
-                    session=session,
-                    etf_name=row["etf_name"],
-                    manager=row["manager"],
-                    short_code=row["short_code"],
-                    fund_code=row["fund_code"],
-                )
-                row["detail_url"] = detail_url
-                row["asof_date"] = official_asof_date or row["asof_date"]
-                row_series["detail_url"] = detail_url
-                row_series["asof_date"] = row["asof_date"]
-            except Exception as exc:
-                errors.append(f"time_official: {exc}")
-
-        if holdings.empty and row["manager"] == "삼성" and str(row["etf_name"]).startswith("KODEX"):
-            try:
-                detail_url, official_asof_date, holdings = fetch_kodex_holdings(
-                    session=session,
-                    etf_name=row["etf_name"],
-                    manager=row["manager"],
-                    short_code=row["short_code"],
-                    fund_code=row["fund_code"],
-                    catalog=kodex_catalog,
-                )
-                row["detail_url"] = detail_url
-                row["asof_date"] = official_asof_date or row["asof_date"]
-                row_series["detail_url"] = detail_url
-                row_series["asof_date"] = row["asof_date"]
-            except Exception as exc:
-                errors.append(f"kodex_official: {exc}")
-
-        if holdings.empty and row["manager"] == "미래에셋":
-            try:
-                detail_url, official_asof_date, holdings = fetch_tiger_holdings(
-                    session=session,
-                    etf_name=row["etf_name"],
-                    manager=row["manager"],
-                    short_code=row["short_code"],
-                    fund_code=row["fund_code"],
-                )
-                row["detail_url"] = detail_url
-                row["asof_date"] = official_asof_date or row["asof_date"]
-                row_series["detail_url"] = detail_url
-                row_series["asof_date"] = row["asof_date"]
-            except Exception as exc:
-                errors.append(f"tiger_official: {exc}")
+            detail_url, official_asof_date, holdings = fetch_time_holdings(
+                session=session,
+                etf_name=row["etf_name"],
+                manager=row["manager"],
+                short_code=row["short_code"],
+                fund_code=row["fund_code"],
+            )
+        elif row["manager"] == "삼성" and str(row["etf_name"]).startswith("KODEX"):
+            detail_url, official_asof_date, holdings = fetch_kodex_holdings(
+                session=session,
+                etf_name=row["etf_name"],
+                manager=row["manager"],
+                short_code=row["short_code"],
+                fund_code=row["fund_code"],
+                catalog=kodex_catalog,
+            )
+        elif row["manager"] == "미래에셋":
+            detail_url, official_asof_date, holdings = fetch_tiger_holdings(
+                session=session,
+                etf_name=row["etf_name"],
+                manager=row["manager"],
+                short_code=row["short_code"],
+                fund_code=row["fund_code"],
+            )
+        else:
+            raise RuntimeError(f"공식 수집기를 지원하지 않는 ETF입니다: {row['etf_name']}")
 
         if holdings.empty:
-            try:
-                item_id, detail_url = resolve_item_id(session, row["etf_name"], row["fund_code"])
-            except Exception as exc:
-                errors.append(f"resolve_item_id: {exc}")
+            raise RuntimeError(f"보유종목 수집 결과가 비어 있습니다: {row['etf_name']}")
 
-            if not item_id:
-                errors.append("item_id_not_found")
-
-            row["detail_url"] = detail_url
-            row_series["detail_url"] = detail_url
-
-            if item_id:
-                try:
-                    api_rows = fetch_top10_holdings(session, item_id)
-                    holdings = build_holdings_from_api(row_series, api_rows)
-                    if holdings.empty:
-                        errors.append("api_holdings_empty")
-                except Exception as exc:
-                    errors.append(f"fetch_top10_holdings: {exc}")
-                    holdings = pd.DataFrame()
-
-        if holdings.empty:
-            holdings = build_holdings_from_row(row_series)
-            if holdings.empty:
-                errors.append("fallback_holdings_empty")
-
-        row["holdings_source"] = holdings["source"].iloc[0] if not holdings.empty else row["source"]
+        row["detail_url"] = detail_url
+        row["asof_date"] = official_asof_date or row["asof_date"]
+        row["holdings_source"] = holdings["source"].iloc[0]
         row["holding_count"] = int(len(holdings.index))
         holdings_frames.append(holdings)
-        row["error"] = " ; ".join(dict.fromkeys(errors))
         enriched_rows.append(row)
         print(f"[OK] {row['etf_name']}")
 
     summary_df = pd.DataFrame(enriched_rows)
     summary_df["fetched_at_utc"] = datetime.now(timezone.utc).isoformat()
     summary_df["run_date_kst"] = datetime.now(timezone.utc).astimezone(KST).isoformat()
-    if "error" not in summary_df.columns:
-        summary_df["error"] = ""
     summary_df = summary_df.sort_values(
         by=["aum_okr", "manager", "etf_name"],
         ascending=[False, True, True],
@@ -194,7 +136,6 @@ def collect_etf_data() -> tuple[pd.DataFrame, pd.DataFrame]:
             "holdings_source",
             "holding_count",
             "fetched_at_utc",
-            "error",
             "run_date_kst",
         ]
     ]

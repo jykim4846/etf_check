@@ -28,32 +28,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run collector with retry
-        id: collector
-        run: |
-          attempts=0
-          until [ "$attempts" -ge 2 ]
-          do
-            attempts=$((attempts + 1))
-            echo "Collector attempt $attempts"
-            if python main.py; then
-              echo "attempts_used=$attempts" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-            if [ "$attempts" -lt 2 ]; then
-              echo "Retrying collector after failure..."
-              sleep 10
-            fi
-          done
-          echo "attempts_used=$attempts" >> "$GITHUB_OUTPUT"
-          exit 1
+      - name: Run collector
+        run: python main.py
 
       - name: Commit updated files
         if: ${{ success() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data docs
+          git add data docs public
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0

@@ -8,21 +8,12 @@ import pandas as pd
 
 def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dict | None = None) -> str:
     etf_json = json.dumps(etf_df.fillna("").to_dict(orient="records"), ensure_ascii=False)
-    holdings_json = json.dumps(
-        holdings_df.fillna("").to_dict(orient="records"), ensure_ascii=False
-    )
-    updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    holdings_json = json.dumps(holdings_df.fillna("").to_dict(orient="records"), ensure_ascii=False)
     run_summary = run_summary or {}
-    error_etf_count = int(run_summary.get("error_etf_count", 0) or 0)
-    holding_count = int(run_summary.get("holding_count", len(holdings_df.index)) or 0)
+    updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     etf_count = int(run_summary.get("etf_count", len(etf_df.index)) or 0)
-    status_label = "정상" if error_etf_count == 0 else "부분 실패"
-    status_color = "#0f9d58" if error_etf_count == 0 else "#d93025"
-    top_errors = run_summary.get("top_errors") or []
-    top_error_html = "".join(
-        f"<li>{item.get('message', 'unknown')} ({item.get('count', 0)})</li>"
-        for item in top_errors[:3]
-    ) or "<li>대표 오류 없음</li>"
+    holding_count = int(run_summary.get("holding_count", len(holdings_df.index)) or 0)
+    run_date = run_summary.get("run_date_kst", "-")
     return f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -31,17 +22,14 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
   <title>ETF Check</title>
   <style>
     :root {{
-      --bg: #f3efe6;
-      --bg-accent: #e4efe7;
-      --ink: #18211b;
-      --muted: #5a685f;
-      --card: rgba(255,255,255,.88);
-      --line: rgba(24, 33, 27, .09);
-      --pill: #eef3ec;
-      --shadow: 0 20px 45px rgba(46, 58, 51, .08);
-      --brand: #1f6a45;
-      --warn: #b64f2a;
-      --status: {status_color};
+      --bg: #f6f3ea;
+      --ink: #152018;
+      --muted: #647066;
+      --card: rgba(255,255,255,.92);
+      --line: rgba(21,32,24,.08);
+      --brand: #1e6945;
+      --pill: #ebf3ec;
+      --shadow: 0 18px 40px rgba(33, 48, 38, .08);
     }}
     * {{ box-sizing: border-box; }}
     body {{
@@ -49,227 +37,134 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
       color: var(--ink);
       font-family: "SF Pro Display", "Pretendard Variable", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(31,106,69,.14), transparent 28%),
-        radial-gradient(circle at top right, rgba(223,153,69,.16), transparent 30%),
-        linear-gradient(180deg, var(--bg) 0%, #f8f6f1 58%, #fbfaf7 100%);
+        radial-gradient(circle at top left, rgba(30,105,69,.12), transparent 26%),
+        radial-gradient(circle at top right, rgba(210,160,87,.15), transparent 28%),
+        linear-gradient(180deg, var(--bg), #fbfaf6);
     }}
-    .wrap {{ max-width: 1180px; margin: 0 auto; padding: 16px 14px 40px; }}
+    a {{ color: inherit; }}
+    button {{ font: inherit; }}
+    .wrap {{ max-width: 1180px; margin: 0 auto; padding: 16px 14px 36px; }}
     .card {{
-      background: var(--card);
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(255,255,255,.7);
-      border-radius: 22px;
-      padding: 18px;
-      box-shadow: var(--shadow);
       margin-bottom: 16px;
+      padding: 18px;
+      border-radius: 22px;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.76);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
     }}
     .hero {{
-      background:
-        linear-gradient(135deg, rgba(18,39,28,.96), rgba(31,106,69,.92)),
-        linear-gradient(180deg, rgba(255,255,255,.08), transparent);
-      color: #f6f7f2;
+      color: #f5f7f1;
+      background: linear-gradient(135deg, rgba(16,38,27,.97), rgba(30,105,69,.93));
       border: none;
-      overflow: hidden;
-      position: relative;
     }}
-    .hero::after {{
-      content: "";
-      position: absolute;
-      inset: auto -40px -55px auto;
-      width: 180px;
-      height: 180px;
-      background: radial-gradient(circle, rgba(255,255,255,.16), transparent 65%);
-      pointer-events: none;
-    }}
-    h1 {{ margin: 0; font-size: clamp(28px, 7vw, 42px); line-height: 1.02; letter-spacing: -.04em; }}
-    h2 {{ margin: 0 0 8px; font-size: 20px; letter-spacing: -.03em; }}
-    .eyebrow {{ font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: .72; }}
-    .hero-copy {{ max-width: 720px; margin-top: 12px; font-size: 14px; line-height: 1.55; color: rgba(246,247,242,.8); }}
-    .muted {{ color: var(--muted); font-size: 13px; line-height: 1.5; }}
-    .hero .muted {{ color: rgba(246,247,242,.74); }}
+    .eyebrow {{ font-size: 11px; letter-spacing: .18em; text-transform: uppercase; opacity: .74; font-weight: 700; }}
+    h1 {{ margin: 10px 0 0; font-size: clamp(30px, 8vw, 44px); line-height: 1.02; letter-spacing: -.05em; }}
+    h2 {{ margin: 0; font-size: 21px; letter-spacing: -.03em; }}
+    .hero-copy {{ margin-top: 12px; max-width: 720px; font-size: 14px; line-height: 1.55; color: rgba(245,247,241,.8); }}
     .status-row {{ display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 16px; }}
     .status-badge {{
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       border-radius: 999px;
       padding: 10px 14px;
-      font-weight: 700;
+      background: rgba(255,255,255,.12);
       color: white;
-      background: var(--status);
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+      font-weight: 700;
     }}
-    .status-badge::before {{
-      content: "";
-      width: 8px;
-      height: 8px;
+    .action-button {{
+      border: 0;
       border-radius: 999px;
-      background: rgba(255,255,255,.9);
+      padding: 11px 16px;
+      background: #fff5df;
+      color: #2e2616;
+      font-weight: 700;
     }}
-    .summary-grid {{
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 18px;
-    }}
-    .summary-item {{
-      border-radius: 18px;
-      padding: 14px;
-      background: rgba(255,255,255,.14);
-      border: 1px solid rgba(255,255,255,.14);
-    }}
-    .summary-item strong {{ display: block; font-size: 22px; margin-top: 6px; letter-spacing: -.04em; }}
-    .summary-item .small {{ color: rgba(246,247,242,.72); }}
-    .hero-note {{
-      margin-top: 14px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,.12);
-    }}
-    .error-list {{ margin: 8px 0 0; padding-left: 18px; color: rgba(246,247,242,.85); }}
-    .panel-head {{ display: flex; justify-content: space-between; gap: 12px; align-items: end; margin-bottom: 12px; }}
-    .panel-kicker {{ font-size: 12px; font-weight: 700; color: var(--brand); letter-spacing: .1em; text-transform: uppercase; }}
-    .nav-tabs {{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-top: 16px;
-    }}
-    button {{
+    .summary-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }}
+    .summary-item {{ border-radius: 18px; padding: 14px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.1); }}
+    .summary-item strong {{ display: block; margin-top: 6px; font-size: 22px; letter-spacing: -.04em; }}
+    .small {{ font-size: 12px; color: var(--muted); }}
+    .hero .small {{ color: rgba(245,247,241,.72); }}
+    .hero-status {{ margin-top: 12px; font-size: 13px; color: rgba(245,247,241,.78); min-height: 19px; }}
+    .nav-tabs {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }}
+    .tab-btn {{
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.9);
+      background: rgba(255,255,255,.92);
+      color: var(--ink);
       border-radius: 999px;
       padding: 11px 14px;
-      cursor: pointer;
-      font: inherit;
-      color: var(--ink);
     }}
-    button.active {{
-      background: var(--ink);
-      color: white;
-      border-color: var(--ink);
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
-    }}
-    .filter-block {{ margin-top: 12px; }}
-    .filter-title {{ font-size: 12px; color: var(--muted); margin-bottom: 8px; font-weight: 700; }}
-    .filters {{
-      display: flex;
-      gap: 8px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      padding-bottom: 4px;
-      scrollbar-width: none;
-    }}
-    .filters::-webkit-scrollbar {{ display: none; }}
-    .filters button {{ flex: 0 0 auto; background: var(--pill); }}
-    a {{ color: inherit; }}
+    .tab-btn.active {{ background: var(--ink); color: white; border-color: var(--ink); }}
     .view-section {{ display: none; }}
     .view-section.active {{ display: block; }}
-    .bio-grid {{ display: grid; gap: 16px; }}
-    .bio-card {{
+    .panel-head {{ display: flex; justify-content: space-between; gap: 12px; align-items: end; margin-bottom: 12px; }}
+    .panel-kicker {{ color: var(--brand); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; }}
+    .muted {{ color: var(--muted); font-size: 13px; line-height: 1.5; }}
+    .filters {{ display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }}
+    .filters::-webkit-scrollbar {{ display: none; }}
+    .filters button {{
+      flex: 0 0 auto;
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 16px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.94), rgba(250,248,243,.96));
-    }}
-    .bio-card h3 {{ margin: 0 0 10px; font-size: 22px; letter-spacing: -.03em; }}
-    .bio-card .meta {{ color: var(--muted); font-size: 12px; margin-bottom: 12px; line-height: 1.55; }}
-    .table-shell {{ overflow-x: auto; border-radius: 16px; border: 1px solid var(--line); }}
-    table {{ width: 100%; border-collapse: collapse; font-size: 14px; background: rgba(255,255,255,.65); }}
-    th, td {{ border-bottom: 1px solid var(--line); text-align: left; padding: 12px 10px; vertical-align: top; }}
-    th {{ position: sticky; top: 0; background: rgba(248,246,241,.98); z-index: 1; }}
-    .num {{ text-align: right; white-space: nowrap; }}
-    .small {{ font-size: 12px; color: var(--muted); }}
-    .badge {{
-      display: inline-block;
-      padding: 4px 9px;
+      background: var(--pill);
       border-radius: 999px;
-      font-size: 11px;
-      font-weight: 700;
-      background: #e7f2e9;
-      color: #215e3a;
+      padding: 9px 12px;
+      color: var(--ink);
     }}
-    .badge-fallback {{ background: #ffeddc; color: #9b4d11; }}
+    .filters button.active {{ background: var(--ink); color: white; border-color: var(--ink); }}
+    .filter-block + .filter-block {{ margin-top: 12px; }}
+    .filter-title {{ margin-bottom: 8px; font-size: 12px; color: var(--muted); font-weight: 700; }}
     .layout-grid {{ display: grid; gap: 16px; }}
     .mobile-stack {{ display: grid; gap: 12px; }}
     .etf-card {{
+      width: 100%;
+      text-align: left;
       border: 1px solid var(--line);
       border-radius: 18px;
       padding: 15px;
-      background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(248,245,238,.96));
-      box-shadow: 0 10px 25px rgba(37, 49, 42, .04);
+      background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(247,244,236,.96));
+      color: var(--ink);
     }}
-    .etf-card.selected {{ border-color: rgba(31,106,69,.55); box-shadow: 0 14px 30px rgba(31,106,69,.12); }}
+    .etf-card.selected {{ border-color: rgba(30,105,69,.48); box-shadow: 0 14px 28px rgba(30,105,69,.11); }}
     .etf-top {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
     .etf-name {{ margin-top: 6px; font-size: 18px; line-height: 1.22; letter-spacing: -.03em; }}
-    .etf-sub {{ margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }}
-    .chip {{
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      padding: 0 10px;
-      border-radius: 999px;
-      background: var(--pill);
-      font-size: 12px;
-      color: #314038;
-      white-space: nowrap;
-    }}
-    .etf-metrics {{
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 14px;
-    }}
-    .metric {{
-      padding: 11px 12px;
-      border-radius: 14px;
-      background: rgba(241,238,229,.86);
-      border: 1px solid rgba(24,33,27,.06);
-    }}
+    .chip-row {{ display: flex; gap: 6px; flex-wrap: wrap; margin-top: 9px; }}
+    .chip {{ display: inline-flex; align-items: center; min-height: 28px; padding: 0 10px; border-radius: 999px; background: var(--pill); font-size: 12px; color: #314038; }}
+    .metric-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }}
+    .metric {{ padding: 11px 12px; border-radius: 14px; border: 1px solid var(--line); background: rgba(240,237,228,.82); }}
     .metric strong {{ display: block; margin-top: 4px; font-size: 17px; letter-spacing: -.03em; }}
     .actions-row {{ display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-top: 14px; }}
-    .select-hint {{ font-size: 12px; color: var(--muted); }}
-    .detail-link {{ font-weight: 700; color: var(--brand); text-decoration: none; }}
-    .detail-link:hover {{ text-decoration: underline; }}
+    .detail-link {{ color: var(--brand); text-decoration: none; font-weight: 700; }}
     .holdings-grid {{ display: grid; gap: 10px; margin-top: 14px; }}
-    .holding-card {{
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: center;
-      padding: 12px 14px;
-      border-radius: 16px;
-      background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(247,244,237,.95));
-      border: 1px solid var(--line);
-    }}
-    .holding-rank {{
-      width: 28px;
-      height: 28px;
-      border-radius: 999px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 800;
-      color: white;
-      background: linear-gradient(135deg, #284f3a, #4a8660);
-      margin-right: 10px;
-      flex: 0 0 auto;
-    }}
+    .holding-card {{ display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 12px 14px; border-radius: 16px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(248,245,239,.96)); }}
     .holding-left {{ display: flex; align-items: center; min-width: 0; }}
+    .holding-rank {{ width: 28px; height: 28px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px; color: white; background: linear-gradient(135deg, #294f3b, #4b8762); font-size: 12px; font-weight: 800; }}
     .holding-name {{ font-size: 15px; line-height: 1.35; }}
     .holding-weight {{ font-size: 18px; font-weight: 800; letter-spacing: -.03em; }}
-    .desktop-only {{ display: none; }}
-    .section-copy {{ margin-top: 2px; }}
+    .table-shell {{ display: none; }}
+    .bio-card {{ border: 1px solid var(--line); border-radius: 18px; padding: 16px; background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(249,247,241,.96)); }}
+    .bio-card h3 {{ margin: 0 0 10px; font-size: 22px; letter-spacing: -.03em; }}
+    .bio-card .meta {{ color: var(--muted); font-size: 12px; line-height: 1.55; margin-bottom: 12px; }}
+    .bio-summary-grid {{ display: grid; gap: 12px; }}
+    .bio-stock-card {{ border: 1px solid var(--line); border-radius: 18px; padding: 16px; background: rgba(255,255,255,.88); }}
+    .bio-stock-top {{ display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }}
+    .bio-stock-name {{ font-size: 19px; line-height: 1.2; letter-spacing: -.03em; }}
+    .bio-stock-total {{ text-align: right; }}
+    .bio-stock-total strong {{ display: block; font-size: 24px; letter-spacing: -.04em; }}
+    .bio-fund-list {{ display: grid; gap: 8px; margin-top: 14px; }}
+    .bio-fund-row {{ display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; background: rgba(246,243,236,.88); }}
+    .bio-fund-name {{ font-size: 13px; line-height: 1.35; }}
+    .bio-fund-weight {{ font-size: 16px; font-weight: 800; letter-spacing: -.03em; }}
+    table {{ width: 100%; border-collapse: collapse; font-size: 14px; }}
+    th, td {{ padding: 12px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }}
+    th {{ position: sticky; top: 0; background: rgba(248,246,241,.98); }}
+    .num {{ text-align: right; white-space: nowrap; }}
     @media (min-width: 820px) {{
       .wrap {{ padding: 24px 20px 56px; }}
       .card {{ padding: 22px; }}
       .summary-grid {{ grid-template-columns: repeat(4, minmax(0, 1fr)); }}
-      .layout-grid {{ grid-template-columns: minmax(0, 1.3fr) minmax(360px, .8fr); }}
-      .desktop-only {{ display: block; }}
+      .layout-grid {{ grid-template-columns: minmax(0, 1.25fr) minmax(360px, .8fr); }}
+      .table-shell {{ display: block; overflow-x: auto; border: 1px solid var(--line); border-radius: 16px; }}
       .mobile-stack {{ display: none; }}
-      .nav-tabs {{ display: inline-flex; grid-template-columns: none; }}
-      .filters {{ flex-wrap: wrap; overflow: visible; }}
     }}
   </style>
 </head>
@@ -277,29 +172,22 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
   <div class="wrap">
     <div class="card hero">
       <div class="eyebrow">Active ETF Monitor</div>
-      <h1>한 화면에서 바로 보는<br />국내 액티브 ETF</h1>
-      <div class="hero-copy">삼성(KODEX), 미래에셋(TIGER), 타임폴리오(TIME) 액티브 ETF를 순자산총액 기준으로 정렬했습니다. 아이폰 화면에서도 종목 선택, 보유비중 확인, 오류 상태 파악이 한 번에 되도록 재구성했습니다. 업데이트: {updated_at}</div>
+      <h1>국내 액티브 ETF<br />수집 결과</h1>
+      <div class="hero-copy">이 페이지는 마지막 성공 수집 결과를 보여줍니다. 수집 실패는 숨기지 않고 그대로 실패로 처리합니다. 업데이트: {updated_at}</div>
       <div class="status-row">
-        <span class="status-badge">최근 수집 상태: {status_label}</span>
-        <a href="https://github.com/jykim4846/etf_check/actions/workflows/daily.yml">
-          <img alt="Daily ETF Update status" src="https://github.com/jykim4846/etf_check/actions/workflows/daily.yml/badge.svg" />
-        </a>
+        <span class="status-badge">최근 성공 수집 기준 표시</span>
+        <button id="manual-collect-button" class="action-button" type="button">수동 재수집 실행</button>
       </div>
+      <div id="manual-collect-status" class="hero-status"></div>
       <div class="summary-grid">
         <div class="summary-item"><div class="small">ETF 수</div><strong>{etf_count}</strong></div>
         <div class="summary-item"><div class="small">구성종목 행 수</div><strong>{holding_count}</strong></div>
-        <div class="summary-item"><div class="small">오류 ETF 수</div><strong>{error_etf_count}</strong></div>
-        <div class="summary-item"><div class="small">생성 시각</div><strong style="font-size:14px">{run_summary.get("run_date_kst", "-")}</strong></div>
-      </div>
-      <div class="hero-note">
-        <div class="small">대표 오류</div>
-        <ul class="error-list">
-          {top_error_html}
-        </ul>
+        <div class="summary-item"><div class="small">최근 생성 시각</div><strong style="font-size:14px">{run_date}</strong></div>
+        <div class="summary-item"><div class="small">데이터 기준</div><strong style="font-size:16px">공식 운용사 페이지</strong></div>
       </div>
       <div class="nav-tabs">
-        <button id="show-bio-view" class="active">바이오 통합 보기</button>
-        <button id="show-list-view">전체 ETF 보기</button>
+        <button id="show-bio-view" class="tab-btn active" type="button">바이오 통합 보기</button>
+        <button id="show-list-view" class="tab-btn" type="button">전체 ETF 보기</button>
       </div>
     </div>
     <div id="bio-view" class="view-section active">
@@ -310,8 +198,8 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
             <h2>바이오 섹터 통합 요약</h2>
           </div>
         </div>
-        <div class="muted section-copy">세 운용사의 바이오 테마 ETF 보유종목과 비중을 한 번에 비교합니다. 모바일에서는 가장 중요한 상위 종목이 먼저 보이도록 정리했습니다.</div>
-        <div id="bio-summary" class="bio-grid" style="margin-top:16px;"></div>
+        <div class="muted">바이오 테마 ETF에 편입된 종목을 종목 기준으로 다시 묶었습니다. 각 종목이 어떤 펀드에 얼마나 들어있는지 바로 볼 수 있습니다.</div>
+        <div id="bio-summary" style="margin-top:16px;"></div>
       </div>
     </div>
     <div id="list-view" class="view-section">
@@ -327,10 +215,9 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
               <div class="panel-kicker">Universe</div>
               <h2>ETF 목록</h2>
             </div>
-            <div class="small">모바일에서는 카드 선택, 데스크톱에서는 표 정렬</div>
           </div>
           <div id="etf-cards" class="mobile-stack"></div>
-          <div class="table-shell desktop-only">
+          <div class="table-shell">
             <table id="etf-table">
               <thead>
                 <tr>
@@ -356,7 +243,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
           </div>
           <div class="small" id="selected-name">ETF를 선택하면 구성종목이 표시됩니다.</div>
           <div id="holdings-cards" class="holdings-grid"></div>
-          <div class="table-shell desktop-only" style="margin-top:14px;">
+          <div class="table-shell" style="margin-top:14px;">
             <table id="holdings-table">
               <thead>
                 <tr>
@@ -371,7 +258,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
       </div>
     </div>
   </div>
-<script>
+  <script>
 const etfs = {etf_json};
 const holdings = {holdings_json};
 let currentManager = '전체';
@@ -386,25 +273,24 @@ function switchView(nextView) {{
   document.getElementById('show-list-view').classList.toggle('active', nextView === 'list');
 }}
 
-function formatNum(v) {{
-  if (v === '' || v === null || v === undefined) return '-';
-  const n = Number(v);
-  if (Number.isNaN(n)) return String(v);
-  return n.toLocaleString('ko-KR', {{ maximumFractionDigits: 2 }});
+function formatNum(value) {{
+  if (value === '' || value === null || value === undefined) return '-';
+  const num = Number(value);
+  if (Number.isNaN(num)) return String(value);
+  return num.toLocaleString('ko-KR', {{ maximumFractionDigits: 2 }});
 }}
 
 function uniqueOptions(key) {{
-  return ['전체', ...new Set(etfs.map(x => x[key]).filter(Boolean))];
+  return ['전체', ...new Set(etfs.map(item => item[key]).filter(Boolean))];
 }}
 
 function filteredEtfs() {{
-  const rows = etfs.filter(x => {{
-    if (currentManager !== '전체' && x.manager !== currentManager) return false;
-    if (currentAssetClass !== '전체' && x.asset_class !== currentAssetClass) return false;
-    if (currentTheme !== '전체' && x.theme !== currentTheme) return false;
+  return [...etfs.filter(item => {{
+    if (currentManager !== '전체' && item.manager !== currentManager) return false;
+    if (currentAssetClass !== '전체' && item.asset_class !== currentAssetClass) return false;
+    if (currentTheme !== '전체' && item.theme !== currentTheme) return false;
     return true;
-  }});
-  return [...rows].sort((a, b) => Number(b.aum_okr || -1) - Number(a.aum_okr || -1));
+  }})].sort((a, b) => Number(b.aum_okr || -1) - Number(a.aum_okr || -1));
 }}
 
 function renderFilterGroup(rootId, title, currentValue, options, onSelect) {{
@@ -417,86 +303,15 @@ function renderFilterGroup(rootId, title, currentValue, options, onSelect) {{
 
   const wrap = document.createElement('div');
   wrap.className = 'filters';
-  options.forEach(m => {{
+  options.forEach(option => {{
     const btn = document.createElement('button');
-    btn.textContent = m;
-    if (m === currentValue) btn.classList.add('active');
-    btn.onclick = () => onSelect(m);
+    btn.type = 'button';
+    btn.textContent = option;
+    if (option === currentValue) btn.classList.add('active');
+    btn.onclick = () => onSelect(option);
     wrap.appendChild(btn);
   }});
   root.appendChild(wrap);
-}}
-
-function renderBioSummary() {{
-  const container = document.getElementById('bio-summary');
-  const managers = ['삼성', '미래에셋', '타임폴리오'];
-  const bioEtfs = etfs.filter(x => x.theme === '바이오');
-  const topByManager = {{}};
-  managers.forEach(manager => {{
-    const managerEtfs = bioEtfs.filter(x => x.manager === manager);
-    const fundCodes = new Set(managerEtfs.map(x => x.fund_code));
-    const rows = holdings
-      .filter(x => fundCodes.has(x.fund_code))
-      .sort((a, b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1))
-      .slice(0, 10);
-    topByManager[manager] = {{
-      etfNames: managerEtfs.map(x => x.etf_name).join(' / '),
-      sourceSet: [...new Set(managerEtfs.map(x => x.holdings_source || x.source))].join(', '),
-      rows,
-    }};
-  }});
-
-  const scoreMap = new Map();
-  managers.forEach(manager => {{
-    topByManager[manager].rows.forEach(row => {{
-      const prev = scoreMap.get(row.holding_name) || 0;
-      scoreMap.set(row.holding_name, Math.max(prev, Number(row.weight_pct || 0)));
-    }});
-  }});
-
-  const topHoldings = [...scoreMap.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 10)
-    .map(item => item[0]);
-
-  const metaHtml = managers.map(manager => {{
-    const meta = topByManager[manager];
-    return `<div><strong>${{manager}}</strong>: ${{meta.etfNames || '바이오 ETF 없음'}} / 소스: ${{meta.sourceSet || '-'}}<\/div>`;
-  }}).join('');
-
-  const bodyRows = topHoldings.map(name => {{
-    const cols = managers.map(manager => {{
-      const row = topByManager[manager].rows.find(item => item.holding_name === name);
-      return `<td class="num">${{row ? formatNum(row.weight_pct) : '-'}}<\/td>`;
-    }}).join('');
-    return `<tr><td>${{name}}<\/td>${{cols}}<\/tr>`;
-  }}).join('');
-
-  container.innerHTML = `
-    <div class="bio-card">
-      <h3>바이오 보유종목 비교 Top 10</h3>
-      <div class="meta">${{metaHtml}}<\/div>
-      <table>
-        <thead>
-          <tr>
-            <th>종목명</th>
-            <th class="num">삼성</th>
-            <th class="num">미래에셋</th>
-            <th class="num">타임폴리오</th>
-          </tr>
-        </thead>
-        <tbody>${{bodyRows || '<tr><td colspan="4">데이터 없음<\/td><\/tr>'}}<\/tbody>
-      </table>
-    </div>
-  `;
-}}
-
-function rerenderAfterFilter() {{
-  const rows = filteredEtfs();
-  currentFundCode = rows.length ? rows[0].fund_code : null;
-  renderFilters();
-  renderEtfs();
-  renderHoldings();
 }}
 
 function renderFilters() {{
@@ -514,53 +329,126 @@ function renderFilters() {{
   }});
 }}
 
+function renderBioSummary() {{
+  const container = document.getElementById('bio-summary');
+  const bioEtfs = etfs.filter(item => item.theme === '바이오');
+  if (!bioEtfs.length) {{
+    container.innerHTML = '<div class="bio-card"><h3>바이오 종목 노출 현황</h3><div class="meta">바이오 테마 ETF 데이터가 없습니다.<\\/div><\\/div>';
+    return;
+  }}
+
+  const bioFundMap = new Map(bioEtfs.map(item => [item.fund_code, item]));
+  const grouped = new Map();
+  holdings
+    .filter(item => bioFundMap.has(item.fund_code))
+    .forEach(item => {{
+      const stockName = item.holding_name;
+      const fund = bioFundMap.get(item.fund_code);
+      const current = grouped.get(stockName) || {{
+        holding_name: stockName,
+        total_weight: 0,
+        funds: [],
+      }};
+      current.total_weight += Number(item.weight_pct || 0);
+      current.funds.push({{
+        etf_name: fund.etf_name,
+        manager: fund.manager,
+        weight_pct: Number(item.weight_pct || 0),
+      }});
+      grouped.set(stockName, current);
+    }});
+
+  const rows = [...grouped.values()]
+    .map(item => ({{
+      ...item,
+      fund_count: item.funds.length,
+      funds: [...item.funds].sort((a, b) => b.weight_pct - a.weight_pct),
+    }}))
+    .sort((a, b) => b.total_weight - a.total_weight);
+
+  const cardsHtml = rows.map((row, index) => {{
+    const fundsHtml = row.funds.map(fund => `
+      <div class="bio-fund-row">
+        <div class="bio-fund-name">${{fund.manager}} · ${{fund.etf_name}}<\\/div>
+        <div class="bio-fund-weight">${{formatNum(fund.weight_pct)}}%<\\/div>
+      </div>
+    `).join('');
+    return `
+      <div class="bio-stock-card">
+        <div class="bio-stock-top">
+          <div>
+            <div class="small">종목 ${'{'}index + 1{'}'} · 편입 펀드 ${'{'}row.fund_count{'}'}개<\\/div>
+            <div class="bio-stock-name">${'{'}row.holding_name{'}'}<\\/div>
+          </div>
+          <div class="bio-stock-total">
+            <div class="small">합산 비중<\\/div>
+            <strong>${'{'}formatNum(row.total_weight){'}'}%<\\/strong>
+          </div>
+        </div>
+        <div class="bio-fund-list">${'{'}fundsHtml{'}'}<\\/div>
+      </div>
+    `;
+  }}).join('');
+
+  container.innerHTML = `
+    <div class="bio-card">
+      <h3>바이오 종목별 편입 비중<\\/h3>
+      <div class="meta">정렬 기준은 각 종목의 합산 편입 비중입니다. 카드 안에서 어떤 펀드에 몇 %가 들어있는지 바로 볼 수 있습니다.<\\/div>
+      <div class="bio-summary-grid">${'{'}cardsHtml || '<div class="small">데이터 없음<\\/div>'{'}'}<\\/div>
+    </div>`;
+}}
+
+function rerenderAfterFilter() {{
+  const rows = filteredEtfs();
+  currentFundCode = rows.length ? rows[0].fund_code : null;
+  renderFilters();
+  renderEtfs();
+  renderHoldings();
+}}
+
 function renderEtfs() {{
   const tbody = document.querySelector('#etf-table tbody');
   const cards = document.getElementById('etf-cards');
   tbody.innerHTML = '';
   cards.innerHTML = '';
+
   filteredEtfs().forEach(row => {{
     const tr = document.createElement('tr');
     tr.style.cursor = 'pointer';
     tr.onclick = () => {{ currentFundCode = row.fund_code; renderEtfs(); renderHoldings(); }};
-    if (row.fund_code === currentFundCode) tr.style.background = '#fafafa';
-    const sourceBadge = row.holdings_source === 'FunETF'
-      ? '<span class="badge badge-fallback">fallback</span>'
-      : `<span class="badge">${{row.holdings_source || '-'}}</span>`;
+    if (row.fund_code === currentFundCode) tr.style.background = '#f4f7f2';
     tr.innerHTML = `
-      <td>${{row.manager}}</td>
-      <td><strong>${{row.etf_name}}</strong><div class="small">${{row.short_code}} · ${{sourceBadge}}</div></td>
-      <td><div>${{row.asset_class || '-'}}</div><div class="small">${{row.style || '-'}} / ${{row.theme || '-'}}</div></td>
-      <td>${{formatNum(row.holding_count)}}개</td>
-      <td class="num">${{formatNum(row.aum_okr)}}</td>
-      <td>${{row.asof_date || '-'}}</td>
-      <td>${{row.detail_url ? '<a href="' + row.detail_url + '" target="_blank" rel="noreferrer">원본</a>' : '-'}}</td>`;
+      <td>${{row.manager}}<\\/td>
+      <td><strong>${{row.etf_name}}<\\/strong><div class="small">${{row.short_code}} · ${{row.holdings_source || '-'}}<\\/div><\\/td>
+      <td><div>${{row.asset_class || '-'}}<\\/div><div class="small">${{row.style || '-'}} / ${{row.theme || '-'}}<\\/div><\\/td>
+      <td>${{formatNum(row.holding_count)}}개<\\/td>
+      <td class="num">${{formatNum(row.aum_okr)}}<\\/td>
+      <td>${{row.asof_date || '-'}}<\\/td>
+      <td>${{row.detail_url ? '<a href="' + row.detail_url + '" target="_blank" rel="noreferrer">원본</a>' : '-'}}<\\/td>`;
     tbody.appendChild(tr);
 
     const card = document.createElement('button');
     card.type = 'button';
     card.className = `etf-card${{row.fund_code === currentFundCode ? ' selected' : ''}}`;
-    const tags = [row.asset_class, row.style, row.theme].filter(Boolean).map(tag => `<span class="chip">${{tag}}<\/span>`).join('');
+    const chips = [row.asset_class, row.style, row.theme].filter(Boolean).map(tag => `<span class="chip">${{tag}}<\\/span>`).join('');
     card.innerHTML = `
       <div class="etf-top">
         <div>
-          <div class="small">${{row.manager}}</div>
-          <div class="etf-name">${{row.etf_name}}<\/div>
+          <div class="small">${{row.manager}}<\\/div>
+          <div class="etf-name">${{row.etf_name}}<\\/div>
         </div>
-        ${{row.holdings_source === 'FunETF'
-          ? '<span class="badge badge-fallback">fallback<\/span>'
-          : `<span class="badge">${{row.holdings_source || '-'}}<\/span>`}}
-      <\/div>
-      <div class="small" style="margin-top:6px;">${{row.short_code}} · 기준일 ${{row.asof_date || '-'}}<\/div>
-      <div class="etf-sub">${{tags || '<span class="chip">분류 없음<\/span>'}}<\/div>
-      <div class="etf-metrics">
-        <div class="metric"><div class="small">AUM(억원)<\/div><strong>${{formatNum(row.aum_okr)}}<\/strong><\/div>
-        <div class="metric"><div class="small">보유종목 수<\/div><strong>${{formatNum(row.holding_count)}}개<\/strong><\/div>
-      <\/div>
+        <span class="chip">${{row.holdings_source || '-'}}<\\/span>
+      </div>
+      <div class="small" style="margin-top:6px;">${{row.short_code}} · 기준일 ${{row.asof_date || '-'}}<\\/div>
+      <div class="chip-row">${{chips}}<\\/div>
+      <div class="metric-grid">
+        <div class="metric"><div class="small">AUM(억원)<\\/div><strong>${{formatNum(row.aum_okr)}}<\\/strong><\\/div>
+        <div class="metric"><div class="small">보유종목 수<\\/div><strong>${{formatNum(row.holding_count)}}개<\\/strong><\\/div>
+      </div>
       <div class="actions-row">
-        <div class="select-hint">${{row.error ? '오류 있음' : '탭해서 보유종목 보기'}}<\/div>
-        ${{row.detail_url ? '<span class="detail-link">원본 보기<\/span>' : '<span class="small">원본 없음<\/span>'}}
-      <\/div>`;
+        <div class="small">탭해서 보유종목 보기<\\/div>
+        ${{row.detail_url ? '<span class="detail-link">원본 보기<\\/span>' : '<span class="small">원본 없음<\\/span>'}}
+      </div>`;
     card.onclick = () => {{
       currentFundCode = row.fund_code;
       renderEtfs();
@@ -575,27 +463,66 @@ function renderHoldings() {{
   const cards = document.getElementById('holdings-cards');
   tbody.innerHTML = '';
   cards.innerHTML = '';
-  const selected = etfs.find(x => x.fund_code === currentFundCode);
-  document.getElementById('selected-name').textContent = selected ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}} / 카테고리: ${{selected.category_tags || '-'}} / 보유종목소스: ${{selected.holdings_source || '-'}} / 개수: ${{selected.holding_count || 0}}` : '선택된 ETF가 없습니다.';
-  const rows = holdings.filter(x => x.fund_code === currentFundCode).sort((a,b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1));
+
+  const selected = etfs.find(item => item.fund_code === currentFundCode);
+  document.getElementById('selected-name').textContent = selected
+    ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}} / 카테고리: ${{selected.category_tags || '-'}} / 수집소스: ${{selected.holdings_source || '-'}}`
+    : '선택된 ETF가 없습니다.';
+
+  const rows = holdings
+    .filter(item => item.fund_code === currentFundCode)
+    .sort((a, b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1));
+
   if (!rows.length) {{
-    cards.innerHTML = '<div class="holding-card"><div class="holding-name">보유종목 데이터가 없습니다.<\/div><div class="small">-<\/div><\/div>';
+    cards.innerHTML = '<div class="holding-card"><div class="holding-name">보유종목 데이터가 없습니다.<\\/div><div class="small">-<\\/div><\\/div>';
   }}
+
   rows.forEach((row, index) => {{
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${{row.holding_name}}</td><td class="num">${{formatNum(row.weight_pct)}}</td>`;
+    tr.innerHTML = `<td>${{row.holding_name}}<\\/td><td class="num">${{formatNum(row.weight_pct)}}<\\/td>`;
     tbody.appendChild(tr);
 
     const card = document.createElement('div');
     card.className = 'holding-card';
     card.innerHTML = `
       <div class="holding-left">
-        <span class="holding-rank">${{index + 1}}<\/span>
-        <div class="holding-name">${{row.holding_name}}<\/div>
-      <\/div>
-      <div class="holding-weight">${{formatNum(row.weight_pct)}}%<\/div>`;
+        <span class="holding-rank">${{index + 1}}<\\/span>
+        <div class="holding-name">${{row.holding_name}}<\\/div>
+      </div>
+      <div class="holding-weight">${{formatNum(row.weight_pct)}}%<\\/div>`;
     cards.appendChild(card);
   }});
+}}
+
+async function triggerManualCollect() {{
+  const status = document.getElementById('manual-collect-status');
+  const button = document.getElementById('manual-collect-button');
+  const triggerToken = window.prompt('수동 재수집 토큰을 입력하세요.');
+  if (!triggerToken) {{
+    status.textContent = '수동 재수집이 취소되었습니다.';
+    return;
+  }}
+
+  button.disabled = true;
+  status.textContent = 'GitHub Actions 재수집을 요청하는 중입니다...';
+  try {{
+    const response = await fetch('/api/trigger-collector', {{
+      method: 'POST',
+      headers: {{
+        'Content-Type': 'application/json',
+      }},
+      body: JSON.stringify({{ triggerToken }}),
+    }});
+    const result = await response.json();
+    if (!response.ok) {{
+      throw new Error(result.error || 'dispatch failed');
+    }}
+    status.textContent = '재수집 요청이 접수되었습니다. GitHub Actions에서 실행 상태를 확인하세요.';
+  }} catch (error) {{
+    status.textContent = `재수집 요청 실패: ${{error.message}}`;
+  }} finally {{
+    button.disabled = false;
+  }}
 }}
 
 renderFilters();
@@ -604,7 +531,8 @@ renderHoldings();
 renderBioSummary();
 document.getElementById('show-bio-view').addEventListener('click', () => switchView('bio'));
 document.getElementById('show-list-view').addEventListener('click', () => switchView('list'));
-</script>
+document.getElementById('manual-collect-button').addEventListener('click', triggerManualCollect);
+  </script>
 </body>
 </html>
 """
