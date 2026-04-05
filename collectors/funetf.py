@@ -15,6 +15,7 @@ from config import (
     FUNETF_SEARCH_URL,
     HEADERS,
     KST,
+    MANAGER_RULES,
     MAX_ETFS,
     REQUEST_TIMEOUT,
 )
@@ -183,9 +184,6 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
         normalized_manager = manager_from_text(raw_manager) if raw_manager else None
         name_manager = manager_from_text(etf_name)
         manager = normalized_manager or raw_manager or name_manager
-        if not manager:
-            continue
-
         fund_code = _row_text(row, fund_code_col) or short_code_to_kr_isin(short_code)
         if not fund_code:
             continue
@@ -210,6 +208,10 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
 
         theme = classify_theme(etf_name, representative_sub, benchmark_name)
         category_tags = build_category_tags(asset_class, style, theme, representative_sub)
+        if not manager:
+            continue
+        if manager not in MANAGER_RULES and theme != "바이오":
+            continue
 
         records.append(
             {
