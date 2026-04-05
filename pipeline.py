@@ -5,11 +5,13 @@ from datetime import datetime, timezone
 import pandas as pd
 
 from collectors import (
+    fetch_top10_holdings,
     fetch_kodex_holdings,
     fetch_tiger_holdings,
     fetch_time_holdings,
     load_kodex_catalog,
     load_etf_universe,
+    resolve_item_id,
     session_with_retries,
 )
 from config import KST
@@ -97,7 +99,12 @@ def collect_etf_data() -> tuple[pd.DataFrame, pd.DataFrame]:
                 fund_code=row["fund_code"],
             )
         else:
-            raise RuntimeError(f"공식 수집기를 지원하지 않는 ETF입니다: {row['etf_name']}")
+            item_id, detail_url = resolve_item_id(session, row["etf_name"], row["fund_code"])
+            if not item_id:
+                raise RuntimeError(f"FunETF itemId를 찾지 못했습니다: {row['etf_name']}")
+            api_rows = fetch_top10_holdings(session, item_id)
+            holdings = build_holdings_from_api(pd.Series(row), api_rows)
+            official_asof_date = row["asof_date"]
 
         if holdings.empty:
             raise RuntimeError(f"보유종목 수집 결과가 비어 있습니다: {row['etf_name']}")

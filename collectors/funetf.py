@@ -15,7 +15,6 @@ from config import (
     FUNETF_SEARCH_URL,
     HEADERS,
     KST,
-    MANAGER_RULES,
     MAX_ETFS,
     REQUEST_TIMEOUT,
 )
@@ -136,16 +135,6 @@ def _row_text(row: pd.Series, column: str | None) -> str:
     return str(value).strip()
 
 
-def _supports_official_collection(manager: str, etf_name: str) -> bool:
-    if manager == "타임폴리오":
-        return True
-    if manager == "미래에셋":
-        return True
-    if manager == "삼성" and str(etf_name).startswith("KODEX"):
-        return True
-    return False
-
-
 def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     raw = fetch_bytes(session, FUNETF_FILTER_EXCEL_URL)
     xls = pd.read_excel(io.BytesIO(raw))
@@ -190,12 +179,11 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
         if "액티브" not in active_marker:
             continue
 
-        row_manager = manager_from_text(_row_text(row, manager_col)) if manager_col else None
+        raw_manager = _row_text(row, manager_col)
+        normalized_manager = manager_from_text(raw_manager) if raw_manager else None
         name_manager = manager_from_text(etf_name)
-        manager = row_manager or name_manager
-        if manager not in MANAGER_RULES:
-            continue
-        if not _supports_official_collection(manager, etf_name):
+        manager = normalized_manager or raw_manager or name_manager
+        if not manager:
             continue
 
         fund_code = _row_text(row, fund_code_col) or short_code_to_kr_isin(short_code)

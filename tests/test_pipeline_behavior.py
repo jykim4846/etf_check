@@ -193,6 +193,15 @@ class FunEtfUniverseTests(unittest.TestCase):
                     "비율(%).2": "7.2",
                 },
                 {
+                    "ETF 종목명": "ACE 바이오TOP10액티브",
+                    "ETF 단축코드": "999999",
+                    "ETF 대유형": "국내주식형",
+                    "운용규모(억원)": "500",
+                    "운용사명": "한국투자신탁운용",
+                    "TOP 1": "알테오젠",
+                    "비율(%)": "11.5",
+                },
+                {
                     "ETF 종목명": "KODEX 200",
                     "ETF 단축코드": "069500",
                     "ETF 대유형": "국내주식형",
@@ -211,12 +220,16 @@ class FunEtfUniverseTests(unittest.TestCase):
         with patch("collectors.funetf.fetch_bytes", return_value=excel_buffer.getvalue()):
             result = load_etf_universe(DummySession())
 
-        self.assertEqual(list(result["etf_name"]), ["KODEX 로봇액티브"])
+        self.assertEqual(
+            list(result["etf_name"]),
+            ["KODEX 로봇액티브", "ACE 바이오TOP10액티브"],
+        )
         self.assertEqual(result.iloc[0]["short_code"], "445290")
         self.assertEqual(result.iloc[0]["fund_code"], "KR7445290000")
         self.assertEqual(result.iloc[0]["style"], "액티브")
         self.assertEqual(result.iloc[0]["top_1"], "삼성전자")
         self.assertEqual(result.iloc[0]["top_1_weight_pct"], 10.5)
+        self.assertEqual(result.iloc[1]["manager"], "한국투자신탁운용")
 
 
 class MainPipelineTests(unittest.TestCase):
@@ -284,6 +297,57 @@ class MainPipelineTests(unittest.TestCase):
             summary = pd.read_json(data_dir / "run_summary.json", typ="series")
             self.assertEqual(int(summary["etf_count"]), 1)
             self.assertEqual(int(summary["holding_count"]), 1)
+
+    def test_main_uses_funetf_for_non_supported_managers(self):
+        summary = pd.DataFrame(
+            [
+                {
+                    "manager": "한국투자신탁운용",
+                    "etf_name": "ACE 바이오TOP10액티브",
+                    "short_code": "999999",
+                    "fund_code": "FUND999",
+                    "detail_url": "",
+                    "source": "FunETF",
+                    "asset_class": "주식",
+                    "style": "액티브",
+                    "theme": "바이오",
+                    "category_tags": "주식 | 액티브 | 바이오",
+                    "aum_okr": 456.78,
+                    "aum_unit": "억원",
+                    "asof_date": "2026-03-27",
+                }
+            ]
+        )
+
+        with TemporaryDirectory() as tmp_dir:
+            tmp_path = Path(tmp_dir)
+            data_dir = tmp_path / "data"
+            docs_dir = tmp_path / "docs"
+            public_dir = tmp_path / "public"
+            data_dir.mkdir()
+            docs_dir.mkdir()
+            public_dir.mkdir()
+
+            with patch.object(output_files, "DATA_DIR", data_dir), \
+                 patch.object(output_files, "DOCS_DIR", docs_dir), \
+                 patch.object(output_files, "PUBLIC_DIR", public_dir), \
+                 patch.object(pipeline, "load_etf_universe", return_value=summary), \
+                 patch.object(pipeline, "load_kodex_catalog", return_value=[]), \
+                 patch.object(pipeline, "resolve_item_id", return_value=("ITEM999", "https://example.com/funetf")), \
+                 patch.object(
+                     pipeline,
+                     "fetch_top10_holdings",
+                     return_value=[
+                         {"citmNm": "알테오젠", "evP": "12.3"},
+                         {"citmNm": "리가켐바이오", "evP": "8.4"},
+                     ],
+                 ):
+                main.main()
+
+            output = pd.read_csv(data_dir / "etf_list.csv")
+            self.assertEqual(output.loc[0, "holdings_source"], "FunETF")
+            holdings = pd.read_csv(data_dir / "etf_holdings.csv")
+            self.assertEqual(list(holdings["holding_name"]), ["알테오젠", "리가켐바이오"])
 
 
 if __name__ == "__main__":
