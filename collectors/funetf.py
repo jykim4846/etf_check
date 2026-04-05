@@ -208,9 +208,9 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
 
         theme = classify_theme(etf_name, representative_sub, benchmark_name)
         category_tags = build_category_tags(asset_class, style, theme, representative_sub)
-        if not manager:
+        if theme != "바이오":
             continue
-        if manager not in MANAGER_RULES and theme != "바이오":
+        if not manager:
             continue
 
         records.append(

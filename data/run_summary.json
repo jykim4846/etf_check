@@ -1,30 +1,6 @@
 {
-  "generated_at_utc": "2026-04-02T00:05:21.485960+00:00",
-  "run_date_kst": "2026-04-02T09:05:21.485972+09:00",
-  "etf_count": 66,
-  "holding_count": 1729,
-  "error_etf_count": 41,
-  "error_count": 41,
-  "top_errors": [
-    {
-      "message": "tiger_official: 403 Client Error: Forbidden for url: https://investments.miraeasset.com/tigeretf/ko/product/search/detail/pdf.ajax",
-      "count": 20
-    },
-    {
-      "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product/2ETF88.do",
-      "count": 1
-    },
-    {
-      "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=445290",
-      "count": 1
-    },
-    {
-      "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=494890",
-      "count": 1
-    },
-    {
-      "message": "kodex_official: 403 Client Error: Forbidden for url: https://www.samsungfund.com/api/v1/kodex/product.do?srchTerm=w&ordrSort=DESC&ordrColm=NAV&pageNo=1&srchVal=471230",
-      "count": 1
-    }
-  ]
+  "generated_at_utc": "2026-04-05T06:06:32.755952+00:00",
+  "run_date_kst": "2026-04-05T15:06:32.755966+09:00",
+  "etf_count": 6,
+  "holding_count": 56
 }

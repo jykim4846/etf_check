@@ -222,22 +222,22 @@ class FunEtfUniverseTests(unittest.TestCase):
 
         self.assertEqual(
             list(result["etf_name"]),
-            ["KODEX 로봇액티브", "ACE 바이오TOP10액티브"],
+            ["ACE 바이오TOP10액티브"],
         )
-        self.assertEqual(result.iloc[0]["short_code"], "445290")
-        self.assertEqual(result.iloc[0]["fund_code"], "KR7445290000")
+        self.assertEqual(result.iloc[0]["short_code"], "999999")
+        self.assertEqual(result.iloc[0]["fund_code"], "KR7999999006")
         self.assertEqual(result.iloc[0]["style"], "액티브")
-        self.assertEqual(result.iloc[0]["top_1"], "삼성전자")
-        self.assertEqual(result.iloc[0]["top_1_weight_pct"], 10.5)
-        self.assertEqual(result.iloc[1]["manager"], "한국투자신탁운용")
+        self.assertEqual(result.iloc[0]["top_1"], "알테오젠")
+        self.assertEqual(result.iloc[0]["top_1_weight_pct"], 11.5)
+        self.assertEqual(result.iloc[0]["manager"], "한국투자신탁운용")
 
 
 class MainPipelineTests(unittest.TestCase):
-    def test_main_writes_outputs_from_official_sources(self):
+    def test_main_writes_outputs_from_funetf_sources(self):
         summary = pd.DataFrame(
             [
                 {
-                    "manager": "미래에셋",
+                    "manager": "한국투자신탁운용",
                     "etf_name": "테스트 ETF",
                     "short_code": "123456",
                     "fund_code": "FUND123",
@@ -245,8 +245,8 @@ class MainPipelineTests(unittest.TestCase):
                     "source": "FunETF",
                     "asset_class": "주식",
                     "style": "액티브",
-                    "theme": "AI",
-                    "category_tags": "주식 | 액티브 | AI",
+                    "theme": "바이오",
+                    "category_tags": "주식 | 액티브 | 바이오",
                     "aum_okr": 123.45,
                     "aum_unit": "억원",
                     "asof_date": "2026-03-27",
@@ -256,14 +256,14 @@ class MainPipelineTests(unittest.TestCase):
         official_holdings = pd.DataFrame(
             [
                 {
-                    "manager": "미래에셋",
+                    "manager": "한국투자신탁운용",
                     "etf_name": "테스트 ETF",
                     "short_code": "123456",
                     "fund_code": "FUND123",
                     "holding_name": "알테오젠",
                     "weight_pct": 9.7,
                     "asof_date": "2026-03-27",
-                    "source": "TIGER",
+                    "source": "FunETF",
                 }
             ]
         )
@@ -281,11 +281,13 @@ class MainPipelineTests(unittest.TestCase):
                  patch.object(output_files, "DOCS_DIR", docs_dir), \
                  patch.object(output_files, "PUBLIC_DIR", public_dir), \
                  patch.object(pipeline, "load_etf_universe", return_value=summary), \
-                 patch.object(pipeline, "load_kodex_catalog", return_value=[]), \
+                 patch.object(pipeline, "resolve_item_id", return_value=("ITEM123", "https://example.com/funetf")), \
                  patch.object(
                      pipeline,
-                     "fetch_tiger_holdings",
-                     return_value=("https://example.com", "2026-03-27", official_holdings),
+                     "fetch_top10_holdings",
+                     return_value=[
+                         {"citmNm": "알테오젠", "evP": "9.7"},
+                     ],
                  ):
                 main.main()
 
@@ -293,7 +295,7 @@ class MainPipelineTests(unittest.TestCase):
             self.assertIn("holding_count", output.columns)
             self.assertIn("holdings_source", output.columns)
             self.assertEqual(output.loc[0, "etf_name"], "테스트 ETF")
-            self.assertEqual(output.loc[0, "holdings_source"], "TIGER")
+            self.assertEqual(output.loc[0, "holdings_source"], "FunETF")
             summary = pd.read_json(data_dir / "run_summary.json", typ="series")
             self.assertEqual(int(summary["etf_count"]), 1)
             self.assertEqual(int(summary["holding_count"]), 1)
@@ -332,7 +334,6 @@ class MainPipelineTests(unittest.TestCase):
                  patch.object(output_files, "DOCS_DIR", docs_dir), \
                  patch.object(output_files, "PUBLIC_DIR", public_dir), \
                  patch.object(pipeline, "load_etf_universe", return_value=summary), \
-                 patch.object(pipeline, "load_kodex_catalog", return_value=[]), \
                  patch.object(pipeline, "resolve_item_id", return_value=("ITEM999", "https://example.com/funetf")), \
                  patch.object(
                      pipeline,

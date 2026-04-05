@@ -6,10 +6,7 @@ import pandas as pd
 
 from collectors import (
     fetch_top10_holdings,
-    fetch_kodex_holdings,
-    fetch_tiger_holdings,
     fetch_time_holdings,
-    load_kodex_catalog,
     load_etf_universe,
     resolve_item_id,
     session_with_retries,
@@ -67,7 +64,6 @@ def collect_etf_data() -> tuple[pd.DataFrame, pd.DataFrame]:
     etf_df = load_etf_universe(session)
     if etf_df.empty:
         raise RuntimeError("액티브 ETF 목록을 찾지 못했습니다. 사이트 구조가 바뀌었는지 확인하세요.")
-    kodex_catalog = load_kodex_catalog(session)
 
     holdings_frames: list[pd.DataFrame] = []
     enriched_rows: list[dict] = []
@@ -81,30 +77,21 @@ def collect_etf_data() -> tuple[pd.DataFrame, pd.DataFrame]:
                 short_code=row["short_code"],
                 fund_code=row["fund_code"],
             )
-        elif row["manager"] == "삼성" and str(row["etf_name"]).startswith("KODEX"):
-            detail_url, official_asof_date, holdings = fetch_kodex_holdings(
-                session=session,
-                etf_name=row["etf_name"],
-                manager=row["manager"],
-                short_code=row["short_code"],
-                fund_code=row["fund_code"],
-                catalog=kodex_catalog,
-            )
-        elif row["manager"] == "미래에셋":
-            detail_url, official_asof_date, holdings = fetch_tiger_holdings(
-                session=session,
-                etf_name=row["etf_name"],
-                manager=row["manager"],
-                short_code=row["short_code"],
-                fund_code=row["fund_code"],
-            )
         else:
             item_id, detail_url = resolve_item_id(session, row["etf_name"], row["fund_code"])
             if not item_id:
-                raise RuntimeError(f"FunETF itemId를 찾지 못했습니다: {row['etf_name']}")
-            api_rows = fetch_top10_holdings(session, item_id)
-            holdings = build_holdings_from_api(pd.Series(row), api_rows)
-            official_asof_date = row["asof_date"]
+                holdings = build_holdings_from_row(pd.Series(row))
+                if holdings.empty:
+                    raise RuntimeError(f"FunETF itemId를 찾지 못했습니다: {row['etf_name']}")
+                official_asof_date = row["asof_date"]
+            else:
+                api_rows = fetch_top10_holdings(session, item_id)
+                holdings = build_holdings_from_api(pd.Series(row), api_rows)
+                official_asof_date = row["asof_date"]
+                if holdings.empty:
+                    holdings = build_holdings_from_row(pd.Series(row))
+                    if holdings.empty:
+                        raise RuntimeError(f"보유종목 수집 결과가 비어 있습니다: {row['etf_name']}")
 
         if holdings.empty:
             raise RuntimeError(f"보유종목 수집 결과가 비어 있습니다: {row['etf_name']}")
