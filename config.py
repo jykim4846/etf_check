@@ -7,9 +7,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 DOCS_DIR = BASE_DIR / "docs"
+PUBLIC_DIR = BASE_DIR / "public"
 
 DATA_DIR.mkdir(exist_ok=True)
 DOCS_DIR.mkdir(exist_ok=True)
+PUBLIC_DIR.mkdir(exist_ok=True)
 
 FUNETF_FILTER_EXCEL_URL = "https://www.funetf.co.kr/api/public/download/excel/etfFilter"
 FUNETF_DETAIL_URL = "https://www.funetf.co.kr/product/etf/view/{fund_code}"

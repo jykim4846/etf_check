@@ -38,6 +38,17 @@ def find_column(df: pd.DataFrame, candidates: list[str], default_idx: int | None
     raise KeyError(f"Column not found. Candidates={candidates}, columns={list(df.columns)}")
 
 
+def find_column_optional(
+    df: pd.DataFrame,
+    candidates: list[str],
+    default_idx: int | None = None,
+) -> str | None:
+    try:
+        return find_column(df, candidates, default_idx=default_idx)
+    except KeyError:
+        return None
+
+
 def compact_text(*values: object) -> str:
     return " ".join(
         str(v).strip()

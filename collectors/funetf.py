@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from .tiger import short_code_to_kr_isin
 from config import (
     FUNETF_FILTER_EXCEL_URL,
     FUNETF_PDF_API_URL,
@@ -25,7 +26,9 @@ from transforms import (
     classify_asset_class,
     classify_style,
     classify_theme,
+    compact_text,
     find_column,
+    find_column_optional,
     is_overseas_etf,
     manager_from_text,
     normalize_columns,
@@ -135,21 +138,30 @@ def fetch_top10_holdings(session: requests.Session, item_id: str) -> list[dict]:
     return sorted(result, key=lambda item: float(item.get("evP") or 0), reverse=True)[:10]
 
 
+def _row_text(row: pd.Series, column: str | None) -> str:
+    if not column:
+        return ""
+    value = row.get(column, "")
+    if pd.isna(value):
+        return ""
+    return str(value).strip()
+
+
 def load_etf_universe(session: requests.Session) -> pd.DataFrame:
     raw = fetch_bytes(session, FUNETF_FILTER_EXCEL_URL)
     xls = pd.read_excel(io.BytesIO(raw))
     xls.columns = normalize_columns(xls.columns)
 
-    fund_code_col = find_column(xls, ["펀드코드", "fund code"], default_idx=0)
-    name_col = find_column(xls, ["etf 종목명", "종목명", "상품명"], default_idx=2)
-    short_col = find_column(xls, ["etf 단축코드", "단축코드", "종목코드"], default_idx=3)
-    replica_col = find_column(xls, ["복제방식"], default_idx=28)
-    aum_col = find_column(xls, ["운용규모(억원)", "운용규모"], default_idx=22)
-    etf_type_col = find_column(xls, ["etf 대유형"], default_idx=3)
-    etf_subtype_col = find_column(xls, ["etf 소유형"], default_idx=4)
-    representative_main_col = find_column(xls, ["etf 대표유형 대유형"], default_idx=31)
-    representative_sub_col = find_column(xls, ["etf 대표유형 소유형"], default_idx=32)
-    benchmark_col = find_column(xls, ["기초지수"], default_idx=27)
+    fund_code_col = find_column_optional(xls, ["펀드코드", "fund code", "표준코드", "isin"])
+    name_col = find_column(xls, ["etf 종목명", "종목명", "상품명"])
+    short_col = find_column(xls, ["etf 단축코드", "단축코드", "종목코드"])
+    replica_col = find_column_optional(xls, ["복제방식"])
+    aum_col = find_column(xls, ["운용규모(억원)", "운용규모"])
+    etf_type_col = find_column(xls, ["etf 대유형"])
+    etf_subtype_col = find_column_optional(xls, ["etf 소유형"])
+    representative_main_col = find_column_optional(xls, ["etf 대표유형 대유형"])
+    representative_sub_col = find_column_optional(xls, ["etf 대표유형 소유형"])
+    benchmark_col = find_column_optional(xls, ["기초지수"])
 
     manager_col = None
     for candidate in ["운용사명", "운용사", "자산운용사", "issuer"]:
@@ -161,39 +173,46 @@ def load_etf_universe(session: requests.Session) -> pd.DataFrame:
 
     records: list[dict] = []
     for _, row in xls.iterrows():
-        etf_name = str(row[name_col]).strip()
+        etf_name = _row_text(row, name_col)
         if not etf_name or etf_name == "nan":
             continue
 
-        replica_type = str(row[replica_col]).strip()
-        if "액티브" not in replica_type:
+        short_code = _row_text(row, short_col)
+        if not short_code:
             continue
 
-        row_manager = manager_from_text(row[manager_col]) if manager_col else None
+        etf_type = _row_text(row, etf_type_col)
+        etf_subtype = _row_text(row, etf_subtype_col)
+        representative_main = _row_text(row, representative_main_col)
+        representative_sub = _row_text(row, representative_sub_col)
+        benchmark_name = _row_text(row, benchmark_col)
+        replica_type = _row_text(row, replica_col)
+        active_marker = compact_text(replica_type, etf_type, etf_name)
+        if "액티브" not in active_marker:
+            continue
+
+        row_manager = manager_from_text(_row_text(row, manager_col)) if manager_col else None
         name_manager = manager_from_text(etf_name)
         manager = row_manager or name_manager
         if manager not in MANAGER_RULES:
             continue
 
-        fund_code = str(row[fund_code_col]).strip()
-        short_code = str(row[short_col]).strip()
+        fund_code = _row_text(row, fund_code_col) or short_code_to_kr_isin(short_code)
         if not fund_code:
             continue
 
         asset_class = classify_asset_class(
-            str(row[etf_type_col]),
-            str(row[etf_subtype_col]),
-            str(row[representative_main_col]),
-            str(row[representative_sub_col]),
+            etf_type,
+            etf_subtype,
+            representative_main,
+            representative_sub,
             etf_name,
         )
-        style = classify_style(replica_type, str(row[etf_type_col]), etf_name)
-        benchmark_name = str(row[benchmark_col])
-        representative_sub = str(row[representative_sub_col])
+        style = classify_style(replica_type, etf_type, etf_name)
         if is_overseas_etf(
-            str(row[etf_type_col]),
-            str(row[etf_subtype_col]),
-            str(row[representative_main_col]),
+            etf_type,
+            etf_subtype,
+            representative_main,
             representative_sub,
             etf_name,
             benchmark_name,

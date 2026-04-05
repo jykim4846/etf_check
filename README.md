@@ -52,6 +52,22 @@ python main.py
 - 대표 오류 상위 항목
 - GitHub Actions 배지로 최근 워크플로 성공/실패 표시
 
+## Vercel 배포
+
+1. Vercel에서 이 저장소를 import
+2. 프로젝트 루트는 그대로 사용
+3. Framework Preset은 `Other` 로 두기
+4. `vercel.json` 을 자동 인식하도록 두기
+5. Deploy
+
+현재 설정은 빌드 시 아래 순서로 동작합니다.
+
+- `python3 -m pip install -r requirements.txt`
+- `python3 main.py`
+- 생성된 `public/` 정적 파일 배포
+
+수집 대상 사이트에 접근 가능한 환경이어야 빌드가 성공합니다.
+
 ## GitHub Pages 켜기
 
 1. GitHub 저장소 열기

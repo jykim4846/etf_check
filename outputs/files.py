@@ -12,6 +12,7 @@ from config import (
     FUNETF_FILTER_EXCEL_URL,
     KODEX_LIST_URL,
     KST,
+    PUBLIC_DIR,
     TIGER_ACTIVE_LINEUP_URL,
     TIME_LINEUP_URL,
 )
@@ -60,10 +61,9 @@ def write_outputs(summary_df: pd.DataFrame, holdings_df: pd.DataFrame) -> None:
         encoding="utf-8",
     )
 
-    (DOCS_DIR / "index.html").write_text(
-        build_html(summary_df, holdings_df, run_summary=run_summary),
-        encoding="utf-8",
-    )
+    html = build_html(summary_df, holdings_df, run_summary=run_summary)
+    (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
+    (PUBLIC_DIR / "index.html").write_text(html, encoding="utf-8")
 
     readme_note = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),

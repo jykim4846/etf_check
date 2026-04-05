@@ -1,4 +1,5 @@
 import unittest
+from io import BytesIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
@@ -6,6 +7,7 @@ from unittest.mock import patch
 import pandas as pd
 
 import main
+from collectors.funetf import load_etf_universe
 import outputs.files as output_files
 import pipeline
 from collectors.timeetf import load_time_lineup
@@ -173,6 +175,50 @@ class KodexOfficialSourceTests(unittest.TestCase):
         fid, official_name = search_kodex_fid(DummySession(), "KODEX 로봇액티브", "445290")
         self.assertEqual(fid, "2ETFH5")
         self.assertEqual(official_name, "KODEX 로봇액티브")
+
+
+class FunEtfUniverseTests(unittest.TestCase):
+    def test_load_etf_universe_tolerates_missing_schema_columns(self):
+        df = pd.DataFrame(
+            [
+                {
+                    "ETF 종목명": "KODEX 로봇액티브",
+                    "ETF 단축코드": "445290",
+                    "ETF 대유형": "국내주식형",
+                    "운용규모(억원)": "9856.35",
+                    "운용사명": "삼성자산운용",
+                    "TOP 1": "삼성전자",
+                    "비율(%)": "10.5",
+                    "TOP 2": "SK하이닉스",
+                    "비율(%).1": "8.1",
+                    "TOP 3": "한화에어로스페이스",
+                    "비율(%).2": "7.2",
+                },
+                {
+                    "ETF 종목명": "KODEX 200",
+                    "ETF 단축코드": "069500",
+                    "ETF 대유형": "국내주식형",
+                    "운용규모(억원)": "1000",
+                    "운용사명": "삼성자산운용",
+                },
+            ]
+        )
+        excel_buffer = BytesIO()
+        with pd.ExcelWriter(excel_buffer, engine="openpyxl") as writer:
+            df.to_excel(writer, index=False)
+
+        class DummySession:
+            pass
+
+        with patch("collectors.funetf.fetch_bytes", return_value=excel_buffer.getvalue()):
+            result = load_etf_universe(DummySession())
+
+        self.assertEqual(list(result["etf_name"]), ["KODEX 로봇액티브"])
+        self.assertEqual(result.iloc[0]["short_code"], "445290")
+        self.assertEqual(result.iloc[0]["fund_code"], "KR7445290000")
+        self.assertEqual(result.iloc[0]["style"], "액티브")
+        self.assertEqual(result.iloc[0]["top_1"], "삼성전자")
+        self.assertEqual(result.iloc[0]["top_1_weight_pct"], 10.5)
 
 
 class MainPipelineTests(unittest.TestCase):
