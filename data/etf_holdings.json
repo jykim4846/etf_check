@@ -6,7 +6,7 @@
     "fund_code":"KR70001P0005",
     "holding_name":"셀트리온",
     "weight_pct":15.1039755244,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -16,7 +16,7 @@
     "fund_code":"KR70001P0005",
     "holding_name":"삼성바이오로직스",
     "weight_pct":14.9353451625,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -26,7 +26,7 @@
     "fund_code":"KR70001P0005",
     "holding_name":"에스티팜",
     "weight_pct":14.1539636706,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -36,7 +36,7 @@
     "fund_code":"KR7462900002",
     "holding_name":"에이비엘바이오",
     "weight_pct":11.8714368544,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -46,7 +46,7 @@
     "fund_code":"KR7462900002",
     "holding_name":"리가켐바이오",
     "weight_pct":11.0810875141,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -56,7 +56,7 @@
     "fund_code":"KR7462900002",
     "holding_name":"올릭스",
     "weight_pct":8.8774554998,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -66,7 +66,7 @@
     "fund_code":"KR7498050004",
     "holding_name":"에이비엘바이오",
     "weight_pct":16.530844824,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -76,7 +76,7 @@
     "fund_code":"KR7498050004",
     "holding_name":"리가켐바이오",
     "weight_pct":9.7539959986,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -86,7 +86,7 @@
     "fund_code":"KR7498050004",
     "holding_name":"한올바이오파마",
     "weight_pct":5.4493415374,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -506,7 +506,7 @@
     "fund_code":"KR70000Z0006",
     "holding_name":"올릭스",
     "weight_pct":12.7263776632,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -516,7 +516,7 @@
     "fund_code":"KR70000Z0006",
     "holding_name":"리가켐바이오",
     "weight_pct":12.1029859203,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -526,7 +526,7 @@
     "fund_code":"KR70000Z0006",
     "holding_name":"에이비엘바이오",
     "weight_pct":10.4314235788,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -536,7 +536,7 @@
     "fund_code":"KR70168K0003",
     "holding_name":"리가켐바이오",
     "weight_pct":13.1167297356,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -546,7 +546,7 @@
     "fund_code":"KR70168K0003",
     "holding_name":"올릭스",
     "weight_pct":12.3410586377,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   },
   {
@@ -556,7 +556,7 @@
     "fund_code":"KR70168K0003",
     "holding_name":"에이비엘바이오",
     "weight_pct":8.4035417931,
-    "asof_date":"2026-04-05",
+    "asof_date":"2026-04-06",
     "source":"FunETF"
   }
 ]
