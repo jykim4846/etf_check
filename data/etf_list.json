@@ -15,8 +15,8 @@
     "asof_date":"2026-04-06",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-05T15:34:52.249578+00:00",
-    "run_date_kst":"2026-04-06T00:34:52.249882+09:00"
+    "fetched_at_utc":"2026-04-06T00:03:28.693185+00:00",
+    "run_date_kst":"2026-04-06T09:03:28.693490+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -31,11 +31,11 @@
     "category_tags":"주식 | 액티브 | 바이오",
     "aum_okr":3788.79125445,
     "aum_unit":"억원",
-    "asof_date":"2026-04-03",
+    "asof_date":"2026-04-06",
     "holdings_source":"TIME",
-    "holding_count":41,
-    "fetched_at_utc":"2026-04-05T15:34:52.249578+00:00",
-    "run_date_kst":"2026-04-06T00:34:52.249882+09:00"
+    "holding_count":39,
+    "fetched_at_utc":"2026-04-06T00:03:28.693185+00:00",
+    "run_date_kst":"2026-04-06T09:03:28.693490+09:00"
   },
   {
     "manager":"미래에셋",
@@ -53,8 +53,8 @@
     "asof_date":"2026-04-06",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-05T15:34:52.249578+00:00",
-    "run_date_kst":"2026-04-06T00:34:52.249882+09:00"
+    "fetched_at_utc":"2026-04-06T00:03:28.693185+00:00",
+    "run_date_kst":"2026-04-06T09:03:28.693490+09:00"
   },
   {
     "manager":"KB운용",
@@ -72,8 +72,8 @@
     "asof_date":"2026-04-06",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-05T15:34:52.249578+00:00",
-    "run_date_kst":"2026-04-06T00:34:52.249882+09:00"
+    "fetched_at_utc":"2026-04-06T00:03:28.693185+00:00",
+    "run_date_kst":"2026-04-06T09:03:28.693490+09:00"
   },
   {
     "manager":"NH-Amundi운용",
@@ -91,8 +91,8 @@
     "asof_date":"2026-04-06",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-05T15:34:52.249578+00:00",
-    "run_date_kst":"2026-04-06T00:34:52.249882+09:00"
+    "fetched_at_utc":"2026-04-06T00:03:28.693185+00:00",
+    "run_date_kst":"2026-04-06T09:03:28.693490+09:00"
   },
   {
     "manager":"DB자산운용",
@@ -110,7 +110,7 @@
     "asof_date":"2026-04-06",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-05T15:34:52.249578+00:00",
-    "run_date_kst":"2026-04-06T00:34:52.249882+09:00"
+    "fetched_at_utc":"2026-04-06T00:03:28.693185+00:00",
+    "run_date_kst":"2026-04-06T09:03:28.693490+09:00"
   }
 ]
