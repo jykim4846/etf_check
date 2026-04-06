@@ -398,6 +398,7 @@ function renderBioSummary() {{
     .forEach(item => {{
       const stockName = item.holding_name;
       const fund = bioFundMap.get(item.fund_code);
+      const currentWeight = Number(item.current_weight_pct ?? item.weight_pct ?? 0);
       const compareRow = holdingChanges.find(change =>
         change.fund_code === item.fund_code && change.holding_name === item.holding_name
       ) || {{}};
@@ -406,11 +407,11 @@ function renderBioSummary() {{
         total_weight: 0,
         funds: [],
       }};
-      current.total_weight += Number(item.weight_pct || 0);
+      current.total_weight += currentWeight;
       current.funds.push({{
         etf_name: fund.etf_name,
         manager: fund.manager,
-        weight_pct: Number(item.weight_pct || 0),
+        weight_pct: currentWeight,
         previous_weight_pct: Number(compareRow.previous_weight_pct || 0),
         weight_diff_pct: Number(compareRow.weight_diff_pct || 0),
         change_state: compareRow.change_state || '유지',
