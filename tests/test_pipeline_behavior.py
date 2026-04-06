@@ -13,6 +13,7 @@ import pipeline
 from collectors.timeetf import load_time_lineup
 from collectors.kodex import search_kodex_fid
 from collectors.tiger import short_code_to_kr_isin
+from outputs.files import build_holding_changes
 
 
 class ClassificationTests(unittest.TestCase):
@@ -123,6 +124,73 @@ class HtmlOutputTests(unittest.TestCase):
         self.assertIn("수동 재수집 실행", html)
         self.assertIn("보유종목", html)
         self.assertIn("바이오 종목별 편입 비중", html)
+        self.assertIn("직전 대비 변동", html)
+
+
+class HoldingChangeTests(unittest.TestCase):
+    def test_build_holding_changes_marks_delta_states(self):
+        current_df = pd.DataFrame(
+            [
+                {
+                    "manager": "운용사",
+                    "etf_name": "ETF A",
+                    "short_code": "111111",
+                    "fund_code": "FUNDA",
+                    "holding_name": "알테오젠",
+                    "weight_pct": 12.0,
+                    "asof_date": "2026-04-06",
+                    "source": "FunETF",
+                },
+                {
+                    "manager": "운용사",
+                    "etf_name": "ETF A",
+                    "short_code": "111111",
+                    "fund_code": "FUNDA",
+                    "holding_name": "리가켐바이오",
+                    "weight_pct": 4.0,
+                    "asof_date": "2026-04-06",
+                    "source": "FunETF",
+                },
+            ]
+        )
+        previous_df = pd.DataFrame(
+            [
+                {
+                    "manager": "운용사",
+                    "etf_name": "ETF A",
+                    "short_code": "111111",
+                    "fund_code": "FUNDA",
+                    "holding_name": "알테오젠",
+                    "weight_pct": 10.0,
+                    "asof_date": "2026-04-05",
+                    "source": "FunETF",
+                },
+                {
+                    "manager": "운용사",
+                    "etf_name": "ETF A",
+                    "short_code": "111111",
+                    "fund_code": "FUNDA",
+                    "holding_name": "삼천당제약",
+                    "weight_pct": 3.5,
+                    "asof_date": "2026-04-05",
+                    "source": "FunETF",
+                },
+            ]
+        )
+
+        enriched_df, changes_df = build_holding_changes(current_df, previous_df)
+
+        increased = enriched_df.loc[enriched_df["holding_name"] == "알테오젠"].iloc[0]
+        added = enriched_df.loc[enriched_df["holding_name"] == "리가켐바이오"].iloc[0]
+        removed = changes_df.loc[changes_df["holding_name"] == "삼천당제약"].iloc[0]
+
+        self.assertEqual(increased["change_state"], "증가")
+        self.assertEqual(increased["weight_diff_pct"], 2.0)
+        self.assertEqual(added["change_state"], "신규")
+        self.assertTrue(pd.isna(added["previous_weight_pct"]))
+        self.assertEqual(removed["change_state"], "제외")
+        self.assertEqual(removed["current_weight_pct"], 0.0)
+        self.assertEqual(removed["weight_diff_pct"], -3.5)
 
 
 class TimeOfficialSourceTests(unittest.TestCase):

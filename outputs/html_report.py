@@ -6,14 +6,27 @@ from datetime import datetime, timezone
 import pandas as pd
 
 
-def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dict | None = None) -> str:
+def build_html(
+    etf_df: pd.DataFrame,
+    holdings_df: pd.DataFrame,
+    run_summary: dict | None = None,
+    holding_changes_df: pd.DataFrame | None = None,
+) -> str:
     etf_json = json.dumps(etf_df.fillna("").to_dict(orient="records"), ensure_ascii=False)
     holdings_json = json.dumps(holdings_df.fillna("").to_dict(orient="records"), ensure_ascii=False)
+    holding_changes_json = json.dumps(
+        (holding_changes_df if holding_changes_df is not None else holdings_df).fillna("").to_dict(orient="records"),
+        ensure_ascii=False,
+    )
     run_summary = run_summary or {}
     updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     etf_count = int(run_summary.get("etf_count", len(etf_df.index)) or 0)
     holding_count = int(run_summary.get("holding_count", len(holdings_df.index)) or 0)
     run_date = run_summary.get("run_date_kst", "-")
+    previous_run_date = run_summary.get("previous_run_date_kst") or "이전 비교 없음"
+    changed_holding_count = int(run_summary.get("changed_holding_count", 0) or 0)
+    new_holding_count = int(run_summary.get("new_holding_count", 0) or 0)
+    removed_holding_count = int(run_summary.get("removed_holding_count", 0) or 0)
     return f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -140,6 +153,24 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
     .holding-rank {{ width: 28px; height: 28px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; margin-right: 10px; color: white; background: linear-gradient(135deg, #294f3b, #4b8762); font-size: 12px; font-weight: 800; }}
     .holding-name {{ font-size: 15px; line-height: 1.35; }}
     .holding-weight {{ font-size: 18px; font-weight: 800; letter-spacing: -.03em; }}
+    .holding-weight-wrap {{ text-align: right; }}
+    .holding-delta {{ margin-top: 4px; font-size: 12px; font-weight: 700; }}
+    .delta-up {{ color: #16794f; }}
+    .delta-down {{ color: #b84b3f; }}
+    .delta-flat {{ color: var(--muted); }}
+    .delta-new {{ color: #906717; }}
+    .delta-removed {{ color: #7c3d37; }}
+    .change-chip {{
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      background: #edf2eb;
+      color: #314038;
+    }}
     .table-shell {{ display: none; }}
     .bio-card {{ border: 1px solid var(--line); border-radius: 18px; padding: 16px; background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(249,247,241,.96)); }}
     .bio-card h3 {{ margin: 0 0 10px; font-size: 22px; letter-spacing: -.03em; }}
@@ -154,6 +185,8 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
     .bio-fund-row {{ display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; background: rgba(246,243,236,.88); }}
     .bio-fund-name {{ font-size: 13px; line-height: 1.35; }}
     .bio-fund-weight {{ font-size: 16px; font-weight: 800; letter-spacing: -.03em; }}
+    .bio-fund-meta {{ text-align: right; }}
+    .bio-fund-delta {{ margin-top: 4px; font-size: 12px; font-weight: 700; }}
     table {{ width: 100%; border-collapse: collapse; font-size: 14px; }}
     th, td {{ padding: 12px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }}
     th {{ position: sticky; top: 0; background: rgba(248,246,241,.98); }}
@@ -182,8 +215,8 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
       <div class="summary-grid">
         <div class="summary-item"><div class="small">ETF 수</div><strong>{etf_count}</strong></div>
         <div class="summary-item"><div class="small">구성종목 행 수</div><strong>{holding_count}</strong></div>
-        <div class="summary-item"><div class="small">최근 생성 시각</div><strong style="font-size:14px">{run_date}</strong></div>
-        <div class="summary-item"><div class="small">데이터 기준</div><strong style="font-size:16px">공식 운용사 페이지</strong></div>
+        <div class="summary-item"><div class="small">직전 대비 변동</div><strong>{changed_holding_count}</strong><div class="small">신규 {new_holding_count} / 제외 {removed_holding_count}</div></div>
+        <div class="summary-item"><div class="small">직전 수집 시각</div><strong style="font-size:14px">{previous_run_date}</strong><div class="small">최근 생성 {run_date}</div></div>
       </div>
       <div class="nav-tabs">
         <button id="show-bio-view" class="tab-btn active" type="button">바이오 통합 보기</button>
@@ -261,6 +294,7 @@ def build_html(etf_df: pd.DataFrame, holdings_df: pd.DataFrame, run_summary: dic
   <script>
 const etfs = {etf_json};
 const holdings = {holdings_json};
+const holdingChanges = {holding_changes_json};
 let currentManager = '전체';
 let currentAssetClass = '전체';
 let currentTheme = '전체';
@@ -282,6 +316,24 @@ function formatNum(value) {{
 
 function uniqueOptions(key) {{
   return ['전체', ...new Set(etfs.map(item => item[key]).filter(Boolean))];
+}}
+
+function diffClass(changeState, diffValue) {{
+  if (changeState === '신규' || changeState === '첫수집') return 'delta-new';
+  if (changeState === '제외') return 'delta-removed';
+  if (Number(diffValue) > 0.0001) return 'delta-up';
+  if (Number(diffValue) < -0.0001) return 'delta-down';
+  return 'delta-flat';
+}}
+
+function diffLabel(changeState, diffValue, previousValue) {{
+  if (changeState === '첫수집') return '첫 수집';
+  if (changeState === '신규') return '신규 편입';
+  if (changeState === '제외') return '제외 ' + formatNum(Math.abs(Number(previousValue || 0))) + '%';
+  const diff = Number(diffValue || 0);
+  if (Math.abs(diff) <= 0.0001) return '변동 없음';
+  const prefix = diff > 0 ? '+' : '';
+  return prefix + formatNum(diff) + '%p';
 }}
 
 function filteredEtfs() {{
@@ -344,6 +396,9 @@ function renderBioSummary() {{
     .forEach(item => {{
       const stockName = item.holding_name;
       const fund = bioFundMap.get(item.fund_code);
+      const compareRow = holdingChanges.find(change =>
+        change.fund_code === item.fund_code && change.holding_name === item.holding_name
+      ) || {{}};
       const current = grouped.get(stockName) || {{
         holding_name: stockName,
         total_weight: 0,
@@ -354,6 +409,9 @@ function renderBioSummary() {{
         etf_name: fund.etf_name,
         manager: fund.manager,
         weight_pct: Number(item.weight_pct || 0),
+        previous_weight_pct: Number(compareRow.previous_weight_pct || 0),
+        weight_diff_pct: Number(compareRow.weight_diff_pct || 0),
+        change_state: compareRow.change_state || '유지',
       }});
       grouped.set(stockName, current);
     }});
@@ -370,7 +428,10 @@ function renderBioSummary() {{
     const fundsHtml = row.funds.map(fund => `
       <div class="bio-fund-row">
         <div class="bio-fund-name">${{fund.manager}} · ${{fund.etf_name}}<\\/div>
-        <div class="bio-fund-weight">${{formatNum(fund.weight_pct)}}%<\\/div>
+        <div class="bio-fund-meta">
+          <div class="bio-fund-weight">${{formatNum(fund.weight_pct)}}%<\\/div>
+          <div class="bio-fund-delta ${{diffClass(fund.change_state, fund.weight_diff_pct)}}">${{diffLabel(fund.change_state, fund.weight_diff_pct, fund.previous_weight_pct)}}<\\/div>
+        <\\/div>
       </div>
     `).join('');
     return `
@@ -393,7 +454,7 @@ function renderBioSummary() {{
   container.innerHTML = `
     <div class="bio-card">
       <h3>바이오 종목별 편입 비중<\\/h3>
-      <div class="meta">정렬 기준은 각 종목의 합산 편입 비중입니다. 카드 안에서 어떤 펀드에 몇 %가 들어있는지 바로 볼 수 있습니다.<\\/div>
+      <div class="meta">정렬 기준은 각 종목의 합산 편입 비중입니다. 카드 안에서 어떤 펀드에 몇 %가 들어있는지, 직전 수집 대비 얼마나 늘거나 줄었는지 바로 볼 수 있습니다.<\\/div>
       <div class="bio-summary-grid">${'{'}cardsHtml || '<div class="small">데이터 없음<\\/div>'{'}'}<\\/div>
     </div>`;
 }}
@@ -465,13 +526,17 @@ function renderHoldings() {{
   cards.innerHTML = '';
 
   const selected = etfs.find(item => item.fund_code === currentFundCode);
+  const selectedChanges = holdingChanges.filter(item => item.fund_code === currentFundCode);
+  const changedCount = selectedChanges.filter(item => ['신규', '증가', '감소', '제외'].includes(item.change_state)).length;
+  const addedCount = selectedChanges.filter(item => item.change_state === '신규').length;
+  const removedCount = selectedChanges.filter(item => item.change_state === '제외').length;
   document.getElementById('selected-name').textContent = selected
-    ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}} / 카테고리: ${{selected.category_tags || '-'}} / 수집소스: ${{selected.holdings_source || '-'}}`
+    ? `${{selected.etf_name}} / 기준일: ${{selected.asof_date || '-'}} / 카테고리: ${{selected.category_tags || '-'}} / 수집소스: ${{selected.holdings_source || '-'}} / 변동 ${{changedCount}}건 / 신규 ${{addedCount}} / 제외 ${{removedCount}}`
     : '선택된 ETF가 없습니다.';
 
-  const rows = holdings
+  const rows = holdingChanges
     .filter(item => item.fund_code === currentFundCode)
-    .sort((a, b) => Number(b.weight_pct || -1) - Number(a.weight_pct || -1));
+    .sort((a, b) => Number(b.current_weight_pct || -1) - Number(a.current_weight_pct || -1));
 
   if (!rows.length) {{
     cards.innerHTML = '<div class="holding-card"><div class="holding-name">보유종목 데이터가 없습니다.<\\/div><div class="small">-<\\/div><\\/div>';
@@ -479,7 +544,7 @@ function renderHoldings() {{
 
   rows.forEach((row, index) => {{
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${{row.holding_name}}<\\/td><td class="num">${{formatNum(row.weight_pct)}}<\\/td>`;
+    tr.innerHTML = `<td>${{row.holding_name}} <span class="change-chip">${{row.change_state || '유지'}}<\\/span><\\/td><td class="num">${{formatNum(row.current_weight_pct)}}<div class="holding-delta ${{diffClass(row.change_state, row.weight_diff_pct)}}">${{diffLabel(row.change_state, row.weight_diff_pct, row.previous_weight_pct)}}<\\/div><\\/td>`;
     tbody.appendChild(tr);
 
     const card = document.createElement('div');
@@ -487,9 +552,15 @@ function renderHoldings() {{
     card.innerHTML = `
       <div class="holding-left">
         <span class="holding-rank">${{index + 1}}<\\/span>
-        <div class="holding-name">${{row.holding_name}}<\\/div>
+        <div>
+          <div class="holding-name">${{row.holding_name}}<\\/div>
+          <div class="holding-delta ${{diffClass(row.change_state, row.weight_diff_pct)}}">${{diffLabel(row.change_state, row.weight_diff_pct, row.previous_weight_pct)}}<\\/div>
+        <\\/div>
       </div>
-      <div class="holding-weight">${{formatNum(row.weight_pct)}}%<\\/div>`;
+      <div class="holding-weight-wrap">
+        <div class="holding-weight">${{formatNum(row.current_weight_pct)}}%<\\/div>
+        <div class="small">직전 ${{row.previous_weight_pct === '' ? '-' : formatNum(row.previous_weight_pct) + '%'}}<\\/div>
+      <\\/div>`;
     cards.appendChild(card);
   }});
 }}
