@@ -4,6 +4,7 @@ import json
 from datetime import datetime, timezone
 
 import pandas as pd
+from config import KST
 
 
 def build_html(
@@ -19,7 +20,7 @@ def build_html(
         ensure_ascii=False,
     )
     run_summary = run_summary or {}
-    updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    updated_at = run_summary.get("run_date_kst") or datetime.now(timezone.utc).astimezone(KST).strftime("%Y-%m-%d %H:%M KST")
     etf_count = int(run_summary.get("etf_count", len(etf_df.index)) or 0)
     holding_count = int(run_summary.get("holding_count", len(holdings_df.index)) or 0)
     run_date = run_summary.get("run_date_kst", "-")
@@ -154,6 +155,7 @@ def build_html(
     .holding-name {{ font-size: 15px; line-height: 1.35; }}
     .holding-weight {{ font-size: 18px; font-weight: 800; letter-spacing: -.03em; }}
     .holding-weight-wrap {{ text-align: right; }}
+    .metric-label {{ font-size: 11px; color: var(--muted); font-weight: 700; }}
     .holding-delta {{ margin-top: 4px; font-size: 12px; font-weight: 700; }}
     .delta-up {{ color: #16794f; }}
     .delta-down {{ color: #b84b3f; }}
@@ -281,7 +283,7 @@ def build_html(
               <thead>
                 <tr>
                   <th>종목명</th>
-                  <th class="num">비중(%)</th>
+                  <th class="num">현재 비중 / 변동</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -328,12 +330,12 @@ function diffClass(changeState, diffValue) {{
 
 function diffLabel(changeState, diffValue, previousValue) {{
   if (changeState === '첫수집') return '첫 수집';
-  if (changeState === '신규') return '신규 편입';
-  if (changeState === '제외') return '제외 ' + formatNum(Math.abs(Number(previousValue || 0))) + '%';
+  if (changeState === '신규') return '변동 신규 편입';
+  if (changeState === '제외') return '변동 제외 ' + formatNum(Math.abs(Number(previousValue || 0))) + '%';
   const diff = Number(diffValue || 0);
   if (Math.abs(diff) <= 0.0001) return '변동 없음';
   const prefix = diff > 0 ? '+' : '';
-  return prefix + formatNum(diff) + '%p';
+  return '변동 ' + prefix + formatNum(diff) + '%p';
 }}
 
 function filteredEtfs() {{
@@ -429,6 +431,7 @@ function renderBioSummary() {{
       <div class="bio-fund-row">
         <div class="bio-fund-name">${{fund.manager}} · ${{fund.etf_name}}<\\/div>
         <div class="bio-fund-meta">
+          <div class="metric-label">현재 비중<\\/div>
           <div class="bio-fund-weight">${{formatNum(fund.weight_pct)}}%<\\/div>
           <div class="bio-fund-delta ${{diffClass(fund.change_state, fund.weight_diff_pct)}}">${{diffLabel(fund.change_state, fund.weight_diff_pct, fund.previous_weight_pct)}}<\\/div>
         <\\/div>
@@ -544,7 +547,7 @@ function renderHoldings() {{
 
   rows.forEach((row, index) => {{
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${{row.holding_name}} <span class="change-chip">${{row.change_state || '유지'}}<\\/span><\\/td><td class="num">${{formatNum(row.current_weight_pct)}}<div class="holding-delta ${{diffClass(row.change_state, row.weight_diff_pct)}}">${{diffLabel(row.change_state, row.weight_diff_pct, row.previous_weight_pct)}}<\\/div><\\/td>`;
+    tr.innerHTML = `<td>${{row.holding_name}} <span class="change-chip">${{row.change_state || '유지'}}<\\/span><\\/td><td class="num"><div class="metric-label">현재 비중<\\/div><div class="holding-weight">${{formatNum(row.current_weight_pct)}}%<\\/div><div class="holding-delta ${{diffClass(row.change_state, row.weight_diff_pct)}}">${{diffLabel(row.change_state, row.weight_diff_pct, row.previous_weight_pct)}}<\\/div><\\/td>`;
     tbody.appendChild(tr);
 
     const card = document.createElement('div');
@@ -558,6 +561,7 @@ function renderHoldings() {{
         <\\/div>
       </div>
       <div class="holding-weight-wrap">
+        <div class="metric-label">현재 비중<\\/div>
         <div class="holding-weight">${{formatNum(row.current_weight_pct)}}%<\\/div>
         <div class="small">직전 ${{row.previous_weight_pct === '' ? '-' : formatNum(row.previous_weight_pct) + '%'}}<\\/div>
       <\\/div>`;

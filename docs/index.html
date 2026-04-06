@@ -125,6 +125,7 @@
     .holding-name { font-size: 15px; line-height: 1.35; }
     .holding-weight { font-size: 18px; font-weight: 800; letter-spacing: -.03em; }
     .holding-weight-wrap { text-align: right; }
+    .metric-label { font-size: 11px; color: var(--muted); font-weight: 700; }
     .holding-delta { margin-top: 4px; font-size: 12px; font-weight: 700; }
     .delta-up { color: #16794f; }
     .delta-down { color: #b84b3f; }
@@ -177,7 +178,7 @@
     <div class="card hero">
       <div class="eyebrow">Active ETF Monitor</div>
       <h1>국내 액티브 ETF<br />수집 결과</h1>
-      <div class="hero-copy">이 페이지는 마지막 성공 수집 결과를 보여줍니다. 수집 실패는 숨기지 않고 그대로 실패로 처리합니다. 업데이트: 2026-04-06 15:48 UTC</div>
+      <div class="hero-copy">이 페이지는 마지막 성공 수집 결과를 보여줍니다. 수집 실패는 숨기지 않고 그대로 실패로 처리합니다. 업데이트: 2026-04-07T00:48:49.201520+09:00</div>
       <div class="status-row">
         <span class="status-badge">최근 성공 수집 기준 표시</span>
         <button id="manual-collect-button" class="action-button" type="button">수동 재수집 실행</button>
@@ -252,7 +253,7 @@
               <thead>
                 <tr>
                   <th>종목명</th>
-                  <th class="num">비중(%)</th>
+                  <th class="num">현재 비중 / 변동</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -299,12 +300,12 @@ function diffClass(changeState, diffValue) {
 
 function diffLabel(changeState, diffValue, previousValue) {
   if (changeState === '첫수집') return '첫 수집';
-  if (changeState === '신규') return '신규 편입';
-  if (changeState === '제외') return '제외 ' + formatNum(Math.abs(Number(previousValue || 0))) + '%';
+  if (changeState === '신규') return '변동 신규 편입';
+  if (changeState === '제외') return '변동 제외 ' + formatNum(Math.abs(Number(previousValue || 0))) + '%';
   const diff = Number(diffValue || 0);
   if (Math.abs(diff) <= 0.0001) return '변동 없음';
   const prefix = diff > 0 ? '+' : '';
-  return prefix + formatNum(diff) + '%p';
+  return '변동 ' + prefix + formatNum(diff) + '%p';
 }
 
 function filteredEtfs() {
@@ -400,6 +401,7 @@ function renderBioSummary() {
       <div class="bio-fund-row">
         <div class="bio-fund-name">${fund.manager} · ${fund.etf_name}<\/div>
         <div class="bio-fund-meta">
+          <div class="metric-label">현재 비중<\/div>
           <div class="bio-fund-weight">${formatNum(fund.weight_pct)}%<\/div>
           <div class="bio-fund-delta ${diffClass(fund.change_state, fund.weight_diff_pct)}">${diffLabel(fund.change_state, fund.weight_diff_pct, fund.previous_weight_pct)}<\/div>
         <\/div>
@@ -515,7 +517,7 @@ function renderHoldings() {
 
   rows.forEach((row, index) => {
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${row.holding_name} <span class="change-chip">${row.change_state || '유지'}<\/span><\/td><td class="num">${formatNum(row.current_weight_pct)}<div class="holding-delta ${diffClass(row.change_state, row.weight_diff_pct)}">${diffLabel(row.change_state, row.weight_diff_pct, row.previous_weight_pct)}<\/div><\/td>`;
+    tr.innerHTML = `<td>${row.holding_name} <span class="change-chip">${row.change_state || '유지'}<\/span><\/td><td class="num"><div class="metric-label">현재 비중<\/div><div class="holding-weight">${formatNum(row.current_weight_pct)}%<\/div><div class="holding-delta ${diffClass(row.change_state, row.weight_diff_pct)}">${diffLabel(row.change_state, row.weight_diff_pct, row.previous_weight_pct)}<\/div><\/td>`;
     tbody.appendChild(tr);
 
     const card = document.createElement('div');
@@ -529,6 +531,7 @@ function renderHoldings() {
         <\/div>
       </div>
       <div class="holding-weight-wrap">
+        <div class="metric-label">현재 비중<\/div>
         <div class="holding-weight">${formatNum(row.current_weight_pct)}%<\/div>
         <div class="small">직전 ${row.previous_weight_pct === '' ? '-' : formatNum(row.previous_weight_pct) + '%'}<\/div>
       <\/div>`;
