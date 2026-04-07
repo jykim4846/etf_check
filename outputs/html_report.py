@@ -316,6 +316,22 @@ function formatNum(value) {{
   return num.toLocaleString('ko-KR', {{ maximumFractionDigits: 2 }});
 }}
 
+function formatDateTimeKst(value) {{
+  if (!value) return '-';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value);
+  return new Intl.DateTimeFormat('ko-KR', {{
+    timeZone: 'Asia/Seoul',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }}).format(date);
+}}
+
 function uniqueOptions(key) {{
   return ['전체', ...new Set(etfs.map(item => item[key]).filter(Boolean))];
 }}
@@ -593,12 +609,46 @@ async function triggerManualCollect() {{
     if (!response.ok) {{
       throw new Error(result.error || 'dispatch failed');
     }}
-    status.textContent = '재수집 요청이 접수되었습니다. GitHub Actions에서 실행 상태를 확인하세요.';
+    status.innerHTML = `재수집 요청이 접수되었습니다. <a href="${{result.actions_url}}" target="_blank" rel="noreferrer">Actions 열기</a>`;
+    await pollCollectorStatus(result.actions_url);
   }} catch (error) {{
     status.textContent = `재수집 요청 실패: ${{error.message}}`;
   }} finally {{
     button.disabled = false;
   }}
+}}
+
+async function pollCollectorStatus(actionsUrl) {{
+  const status = document.getElementById('manual-collect-status');
+  for (let attempt = 0; attempt < 20; attempt += 1) {{
+    try {{
+      const response = await fetch('/api/collector-status');
+      const result = await response.json();
+      if (!response.ok) {{
+        throw new Error(result.error || 'status lookup failed');
+      }}
+      if (!result.run) {{
+        status.innerHTML = `재수집 요청은 접수됐지만 아직 새 런이 보이지 않습니다. <a href="${{actionsUrl || result.actions_url}}" target="_blank" rel="noreferrer">Actions 확인</a>`;
+      }} else {{
+        const run = result.run;
+        const runUrl = run.html_url || actionsUrl || result.actions_url;
+        if (run.status === 'completed') {{
+          const label = run.conclusion === 'success'
+            ? '수집 성공'
+            : '수집 실패 (' + (run.conclusion || 'unknown') + ')';
+          status.innerHTML = `${{label}} · 마지막 갱신 ${{formatDateTimeKst(run.updated_at)}} · <a href="${{runUrl}}" target="_blank" rel="noreferrer">런 보기</a>`;
+          return;
+        }}
+        const runState = run.status === 'in_progress' ? '실행 중' : '대기 중';
+        status.innerHTML = `${{runState}} · 시작 ${{formatDateTimeKst(run.created_at)}} · <a href="${{runUrl}}" target="_blank" rel="noreferrer">런 보기</a>`;
+      }}
+    }} catch (error) {{
+      status.textContent = `상태 확인 실패: ${{error.message}}`;
+      return;
+    }}
+    await new Promise(resolve => setTimeout(resolve, 4000));
+  }}
+  status.innerHTML = `상태 확인 시간이 초과되었습니다. <a href="${{actionsUrl}}" target="_blank" rel="noreferrer">GitHub Actions에서 직접 확인</a>`;
 }}
 
 renderFilters();

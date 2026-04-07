@@ -192,6 +192,46 @@ class HoldingChangeTests(unittest.TestCase):
         self.assertEqual(removed["current_weight_pct"], 0.0)
         self.assertEqual(removed["weight_diff_pct"], -3.5)
 
+    def test_build_holding_changes_accepts_previous_current_weight_schema(self):
+        current_df = pd.DataFrame(
+            [
+                {
+                    "manager": "운용사",
+                    "etf_name": "ETF A",
+                    "short_code": "111111",
+                    "fund_code": "FUNDA",
+                    "holding_name": "알테오젠",
+                    "weight_pct": 12.0,
+                    "asof_date": "2026-04-08",
+                    "source": "FunETF",
+                }
+            ]
+        )
+        previous_df = pd.DataFrame(
+            [
+                {
+                    "manager": "운용사",
+                    "etf_name": "ETF A",
+                    "short_code": "111111",
+                    "fund_code": "FUNDA",
+                    "holding_name": "알테오젠",
+                    "current_weight_pct": 10.5,
+                    "previous_weight_pct": 10.0,
+                    "weight_diff_pct": 0.5,
+                    "change_state": "증가",
+                    "asof_date": "2026-04-07",
+                    "source": "FunETF",
+                }
+            ]
+        )
+
+        enriched_df, _ = build_holding_changes(current_df, previous_df)
+
+        row = enriched_df.iloc[0]
+        self.assertEqual(row["previous_weight_pct"], 10.5)
+        self.assertEqual(row["weight_diff_pct"], 1.5)
+        self.assertEqual(row["change_state"], "증가")
+
 
 class TimeOfficialSourceTests(unittest.TestCase):
     def test_load_time_lineup_maps_full_name_to_detail_url(self):

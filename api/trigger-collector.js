@@ -51,5 +51,6 @@ module.exports = async (req, res) => {
     repo: expectedRepo,
     workflow: workflowFile,
     ref: workflowRef,
+    actions_url: `https://github.com/${expectedRepo}/actions/workflows/${workflowFile}`,
   });
 };

@@ -73,9 +73,24 @@ def _to_numeric(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series, errors="coerce")
 
 
+def _normalize_weight_schema(df: pd.DataFrame) -> pd.DataFrame:
+    normalized = df.copy()
+    if "weight_pct" not in normalized.columns and "current_weight_pct" in normalized.columns:
+        normalized["weight_pct"] = normalized["current_weight_pct"]
+    if "current_weight_pct" not in normalized.columns and "weight_pct" in normalized.columns:
+        normalized["current_weight_pct"] = normalized["weight_pct"]
+    if "previous_weight_pct" not in normalized.columns:
+        normalized["previous_weight_pct"] = pd.NA
+    if "weight_diff_pct" not in normalized.columns:
+        normalized["weight_diff_pct"] = pd.NA
+    if "change_state" not in normalized.columns:
+        normalized["change_state"] = pd.NA
+    return normalized
+
+
 def build_holding_changes(current_df: pd.DataFrame, previous_df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    current = current_df.copy()
-    previous = previous_df.copy()
+    current = _normalize_weight_schema(current_df)
+    previous = _normalize_weight_schema(previous_df)
 
     if current.empty:
         empty_columns = [
@@ -123,13 +138,14 @@ def build_holding_changes(current_df: pd.DataFrame, previous_df: pd.DataFrame) -
             "holding_name",
             "weight_pct",
         ]
-    ].rename(columns={"weight_pct": "previous_weight_pct"})
+    ].rename(columns={"weight_pct": "_previous_weight_pct"})
 
     enriched = current.merge(
         previous_lookup,
         on=["fund_code", "holding_name"],
         how="left",
     )
+    enriched["previous_weight_pct"] = enriched["_previous_weight_pct"]
     enriched["weight_diff_pct"] = enriched["weight_pct"] - enriched["previous_weight_pct"]
     enriched["change_state"] = "유지"
     enriched.loc[enriched["previous_weight_pct"].isna(), "change_state"] = "신규"
