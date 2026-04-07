@@ -15,8 +15,8 @@
     "asof_date":"2026-04-08",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-07T16:07:02.858959+00:00",
-    "run_date_kst":"2026-04-08T01:07:02.859313+09:00"
+    "fetched_at_utc":"2026-04-07T15:56:52.985991+00:00",
+    "run_date_kst":"2026-04-08T00:56:52.986308+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -34,8 +34,8 @@
     "asof_date":"2026-04-07",
     "holdings_source":"TIME",
     "holding_count":39,
-    "fetched_at_utc":"2026-04-07T16:07:02.858959+00:00",
-    "run_date_kst":"2026-04-08T01:07:02.859313+09:00"
+    "fetched_at_utc":"2026-04-07T15:56:52.985991+00:00",
+    "run_date_kst":"2026-04-08T00:56:52.986308+09:00"
   },
   {
     "manager":"미래에셋",
@@ -53,8 +53,8 @@
     "asof_date":"2026-04-08",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-07T16:07:02.858959+00:00",
-    "run_date_kst":"2026-04-08T01:07:02.859313+09:00"
+    "fetched_at_utc":"2026-04-07T15:56:52.985991+00:00",
+    "run_date_kst":"2026-04-08T00:56:52.986308+09:00"
   },
   {
     "manager":"KB운용",
@@ -72,8 +72,8 @@
     "asof_date":"2026-04-08",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-07T16:07:02.858959+00:00",
-    "run_date_kst":"2026-04-08T01:07:02.859313+09:00"
+    "fetched_at_utc":"2026-04-07T15:56:52.985991+00:00",
+    "run_date_kst":"2026-04-08T00:56:52.986308+09:00"
   },
   {
     "manager":"NH-Amundi운용",
@@ -91,8 +91,8 @@
     "asof_date":"2026-04-08",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-07T16:07:02.858959+00:00",
-    "run_date_kst":"2026-04-08T01:07:02.859313+09:00"
+    "fetched_at_utc":"2026-04-07T15:56:52.985991+00:00",
+    "run_date_kst":"2026-04-08T00:56:52.986308+09:00"
   },
   {
     "manager":"DB자산운용",
@@ -110,7 +110,7 @@
     "asof_date":"2026-04-08",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-04-07T16:07:02.858959+00:00",
-    "run_date_kst":"2026-04-08T01:07:02.859313+09:00"
+    "fetched_at_utc":"2026-04-07T15:56:52.985991+00:00",
+    "run_date_kst":"2026-04-08T00:56:52.986308+09:00"
   }
 ]
