@@ -125,6 +125,8 @@ class HtmlOutputTests(unittest.TestCase):
         self.assertIn("보유종목", html)
         self.assertIn("바이오 종목별 편입 비중", html)
         self.assertIn("직전 대비 변동", html)
+        self.assertIn("manifest.webmanifest", html)
+        self.assertIn("apple-touch-icon", html)
 
 
 class HoldingChangeTests(unittest.TestCase):

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ETF Check Icon</title>
+  <desc id="desc">Rounded green tile with ETF lettering and chart marks</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123225"/>
+      <stop offset="100%" stop-color="#24714c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2c6"/>
+      <stop offset="100%" stop-color="#d4f1dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg)"/>
+  <circle cx="394" cy="128" r="56" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="136" cy="386" r="92" fill="rgba(255,255,255,0.08)"/>
+  <path d="M112 336h288" stroke="rgba(255,255,255,0.18)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M152 320l64-92 54 54 94-126" fill="none" stroke="url(#accent)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="152" cy="320" r="18" fill="#fff7dc"/>
+  <circle cx="216" cy="228" r="18" fill="#fff7dc"/>
+  <circle cx="270" cy="282" r="18" fill="#fff7dc"/>
+  <circle cx="364" cy="156" r="18" fill="#fff7dc"/>
+  <text x="78" y="184" fill="#f5f7f1" font-family="SF Pro Display, Pretendard, Apple SD Gothic Neo, sans-serif" font-size="104" font-weight="800" letter-spacing="-8">ETF</text>
+</svg>

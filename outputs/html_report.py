@@ -7,6 +7,18 @@ import pandas as pd
 from config import KST
 
 
+def _format_kst_minute(value: str | None) -> str:
+    if not value:
+        return "-"
+    try:
+        parsed = datetime.fromisoformat(value)
+    except ValueError:
+        return value
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=KST)
+    return parsed.astimezone(KST).strftime("%Y-%m-%d %H:%M")
+
+
 def build_html(
     etf_df: pd.DataFrame,
     holdings_df: pd.DataFrame,
@@ -20,11 +32,11 @@ def build_html(
         ensure_ascii=False,
     )
     run_summary = run_summary or {}
-    updated_at = run_summary.get("run_date_kst") or datetime.now(timezone.utc).astimezone(KST).strftime("%Y-%m-%d %H:%M KST")
+    updated_at = _format_kst_minute(run_summary.get("run_date_kst")) if run_summary.get("run_date_kst") else datetime.now(timezone.utc).astimezone(KST).strftime("%Y-%m-%d %H:%M")
     etf_count = int(run_summary.get("etf_count", len(etf_df.index)) or 0)
     holding_count = int(run_summary.get("holding_count", len(holdings_df.index)) or 0)
-    run_date = run_summary.get("run_date_kst", "-")
-    previous_run_date = run_summary.get("previous_run_date_kst") or "이전 비교 없음"
+    run_date = _format_kst_minute(run_summary.get("run_date_kst"))
+    previous_run_date = _format_kst_minute(run_summary.get("previous_run_date_kst")) if run_summary.get("previous_run_date_kst") else "이전 비교 없음"
     changed_holding_count = int(run_summary.get("changed_holding_count", 0) or 0)
     new_holding_count = int(run_summary.get("new_holding_count", 0) or 0)
     removed_holding_count = int(run_summary.get("removed_holding_count", 0) or 0)
@@ -33,6 +45,14 @@ def build_html(
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#123225" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ETF Check" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/assets/icon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180" />
   <title>ETF Check</title>
   <style>
     :root {{
@@ -75,17 +95,7 @@ def build_html(
     .eyebrow {{ font-size: 11px; letter-spacing: .18em; text-transform: uppercase; opacity: .74; font-weight: 700; }}
     h1 {{ margin: 10px 0 0; font-size: clamp(30px, 8vw, 44px); line-height: 1.02; letter-spacing: -.05em; }}
     h2 {{ margin: 0; font-size: 21px; letter-spacing: -.03em; }}
-    .hero-copy {{ margin-top: 12px; max-width: 720px; font-size: 14px; line-height: 1.55; color: rgba(245,247,241,.8); }}
     .status-row {{ display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 16px; }}
-    .status-badge {{
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      padding: 10px 14px;
-      background: rgba(255,255,255,.12);
-      color: white;
-      font-weight: 700;
-    }}
     .action-button {{
       border: 0;
       border-radius: 999px;
@@ -94,9 +104,9 @@ def build_html(
       color: #2e2616;
       font-weight: 700;
     }}
-    .summary-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }}
-    .summary-item {{ border-radius: 18px; padding: 14px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.1); }}
-    .summary-item strong {{ display: block; margin-top: 6px; font-size: 22px; letter-spacing: -.04em; }}
+    .summary-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }}
+    .summary-item {{ border-radius: 18px; padding: 14px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.08); }}
+    .summary-item strong {{ display: block; margin-top: 6px; font-size: 20px; letter-spacing: -.04em; }}
     .small {{ font-size: 12px; color: var(--muted); }}
     .hero .small {{ color: rgba(245,247,241,.72); }}
     .hero-status {{ margin-top: 12px; font-size: 13px; color: rgba(245,247,241,.78); min-height: 19px; }}
@@ -208,17 +218,15 @@ def build_html(
     <div class="card hero">
       <div class="eyebrow">Active ETF Monitor</div>
       <h1>국내 액티브 ETF<br />수집 결과</h1>
-      <div class="hero-copy">이 페이지는 마지막 성공 수집 결과를 보여줍니다. 수집 실패는 숨기지 않고 그대로 실패로 처리합니다. 업데이트: {updated_at}</div>
       <div class="status-row">
-        <span class="status-badge">최근 성공 수집 기준 표시</span>
         <button id="manual-collect-button" class="action-button" type="button">수동 재수집 실행</button>
       </div>
       <div id="manual-collect-status" class="hero-status"></div>
       <div class="summary-grid">
-        <div class="summary-item"><div class="small">ETF 수</div><strong>{etf_count}</strong></div>
+        <div class="summary-item"><div class="small">업데이트</div><strong style="font-size:18px">{updated_at}</strong></div>
         <div class="summary-item"><div class="small">구성종목 행 수</div><strong>{holding_count}</strong></div>
         <div class="summary-item"><div class="small">직전 대비 변동</div><strong>{changed_holding_count}</strong><div class="small">신규 {new_holding_count} / 제외 {removed_holding_count}</div></div>
-        <div class="summary-item"><div class="small">직전 수집 시각</div><strong style="font-size:14px">{previous_run_date}</strong><div class="small">최근 생성 {run_date}</div></div>
+        <div class="summary-item"><div class="small">직전 수집</div><strong style="font-size:18px">{previous_run_date}</strong><div class="small">ETF {etf_count}개</div></div>
       </div>
       <div class="nav-tabs">
         <button id="show-bio-view" class="tab-btn active" type="button">바이오 통합 보기</button>
@@ -233,7 +241,6 @@ def build_html(
             <h2>바이오 섹터 통합 요약</h2>
           </div>
         </div>
-        <div class="muted">바이오 테마 ETF에 편입된 종목을 종목 기준으로 다시 묶었습니다. 각 종목이 어떤 펀드에 얼마나 들어있는지 바로 볼 수 있습니다.</div>
         <div id="bio-summary" style="margin-top:16px;"></div>
       </div>
     </div>
@@ -327,7 +334,6 @@ function formatDateTimeKst(value) {{
     day: '2-digit',
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit',
     hour12: false,
   }}).format(date);
 }}

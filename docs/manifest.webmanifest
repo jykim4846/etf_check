@@ -1,0 +1,23 @@
+{
+  "name": "ETF Check",
+  "short_name": "ETF Check",
+  "description": "국내 액티브 ETF와 바이오 편입 비중을 홈 화면에서 바로 보는 웹앱",
+  "lang": "ko",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f3ea",
+  "theme_color": "#123225",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

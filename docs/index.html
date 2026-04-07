@@ -3,6 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#123225" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ETF Check" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/assets/icon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180" />
   <title>ETF Check</title>
   <style>
     :root {
@@ -45,17 +53,7 @@
     .eyebrow { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; opacity: .74; font-weight: 700; }
     h1 { margin: 10px 0 0; font-size: clamp(30px, 8vw, 44px); line-height: 1.02; letter-spacing: -.05em; }
     h2 { margin: 0; font-size: 21px; letter-spacing: -.03em; }
-    .hero-copy { margin-top: 12px; max-width: 720px; font-size: 14px; line-height: 1.55; color: rgba(245,247,241,.8); }
     .status-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 16px; }
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      padding: 10px 14px;
-      background: rgba(255,255,255,.12);
-      color: white;
-      font-weight: 700;
-    }
     .action-button {
       border: 0;
       border-radius: 999px;
@@ -64,9 +62,9 @@
       color: #2e2616;
       font-weight: 700;
     }
-    .summary-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
-    .summary-item { border-radius: 18px; padding: 14px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.1); }
-    .summary-item strong { display: block; margin-top: 6px; font-size: 22px; letter-spacing: -.04em; }
+    .summary-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+    .summary-item { border-radius: 18px; padding: 14px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.08); }
+    .summary-item strong { display: block; margin-top: 6px; font-size: 20px; letter-spacing: -.04em; }
     .small { font-size: 12px; color: var(--muted); }
     .hero .small { color: rgba(245,247,241,.72); }
     .hero-status { margin-top: 12px; font-size: 13px; color: rgba(245,247,241,.78); min-height: 19px; }
@@ -178,17 +176,15 @@
     <div class="card hero">
       <div class="eyebrow">Active ETF Monitor</div>
       <h1>국내 액티브 ETF<br />수집 결과</h1>
-      <div class="hero-copy">이 페이지는 마지막 성공 수집 결과를 보여줍니다. 수집 실패는 숨기지 않고 그대로 실패로 처리합니다. 업데이트: 2026-04-08T00:56:53.025398+09:00</div>
       <div class="status-row">
-        <span class="status-badge">최근 성공 수집 기준 표시</span>
         <button id="manual-collect-button" class="action-button" type="button">수동 재수집 실행</button>
       </div>
       <div id="manual-collect-status" class="hero-status"></div>
       <div class="summary-grid">
-        <div class="summary-item"><div class="small">ETF 수</div><strong>6</strong></div>
+        <div class="summary-item"><div class="small">업데이트</div><strong style="font-size:18px">2026-04-08 00:56</strong></div>
         <div class="summary-item"><div class="small">구성종목 행 수</div><strong>54</strong></div>
         <div class="summary-item"><div class="small">직전 대비 변동</div><strong>0</strong><div class="small">신규 0 / 제외 0</div></div>
-        <div class="summary-item"><div class="small">직전 수집 시각</div><strong style="font-size:14px">2026-04-08T00:55:30.033626+09:00</strong><div class="small">최근 생성 2026-04-08T00:56:53.025398+09:00</div></div>
+        <div class="summary-item"><div class="small">직전 수집</div><strong style="font-size:18px">2026-04-08 00:55</strong><div class="small">ETF 6개</div></div>
       </div>
       <div class="nav-tabs">
         <button id="show-bio-view" class="tab-btn active" type="button">바이오 통합 보기</button>
@@ -203,7 +199,6 @@
             <h2>바이오 섹터 통합 요약</h2>
           </div>
         </div>
-        <div class="muted">바이오 테마 ETF에 편입된 종목을 종목 기준으로 다시 묶었습니다. 각 종목이 어떤 펀드에 얼마나 들어있는지 바로 볼 수 있습니다.</div>
         <div id="bio-summary" style="margin-top:16px;"></div>
       </div>
     </div>
@@ -297,7 +292,6 @@ function formatDateTimeKst(value) {
     day: '2-digit',
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit',
     hour12: false,
   }).format(date);
 }
