@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-14T06:13:39.483284+00:00",
+  "generated_at_utc": "2026-04-13T06:33:53.935450+00:00",
   "sources": {
     "etf_filter_excel": "https://www.funetf.co.kr/api/public/download/excel/etfFilter",
     "time_lineup": "https://timeetf.co.kr/m11.php",
@@ -7,5 +7,5 @@
     "kodex_list": "https://www.samsungfund.com/etf/product/list.do"
   },
   "note": "AUM과 구성종목은 공식 운용사 공개 페이지 기준이며, 장중 실시간 값과 차이날 수 있습니다.",
-  "run_date_kst": "2026-04-14T15:13:39.483292+09:00"
+  "run_date_kst": "2026-04-13T15:33:53.935459+09:00"
 }
