@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-04-16T06:16:10.770260+00:00",
+  "run_date_kst": "2026-04-16T15:16:10.770267+09:00",
+  "etf_count": 6,
+  "holding_count": 54,
+  "previous_run_date_kst": "2026-04-15T15:14:11.090877+09:00",
+  "changed_holding_count": 53,
+  "new_holding_count": 3,
+  "removed_holding_count": 2,
+  "increased_holding_count": 30,
+  "decreased_holding_count": 18
+}
