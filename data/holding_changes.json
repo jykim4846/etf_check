@@ -5,11 +5,11 @@
     "short_code":"0001P0",
     "fund_code":"KR70001P0005",
     "holding_name":"셀트리온",
-    "current_weight_pct":15.0905360525,
+    "current_weight_pct":15.0405279988,
     "previous_weight_pct":15.0905360525,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":-0.0500080537,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -18,11 +18,11 @@
     "short_code":"0001P0",
     "fund_code":"KR70001P0005",
     "holding_name":"삼성바이오로직스",
-    "current_weight_pct":14.3185427844,
+    "current_weight_pct":14.2408331225,
     "previous_weight_pct":14.3185427844,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":-0.0777096619,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -31,11 +31,11 @@
     "short_code":"0001P0",
     "fund_code":"KR70001P0005",
     "holding_name":"에스티팜",
-    "current_weight_pct":13.6344191285,
+    "current_weight_pct":13.1556478377,
     "previous_weight_pct":13.6344191285,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":-0.4787712908,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -44,11 +44,11 @@
     "short_code":"498050",
     "fund_code":"KR7498050004",
     "holding_name":"에이비엘바이오",
-    "current_weight_pct":16.2820824435,
+    "current_weight_pct":16.1514777111,
     "previous_weight_pct":16.2820824435,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":-0.1306047324,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -57,11 +57,11 @@
     "short_code":"498050",
     "fund_code":"KR7498050004",
     "holding_name":"리가켐바이오",
-    "current_weight_pct":10.224055594,
+    "current_weight_pct":10.2615720845,
     "previous_weight_pct":10.224055594,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":0.0375164905,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -69,12 +69,12 @@
     "etf_name":"HANARO 바이오코리아액티브",
     "short_code":"498050",
     "fund_code":"KR7498050004",
-    "holding_name":"에스티팜",
-    "current_weight_pct":4.8257589584,
-    "previous_weight_pct":4.8257589584,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "holding_name":"한미약품",
+    "current_weight_pct":4.8522909055,
+    "previous_weight_pct":null,
+    "weight_diff_pct":null,
+    "change_state":"신규",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -83,11 +83,11 @@
     "short_code":"0168K0",
     "fund_code":"KR70168K0003",
     "holding_name":"리가켐바이오",
-    "current_weight_pct":12.62014898,
+    "current_weight_pct":12.7036474958,
     "previous_weight_pct":12.62014898,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":0.0834985157,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -96,11 +96,11 @@
     "short_code":"0168K0",
     "fund_code":"KR70168K0003",
     "holding_name":"올릭스",
-    "current_weight_pct":12.5994602112,
+    "current_weight_pct":12.629903167,
     "previous_weight_pct":12.5994602112,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":0.0304429558,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -109,24 +109,11 @@
     "short_code":"0168K0",
     "fund_code":"KR70168K0003",
     "holding_name":"에이비엘바이오",
-    "current_weight_pct":8.7341085701,
+    "current_weight_pct":8.6894873187,
     "previous_weight_pct":8.7341085701,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KoAct 바이오헬스케어액티브",
-    "short_code":"462900",
-    "fund_code":"KR7462900002",
-    "holding_name":"올릭스",
-    "current_weight_pct":9.8932123241,
-    "previous_weight_pct":9.8932123241,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":-0.0446212514,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -135,11 +122,24 @@
     "short_code":"462900",
     "fund_code":"KR7462900002",
     "holding_name":"리가켐바이오",
-    "current_weight_pct":9.6477472092,
+    "current_weight_pct":9.7384469517,
     "previous_weight_pct":9.6477472092,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":0.0906997426,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"KR7462900002",
+    "holding_name":"올릭스",
+    "current_weight_pct":9.5121806784,
+    "previous_weight_pct":9.8932123241,
+    "weight_diff_pct":-0.3810316457,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -148,11 +148,11 @@
     "short_code":"462900",
     "fund_code":"KR7462900002",
     "holding_name":"에이비엘바이오",
-    "current_weight_pct":9.141891818,
+    "current_weight_pct":9.1203494757,
     "previous_weight_pct":9.141891818,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":-0.0215423423,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -161,11 +161,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"셀트리온",
-    "current_weight_pct":14.39,
+    "current_weight_pct":14.42,
     "previous_weight_pct":14.39,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.03,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -178,7 +178,7 @@
     "previous_weight_pct":10.37,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -191,7 +191,7 @@
     "previous_weight_pct":8.69,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -200,11 +200,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"올릭스",
-    "current_weight_pct":4.88,
+    "current_weight_pct":4.68,
     "previous_weight_pct":4.88,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.2,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -213,11 +213,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"에스티팜",
-    "current_weight_pct":4.74,
+    "current_weight_pct":4.6,
     "previous_weight_pct":4.74,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.14,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -226,11 +226,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"에이비엘바이오",
-    "current_weight_pct":4.38,
+    "current_weight_pct":4.36,
     "previous_weight_pct":4.38,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.02,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -239,11 +239,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"알지노믹스",
-    "current_weight_pct":4.37,
+    "current_weight_pct":4.31,
     "previous_weight_pct":4.37,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.06,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -252,11 +252,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"리가켐바이오",
-    "current_weight_pct":4.23,
+    "current_weight_pct":4.26,
     "previous_weight_pct":4.23,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.03,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -265,11 +265,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"한미약품",
-    "current_weight_pct":3.95,
+    "current_weight_pct":4.03,
     "previous_weight_pct":3.95,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.08,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -278,11 +278,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"에이프릴바이오",
-    "current_weight_pct":3.89,
+    "current_weight_pct":3.86,
     "previous_weight_pct":3.89,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.03,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -291,11 +291,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"HLB",
-    "current_weight_pct":2.72,
+    "current_weight_pct":2.7,
     "previous_weight_pct":2.72,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.02,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -304,11 +304,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"보로노이",
-    "current_weight_pct":2.61,
+    "current_weight_pct":2.68,
     "previous_weight_pct":2.61,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.07,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -317,24 +317,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"셀트리온제약",
-    "current_weight_pct":2.5,
+    "current_weight_pct":2.53,
     "previous_weight_pct":2.5,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"KR7463050005",
-    "holding_name":"오름테라퓨틱",
-    "current_weight_pct":1.88,
-    "previous_weight_pct":1.88,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.03,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -343,11 +330,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"씨어스",
-    "current_weight_pct":1.85,
+    "current_weight_pct":2.02,
     "previous_weight_pct":1.85,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.17,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -356,11 +343,24 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"인벤티지랩",
-    "current_weight_pct":1.83,
+    "current_weight_pct":1.86,
     "previous_weight_pct":1.83,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.03,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"KR7463050005",
+    "holding_name":"오름테라퓨틱",
+    "current_weight_pct":1.85,
+    "previous_weight_pct":1.88,
+    "weight_diff_pct":-0.03,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -369,11 +369,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"오스코텍",
-    "current_weight_pct":1.82,
+    "current_weight_pct":1.78,
     "previous_weight_pct":1.82,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.04,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -382,11 +382,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"펩트론",
-    "current_weight_pct":1.72,
+    "current_weight_pct":1.71,
     "previous_weight_pct":1.72,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.01,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -395,11 +395,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"휴젤",
-    "current_weight_pct":1.4,
+    "current_weight_pct":1.45,
     "previous_weight_pct":1.4,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.05,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -408,11 +408,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"리브스메드",
-    "current_weight_pct":1.34,
+    "current_weight_pct":1.33,
     "previous_weight_pct":1.34,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.01,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -421,11 +421,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"삼성에피스홀딩스",
-    "current_weight_pct":1.3,
+    "current_weight_pct":1.28,
     "previous_weight_pct":1.3,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.02,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -434,11 +434,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"일동제약",
-    "current_weight_pct":1.25,
+    "current_weight_pct":1.26,
     "previous_weight_pct":1.25,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.01,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -447,11 +447,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"지투지바이오",
-    "current_weight_pct":1.16,
+    "current_weight_pct":1.15,
     "previous_weight_pct":1.16,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.01,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -460,11 +460,24 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"로킷헬스케어",
-    "current_weight_pct":1.13,
+    "current_weight_pct":1.12,
     "previous_weight_pct":1.13,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.01,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"KR7463050005",
+    "holding_name":"케어젠",
+    "current_weight_pct":1.12,
+    "previous_weight_pct":1.08,
+    "weight_diff_pct":0.04,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -477,20 +490,7 @@
     "previous_weight_pct":1.11,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"KR7463050005",
-    "holding_name":"케어젠",
-    "current_weight_pct":1.08,
-    "previous_weight_pct":1.08,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -503,7 +503,7 @@
     "previous_weight_pct":1.08,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -516,7 +516,7 @@
     "previous_weight_pct":1.05,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -525,11 +525,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"파마리서치",
-    "current_weight_pct":0.99,
+    "current_weight_pct":1.01,
     "previous_weight_pct":0.99,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.02,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -538,11 +538,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"앱클론",
-    "current_weight_pct":0.93,
+    "current_weight_pct":0.9,
     "previous_weight_pct":0.93,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.03,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -551,11 +551,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"디앤디파마텍",
-    "current_weight_pct":0.86,
+    "current_weight_pct":0.84,
     "previous_weight_pct":0.86,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":-0.02,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -568,7 +568,20 @@
     "previous_weight_pct":0.74,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
+    "source":"TIME"
+  },
+  {
+    "manager":"타임폴리오",
+    "etf_name":"TIME K바이오액티브",
+    "short_code":"463050",
+    "fund_code":"KR7463050005",
+    "holding_name":"고영",
+    "current_weight_pct":0.69,
+    "previous_weight_pct":0.61,
+    "weight_diff_pct":0.08,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -581,7 +594,7 @@
     "previous_weight_pct":0.69,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -590,24 +603,11 @@
     "short_code":"463050",
     "fund_code":"KR7463050005",
     "holding_name":"한올바이오파마",
-    "current_weight_pct":0.63,
+    "current_weight_pct":0.64,
     "previous_weight_pct":0.63,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
-    "source":"TIME"
-  },
-  {
-    "manager":"타임폴리오",
-    "etf_name":"TIME K바이오액티브",
-    "short_code":"463050",
-    "fund_code":"KR7463050005",
-    "holding_name":"고영",
-    "current_weight_pct":0.61,
-    "previous_weight_pct":0.61,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "weight_diff_pct":0.01,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -620,7 +620,7 @@
     "previous_weight_pct":0.61,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -633,7 +633,7 @@
     "previous_weight_pct":0.58,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -646,7 +646,7 @@
     "previous_weight_pct":0.35,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -659,7 +659,7 @@
     "previous_weight_pct":0.29,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-04-17",
+    "asof_date":"2026-04-20",
     "source":"TIME"
   },
   {
@@ -668,11 +668,11 @@
     "short_code":"0000Z0",
     "fund_code":"KR70000Z0006",
     "holding_name":"리가켐바이오",
-    "current_weight_pct":13.226644022,
+    "current_weight_pct":13.3896219323,
     "previous_weight_pct":13.226644022,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":0.1629779103,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -681,11 +681,11 @@
     "short_code":"0000Z0",
     "fund_code":"KR70000Z0006",
     "holding_name":"올릭스",
-    "current_weight_pct":13.0198226817,
+    "current_weight_pct":12.5545945728,
     "previous_weight_pct":13.0198226817,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-04-19",
+    "weight_diff_pct":-0.4652281089,
+    "change_state":"감소",
+    "asof_date":"2026-04-20",
     "source":"FunETF"
   },
   {
@@ -694,10 +694,23 @@
     "short_code":"0000Z0",
     "fund_code":"KR70000Z0006",
     "holding_name":"에이비엘바이오",
-    "current_weight_pct":10.7121091434,
+    "current_weight_pct":10.7177902432,
     "previous_weight_pct":10.7121091434,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
+    "weight_diff_pct":0.0056810998,
+    "change_state":"증가",
+    "asof_date":"2026-04-20",
+    "source":"FunETF"
+  },
+  {
+    "manager":"NH-Amundi운용",
+    "etf_name":"HANARO 바이오코리아액티브",
+    "short_code":"498050",
+    "fund_code":"KR7498050004",
+    "holding_name":"에스티팜",
+    "current_weight_pct":0.0,
+    "previous_weight_pct":4.8257589584,
+    "weight_diff_pct":-4.8257589584,
+    "change_state":"제외",
     "asof_date":"2026-04-19",
     "source":"FunETF"
   }
