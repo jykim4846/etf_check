@@ -9,7 +9,7 @@
     "previous_weight_pct":12.6275022071,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -22,7 +22,7 @@
     "previous_weight_pct":8.6107392538,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -35,7 +35,46 @@
     "previous_weight_pct":6.3487810996,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"KR7462900002",
+    "holding_name":"올릭스",
+    "current_weight_pct":9.9989185035,
+    "previous_weight_pct":9.9989185035,
+    "weight_diff_pct":0.0,
+    "change_state":"유지",
+    "asof_date":"2026-06-02",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"KR7462900002",
+    "holding_name":"알테오젠",
+    "current_weight_pct":9.3026023331,
+    "previous_weight_pct":9.3026023331,
+    "weight_diff_pct":0.0,
+    "change_state":"유지",
+    "asof_date":"2026-06-02",
+    "source":"FunETF"
+  },
+  {
+    "manager":"삼성",
+    "etf_name":"KoAct 바이오헬스케어액티브",
+    "short_code":"462900",
+    "fund_code":"KR7462900002",
+    "holding_name":"셀트리온",
+    "current_weight_pct":8.2312942716,
+    "previous_weight_pct":8.2312942716,
+    "weight_diff_pct":0.0,
+    "change_state":"유지",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -529,7 +568,7 @@
     "previous_weight_pct":14.9730784612,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -542,7 +581,7 @@
     "previous_weight_pct":10.6001539261,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -555,46 +594,7 @@
     "previous_weight_pct":6.8680765714,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KoAct 바이오헬스케어액티브",
-    "short_code":"462900",
-    "fund_code":"KR7462900002",
-    "holding_name":"올릭스",
-    "current_weight_pct":9.9989185035,
-    "previous_weight_pct":9.9989185035,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-06-03",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KoAct 바이오헬스케어액티브",
-    "short_code":"462900",
-    "fund_code":"KR7462900002",
-    "holding_name":"알테오젠",
-    "current_weight_pct":9.3026023331,
-    "previous_weight_pct":9.3026023331,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-06-03",
-    "source":"FunETF"
-  },
-  {
-    "manager":"삼성",
-    "etf_name":"KoAct 바이오헬스케어액티브",
-    "short_code":"462900",
-    "fund_code":"KR7462900002",
-    "holding_name":"셀트리온",
-    "current_weight_pct":8.2312942716,
-    "previous_weight_pct":8.2312942716,
-    "weight_diff_pct":0.0,
-    "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -607,7 +607,7 @@
     "previous_weight_pct":12.3884769809,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -620,7 +620,7 @@
     "previous_weight_pct":12.2698261972,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -633,7 +633,7 @@
     "previous_weight_pct":11.6882033592,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -646,7 +646,7 @@
     "previous_weight_pct":14.7921700067,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -659,7 +659,7 @@
     "previous_weight_pct":14.424787229,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -672,7 +672,7 @@
     "previous_weight_pct":10.1596535293,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -685,7 +685,7 @@
     "previous_weight_pct":8.8822206463,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -698,7 +698,7 @@
     "previous_weight_pct":8.8480798493,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   },
   {
@@ -711,7 +711,7 @@
     "previous_weight_pct":8.5074080698,
     "weight_diff_pct":0.0,
     "change_state":"유지",
-    "asof_date":"2026-06-03",
+    "asof_date":"2026-06-02",
     "source":"FunETF"
   }
 ]
