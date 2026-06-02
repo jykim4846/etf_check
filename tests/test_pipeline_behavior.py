@@ -1,3 +1,4 @@
+import json
 import unittest
 from io import BytesIO
 from pathlib import Path
@@ -121,7 +122,7 @@ class HtmlOutputTests(unittest.TestCase):
         self.assertIn("asset-filters", html)
         self.assertIn("theme-filters", html)
         self.assertIn("테스트 ETF", html)
-        self.assertIn("수동 재수집 실행", html)
+        self.assertNotIn("trigger-collector", html)
         self.assertIn("보유종목", html)
         self.assertIn("바이오 종목별 편입 비중", html)
         self.assertIn("직전 대비 변동", html)
@@ -406,7 +407,7 @@ class MainPipelineTests(unittest.TestCase):
             self.assertIn("holdings_source", output.columns)
             self.assertEqual(output.loc[0, "etf_name"], "테스트 ETF")
             self.assertEqual(output.loc[0, "holdings_source"], "FunETF")
-            summary = pd.read_json(data_dir / "run_summary.json", typ="series")
+            summary = json.loads((data_dir / "run_summary.json").read_text(encoding="utf-8"))
             self.assertEqual(int(summary["etf_count"]), 1)
             self.assertEqual(int(summary["holding_count"]), 1)
 

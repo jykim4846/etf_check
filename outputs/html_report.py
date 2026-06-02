@@ -95,21 +95,11 @@ def build_html(
     .eyebrow {{ font-size: 11px; letter-spacing: .18em; text-transform: uppercase; opacity: .74; font-weight: 700; }}
     h1 {{ margin: 10px 0 0; font-size: clamp(30px, 8vw, 44px); line-height: 1.02; letter-spacing: -.05em; }}
     h2 {{ margin: 0; font-size: 21px; letter-spacing: -.03em; }}
-    .status-row {{ display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 16px; }}
-    .action-button {{
-      border: 0;
-      border-radius: 999px;
-      padding: 11px 16px;
-      background: #fff5df;
-      color: #2e2616;
-      font-weight: 700;
-    }}
     .summary-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }}
     .summary-item {{ border-radius: 18px; padding: 14px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.08); }}
     .summary-item strong {{ display: block; margin-top: 6px; font-size: 20px; letter-spacing: -.04em; }}
     .small {{ font-size: 12px; color: var(--muted); }}
     .hero .small {{ color: rgba(245,247,241,.72); }}
-    .hero-status {{ margin-top: 12px; font-size: 13px; color: rgba(245,247,241,.78); min-height: 19px; }}
     .nav-tabs {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }}
     .tab-btn {{
       border: 1px solid var(--line);
@@ -218,10 +208,6 @@ def build_html(
     <div class="card hero">
       <div class="eyebrow">Active ETF Monitor</div>
       <h1>국내 액티브 ETF<br />수집 결과</h1>
-      <div class="status-row">
-        <button id="manual-collect-button" class="action-button" type="button">수동 재수집 실행</button>
-      </div>
-      <div id="manual-collect-status" class="hero-status"></div>
       <div class="summary-grid">
         <div class="summary-item"><div class="small">업데이트</div><strong style="font-size:18px">{updated_at}</strong></div>
         <div class="summary-item"><div class="small">구성종목 행 수</div><strong>{holding_count}</strong></div>
@@ -592,78 +578,12 @@ function renderHoldings() {{
   }});
 }}
 
-async function triggerManualCollect() {{
-  const status = document.getElementById('manual-collect-status');
-  const button = document.getElementById('manual-collect-button');
-  const triggerToken = window.prompt('수동 재수집 토큰을 입력하세요.');
-  if (!triggerToken) {{
-    status.textContent = '수동 재수집이 취소되었습니다.';
-    return;
-  }}
-
-  button.disabled = true;
-  status.textContent = 'GitHub Actions 재수집을 요청하는 중입니다...';
-  try {{
-    const response = await fetch('/api/trigger-collector', {{
-      method: 'POST',
-      headers: {{
-        'Content-Type': 'application/json',
-      }},
-      body: JSON.stringify({{ triggerToken }}),
-    }});
-    const result = await response.json();
-    if (!response.ok) {{
-      throw new Error(result.error || 'dispatch failed');
-    }}
-    status.innerHTML = `재수집 요청이 접수되었습니다. <a href="${{result.actions_url}}" target="_blank" rel="noreferrer">Actions 열기</a>`;
-    await pollCollectorStatus(result.actions_url);
-  }} catch (error) {{
-    status.textContent = `재수집 요청 실패: ${{error.message}}`;
-  }} finally {{
-    button.disabled = false;
-  }}
-}}
-
-async function pollCollectorStatus(actionsUrl) {{
-  const status = document.getElementById('manual-collect-status');
-  for (let attempt = 0; attempt < 20; attempt += 1) {{
-    try {{
-      const response = await fetch('/api/collector-status');
-      const result = await response.json();
-      if (!response.ok) {{
-        throw new Error(result.error || 'status lookup failed');
-      }}
-      if (!result.run) {{
-        status.innerHTML = `재수집 요청은 접수됐지만 아직 새 런이 보이지 않습니다. <a href="${{actionsUrl || result.actions_url}}" target="_blank" rel="noreferrer">Actions 확인</a>`;
-      }} else {{
-        const run = result.run;
-        const runUrl = run.html_url || actionsUrl || result.actions_url;
-        if (run.status === 'completed') {{
-          const label = run.conclusion === 'success'
-            ? '수집 성공'
-            : '수집 실패 (' + (run.conclusion || 'unknown') + ')';
-          status.innerHTML = `${{label}} · 마지막 갱신 ${{formatDateTimeKst(run.updated_at)}} · <a href="${{runUrl}}" target="_blank" rel="noreferrer">런 보기</a>`;
-          return;
-        }}
-        const runState = run.status === 'in_progress' ? '실행 중' : '대기 중';
-        status.innerHTML = `${{runState}} · 시작 ${{formatDateTimeKst(run.created_at)}} · <a href="${{runUrl}}" target="_blank" rel="noreferrer">런 보기</a>`;
-      }}
-    }} catch (error) {{
-      status.textContent = `상태 확인 실패: ${{error.message}}`;
-      return;
-    }}
-    await new Promise(resolve => setTimeout(resolve, 4000));
-  }}
-  status.innerHTML = `상태 확인 시간이 초과되었습니다. <a href="${{actionsUrl}}" target="_blank" rel="noreferrer">GitHub Actions에서 직접 확인</a>`;
-}}
-
 renderFilters();
 renderEtfs();
 renderHoldings();
 renderBioSummary();
 document.getElementById('show-bio-view').addEventListener('click', () => switchView('bio'));
 document.getElementById('show-list-view').addEventListener('click', () => switchView('list'));
-document.getElementById('manual-collect-button').addEventListener('click', triggerManualCollect);
   </script>
 </body>
 </html>

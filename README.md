@@ -18,13 +18,26 @@
 ## 로컬 실행
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python main.py
+./scripts/run_local.sh
 ```
 
-Windows PowerShell:
+이 스크립트는 필요한 경우 `.venv`를 만들고, 의존성을 설치한 뒤 `main.py`를 실행합니다.
+실행 후 아래 파일이 갱신됩니다.
+
+- `data/*.csv`, `data/*.json`
+- `data/history/<수집시각>/...`
+- `docs/index.html`
+- `public/index.html`
+
+정적 페이지를 로컬에서 확인하려면:
+
+```bash
+.venv/bin/python -m http.server 8000 -d docs
+```
+
+브라우저에서 `http://localhost:8000`을 열면 됩니다.
+
+Windows PowerShell에서 직접 실행하려면:
 
 ```powershell
 python -m venv .venv
@@ -33,24 +46,18 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## GitHub Actions 자동 실행
+## 자동 실행
 
-이 저장소에는 `.github/workflows/daily.yml` 이 포함되어 있습니다.
+GitHub Actions 자동 수집은 꺼져 있습니다. 이 저장소에는 `.github/workflows/daily.yml`을 두지 않습니다.
 
-- 매일 08:10 KST 자동 실행
-- 수동 실행도 가능
-- 데이터 파일과 `docs/index.html` 을 갱신 후 자동 커밋
+매일 자동으로 돌리고 싶으면 이 로컬 머신의 `cron` 또는 `launchd`에서 `scripts/run_local.sh`를 실행하세요.
+예를 들어 macOS/Linux `cron`에서 매일 08:10 KST에 실행하려면:
 
-워크플로는 수집 실패 시 10초 후 한 번 더 자동 재시도합니다.
+```cron
+10 8 * * * cd /Users/jongyeon.kim/Desktop/etf_check_bundle && ./scripts/run_local.sh >> logs/local-collector.log 2>&1
+```
 
-### 화면에서 상태 보기
-
-메일 없이도 `docs/index.html` 상단에서 최근 상태를 바로 볼 수 있게 했습니다.
-
-- 최근 수집 상태: `정상` 또는 `부분 실패`
-- ETF 수 / 보유종목 수 / 오류 ETF 수
-- 대표 오류 상위 항목
-- GitHub Actions 배지로 최근 워크플로 성공/실패 표시
+`logs/` 디렉터리는 먼저 만들어 두면 됩니다.
 
 ## Vercel 배포
 
@@ -60,13 +67,8 @@ python main.py
 4. `vercel.json` 을 자동 인식하도록 두기
 5. Deploy
 
-현재 설정은 빌드 시 아래 순서로 동작합니다.
-
-- `python3 -m pip install -r requirements.txt`
-- `python3 main.py`
-- 생성된 `public/` 정적 파일 배포
-
-수집 대상 사이트에 접근 가능한 환경이어야 빌드가 성공합니다.
+현재 설정은 저장소에 커밋된 `public/` 정적 파일을 배포하는 방식입니다.
+수집은 Vercel이나 GitHub Actions가 아니라 로컬에서 `scripts/run_local.sh`로 실행합니다.
 
 ## GitHub Pages 켜기
 
@@ -88,14 +90,14 @@ python main.py
 - AUM은 일반 주식의 시가총액이 아니라 ETF의 **순자산총액** 기준입니다.
 - 데이터는 공개 페이지 기준이라 장중 실시간과 다를 수 있습니다.
 - 일부 ETF는 사이트 구조 변경으로 구성종목 파싱이 실패할 수 있습니다.
-- `data/etf_list.csv` 의 `error` 컬럼에 실패 원인이 남습니다.
+- 현재 파이프라인은 실패한 ETF를 건너뛰지 않고 전체 실행을 실패시킵니다.
 
 ## 디버그 팁
 
 처음에는 몇 개만 테스트하는 게 좋습니다.
 
 ```bash
-MAX_ETFS=3 python main.py
+MAX_ETFS=3 ./scripts/run_local.sh
 ```
 
 ## 사용 데이터 소스
