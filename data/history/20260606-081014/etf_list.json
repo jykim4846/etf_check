@@ -10,13 +10,13 @@
     "style":"액티브",
     "theme":"바이오",
     "category_tags":"주식 | 액티브 | 바이오",
-    "aum_okr":4924.26413993,
+    "aum_okr":5138.28668651,
     "aum_unit":"억원",
-    "asof_date":"2026-06-06",
+    "asof_date":"2026-06-05",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-06-05T23:10:14.421092+00:00",
-    "run_date_kst":"2026-06-06T08:10:14.421728+09:00"
+    "fetched_at_utc":"2026-06-04T23:10:11.316838+00:00",
+    "run_date_kst":"2026-06-05T08:10:11.317556+09:00"
   },
   {
     "manager":"타임폴리오",
@@ -29,13 +29,13 @@
     "style":"액티브",
     "theme":"바이오",
     "category_tags":"주식 | 액티브 | 바이오",
-    "aum_okr":2930.97188183,
+    "aum_okr":3070.4549077,
     "aum_unit":"억원",
     "asof_date":"2026-06-05",
     "holdings_source":"TIME",
     "holding_count":37,
-    "fetched_at_utc":"2026-06-05T23:10:14.421092+00:00",
-    "run_date_kst":"2026-06-06T08:10:14.421728+09:00"
+    "fetched_at_utc":"2026-06-04T23:10:11.316838+00:00",
+    "run_date_kst":"2026-06-05T08:10:11.317556+09:00"
   },
   {
     "manager":"미래에셋",
@@ -48,13 +48,13 @@
     "style":"액티브",
     "theme":"바이오",
     "category_tags":"주식 | 액티브 | 바이오",
-    "aum_okr":1456.22746127,
+    "aum_okr":1510.18075219,
     "aum_unit":"억원",
-    "asof_date":"2026-06-06",
+    "asof_date":"2026-06-05",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-06-05T23:10:14.421092+00:00",
-    "run_date_kst":"2026-06-06T08:10:14.421728+09:00"
+    "fetched_at_utc":"2026-06-04T23:10:11.316838+00:00",
+    "run_date_kst":"2026-06-05T08:10:11.317556+09:00"
   },
   {
     "manager":"KB운용",
@@ -67,13 +67,13 @@
     "style":"액티브",
     "theme":"바이오",
     "category_tags":"주식 | 액티브 | 바이오",
-    "aum_okr":839.86767378,
+    "aum_okr":886.80398007,
     "aum_unit":"억원",
-    "asof_date":"2026-06-06",
+    "asof_date":"2026-06-05",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-06-05T23:10:14.421092+00:00",
-    "run_date_kst":"2026-06-06T08:10:14.421728+09:00"
+    "fetched_at_utc":"2026-06-04T23:10:11.316838+00:00",
+    "run_date_kst":"2026-06-05T08:10:11.317556+09:00"
   },
   {
     "manager":"NH-Amundi운용",
@@ -86,13 +86,13 @@
     "style":"액티브",
     "theme":"바이오",
     "category_tags":"주식 | 액티브 | 바이오",
-    "aum_okr":132.83927395,
+    "aum_okr":136.74092602,
     "aum_unit":"억원",
-    "asof_date":"2026-06-06",
+    "asof_date":"2026-06-05",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-06-05T23:10:14.421092+00:00",
-    "run_date_kst":"2026-06-06T08:10:14.421728+09:00"
+    "fetched_at_utc":"2026-06-04T23:10:11.316838+00:00",
+    "run_date_kst":"2026-06-05T08:10:11.317556+09:00"
   },
   {
     "manager":"DB자산운용",
@@ -105,13 +105,13 @@
     "style":"액티브",
     "theme":"바이오",
     "category_tags":"금리형 | 액티브 | 바이오",
-    "aum_okr":114.68224136,
+    "aum_okr":118.83325502,
     "aum_unit":"억원",
-    "asof_date":"2026-06-06",
+    "asof_date":"2026-06-05",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-06-05T23:10:14.421092+00:00",
-    "run_date_kst":"2026-06-06T08:10:14.421728+09:00"
+    "fetched_at_utc":"2026-06-04T23:10:11.316838+00:00",
+    "run_date_kst":"2026-06-05T08:10:11.317556+09:00"
   },
   {
     "manager":"현대자산운용",
@@ -124,12 +124,12 @@
     "style":"액티브",
     "theme":"바이오",
     "category_tags":"주식 | 액티브 | 바이오",
-    "aum_okr":84.19273277,
+    "aum_okr":84.49325843,
     "aum_unit":"억원",
-    "asof_date":"2026-06-06",
+    "asof_date":"2026-06-05",
     "holdings_source":"FunETF",
     "holding_count":3,
-    "fetched_at_utc":"2026-06-05T23:10:14.421092+00:00",
-    "run_date_kst":"2026-06-06T08:10:14.421728+09:00"
+    "fetched_at_utc":"2026-06-04T23:10:11.316838+00:00",
+    "run_date_kst":"2026-06-05T08:10:11.317556+09:00"
   }
 ]

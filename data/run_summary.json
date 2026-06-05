@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-06-04T23:10:11.395870+00:00",
-  "run_date_kst": "2026-06-05T08:10:11.395890+09:00",
+  "generated_at_utc": "2026-06-05T23:10:14.482742+00:00",
+  "run_date_kst": "2026-06-06T08:10:14.482753+09:00",
   "etf_count": 7,
   "holding_count": 55,
-  "previous_run_date_kst": "2026-06-04T08:10:15.168874+09:00",
-  "changed_holding_count": 50,
+  "previous_run_date_kst": "2026-06-05T08:10:11.395890+09:00",
+  "changed_holding_count": 0,
   "new_holding_count": 0,
   "removed_holding_count": 0,
-  "increased_holding_count": 23,
-  "decreased_holding_count": 27
+  "increased_holding_count": 0,
+  "decreased_holding_count": 0
 }
