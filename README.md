@@ -54,7 +54,7 @@ GitHub Actions 자동 수집은 꺼져 있습니다. 이 저장소에는 `.githu
 예를 들어 macOS/Linux `cron`에서 매일 08:10 KST에 실행하려면:
 
 ```cron
-10 8 * * * cd /Users/jongyeon.kim/Desktop/etf_check_bundle && ./scripts/run_local.sh >> logs/local-collector.log 2>&1
+10 8 * * * cd /Users/jongyeon.kim/dev/etf_check_bundle && ./scripts/run_local.sh >> logs/local-collector.log 2>&1
 ```
 
 `logs/` 디렉터리는 먼저 만들어 두면 됩니다.
